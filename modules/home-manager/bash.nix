@@ -27,14 +27,14 @@
         if [ -n $home ]
           then
             home-manager switch --flake ~/nix#tobi
-          elif [ -n $nixos || -n $config ]
+        fi
+        if [ -n $nixos || -n $config ]
             then
               sudo nixos-rebuild switch flake ~/nix#tobi
-          elif [ -n $flake ]
+        fi
+        if [ -n $flake ]
             then
               nix flake update
-          else
-            echo "no diff"
         fi
 
         # in case hardware-configuration.nix changes or something
