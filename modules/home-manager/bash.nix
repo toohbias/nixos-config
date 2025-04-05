@@ -2,13 +2,7 @@
 
   programs.bash = {
     enable = true;
-    shellAliases = 
-    let
-      flakePath = "~/nix";
-    in {
-      rbnixos = "sudo nixos-rebuild switch --flake ${flakePath}#tobi";
-      rbhome = "home-manager switch --flake ${flakePath}#tobi";
-
+    shellAliases = {
       gc = "sudo nix-collect-garbage -d";
       sd = "shutdown 0";
     };
@@ -28,7 +22,7 @@
           then
             home-manager switch --flake ~/nix#tobi
         fi
-        if [ -n "$nixos" || -n "$config" ]
+        if [ -n "$nixos" -o -n "$config" ]
             then
               sudo nixos-rebuild switch --flake ~/nix#tobi
         fi
