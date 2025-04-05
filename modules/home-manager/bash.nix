@@ -30,7 +30,7 @@
         fi
         if [ -n $nixos || -n $config ]
             then
-              sudo nixos-rebuild switch flake ~/nix#tobi
+              sudo nixos-rebuild switch --flake ~/nix#tobi
         fi
         if [ -n $flake ]
             then
@@ -48,11 +48,7 @@
               else
                 git commit -m $2
             fi
-            read -p "Do you want to push? (y/n)" push
-            if [ $push == "y" ]
-              then
-                git push origin main
-            fi
+            git push origin main
           else
             echo "You are not committing the changes. Please use
             >    git commit -m [message]"
