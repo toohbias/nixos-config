@@ -29,7 +29,6 @@
     xdg-desktop-portal-gtk
     xdg-desktop-portal-wlr
 
-    meson
     wayland-protocols
     wayland-utils
     wl-clipboard
