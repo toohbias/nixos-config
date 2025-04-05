@@ -1,4 +1,4 @@
-{ pkgs, inputs, ... }: {
+{ inputs, ... }: {
 
   imports = with inputs; [
     ./../../modules/home-manager
@@ -9,5 +9,7 @@
     homeDirectory = "/home/tobi";
     stateVersion = "24.11";
   };
+
+  news.display = "silent";
 
 }
