@@ -3,7 +3,7 @@ let
 in {
 
   services.hyprpaper = {
-    enable = true;
+    enable = false;
     settings = {
       preload = wpdir;
       wallpaper = ",${wpdir}";
