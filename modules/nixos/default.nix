@@ -10,7 +10,6 @@
     ./hyprland.nix
     ./packages.nix
     ./fonts.nix
-    ./stylix.nix
   ];
 
 }
