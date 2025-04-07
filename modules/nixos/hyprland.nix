@@ -1,4 +1,4 @@
-{config, pkgs, ... }: {
+{ pkgs, ... }: {
  
   services.xserver = {
     enable = true;
@@ -22,7 +22,6 @@
     mako
     qt6.qtwayland
     wofi
-    waybar
 
     xwayland
 

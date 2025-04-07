@@ -12,7 +12,7 @@
     ./packages.nix
 
     ./wofi.nix
-
+    ./waybar.nix
     ./hyprpaper.nix
   ];
 
