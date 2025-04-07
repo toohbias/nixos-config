@@ -18,12 +18,11 @@
     stylix = {
       url = "github:danth/stylix";
       inputs.nixpkgs.follows = "nixpkgs";
-      inputs.home-manager.follows = "home-manager";
     };
 
   };
 
-  outputs = { nixpkgs, home-manager, ... } @ inputs: 
+  outputs = { nixpkgs, home-manager, stylix, ... } @ inputs: 
   let 
     system = "x86_64-linux";
     pkgs = nixpkgs.legacyPackages.${system};
@@ -31,7 +30,10 @@
     nixosConfigurations.tobi = nixpkgs.lib.nixosSystem {
       specialArgs = { inherit nixpkgs; };
       inherit system;
-      modules = [ ./hosts/gmktec/configuration.nix ];
+      modules = [ 
+        ./hosts/gmktec/configuration.nix
+        stylix.nixosModules.stylix
+      ];
     };
 
     homeConfigurations.tobi = home-manager.lib.homeManagerConfiguration {
