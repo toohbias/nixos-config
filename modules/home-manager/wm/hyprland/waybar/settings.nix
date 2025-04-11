@@ -1,8 +1,8 @@
-{
+let 
 
-  programs.waybar.settings = {
-#   layer = "top";
-#   position = "top";
+  config = {
+    layer = "top";
+    position = "top";
 
     modules_left = [
       "hyprland/window"
@@ -24,5 +24,9 @@
       tooltop = false;
     };
   };
+
+in {
+
+    programs.waybar.settings = builtins.toJSON config;
 
 }
