@@ -1,8 +1,8 @@
 {
 
   programs.waybar.settings = {
-    layer = "top";
-    position = "top";
+#   layer = "top";
+#   position = "top";
 
     modules_left = [
       "hyprland/window"
