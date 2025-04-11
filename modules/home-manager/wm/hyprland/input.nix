@@ -23,7 +23,7 @@
       "$mainMod, V, togglefloating,"
       "$mainMod, Return, exec, $menu --show drun"
       "$mainMod, P, pseudo, # dwindle"
-      "$mainMod, J, togglesplit, # dwindle"
+#     "$mainMod, J, togglesplit, # dwindle"
 
       # Move focus with mainMod + arrow keys
       "$mainMod, h, movefocus, l"
