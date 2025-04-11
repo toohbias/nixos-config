@@ -1,4 +1,5 @@
 {
+
   programs.waybar.settings = [
     {
       layer = "top";
@@ -46,4 +47,5 @@
       };
     }
   ];
+
 }
