@@ -10,6 +10,7 @@
     # CLI utils
     neofetch
     git
+    starship
 
     # Sound
     pulseaudio

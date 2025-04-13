@@ -54,6 +54,8 @@
         fi
         popd
       }
+
+      eval "$(starship init bash)"
     '';
   };
 
