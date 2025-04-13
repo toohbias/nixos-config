@@ -1,6 +1,13 @@
 { pkgs, ... }: {
 
-  programs.uwsm.enable = true;
+  services.xserver = {
+    enable = true;
+
+    displayManager.gdm = {
+      enable = true;
+      wayland = true;
+    };
+  };
  
   programs.hyprland = {
     enable = true;
@@ -13,7 +20,6 @@
     kitty
     dunst
     libnotify
-    mako
     qt6.qtwayland
     wofi
 
