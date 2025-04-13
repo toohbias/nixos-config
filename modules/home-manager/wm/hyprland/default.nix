@@ -13,7 +13,7 @@
 
     ./wofi.nix
     ./waybar
-        
+    ./hyprlock.nix
     ./hyprpaper.nix
   ];
 
