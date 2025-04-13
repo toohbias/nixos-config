@@ -4,6 +4,7 @@
     "$terminal" = "kitty";
     "$fileManager" = "Thunar";
     "$menu" = "wofi";
+    "$browser" = "Brave";
   };
 
 }

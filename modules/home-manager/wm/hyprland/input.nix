@@ -17,6 +17,7 @@
     bind = [
       # Open random apps
       "$mainMod, T, exec, $terminal"
+      "$mainMod, B, exec, $browser"
       "$mainMod, Q, killactive,"
       "$mainMod, M, exit,"
       "$mainMod, F, exec, $fileManager"
