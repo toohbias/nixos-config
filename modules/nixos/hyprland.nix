@@ -1,17 +1,18 @@
 { pkgs, ... }: {
  
-  services.xserver = {
-    enable = true;
+# services.xserver = {
+#   enable = true;
 
-    displayManager.gdm = {
-      enable = true;
-      wayland = true;
-    };
-  };  
+#   displayManager.gdm = {
+#     enable = true;
+#     wayland = true;
+#   };
+# };  
 
   programs.hyprland = {
     enable = true;
     withUWSM = true;
+    xwayland.enable = true;
   };
 
   environment.systemPackages = with pkgs; [
@@ -27,6 +28,7 @@
 
     xdg-desktop-portal-gtk
     xdg-desktop-portal-wlr
+    xdg-desktop-portal-hyprland
 
     wayland-protocols
     wayland-utils
