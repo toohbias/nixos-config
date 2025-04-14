@@ -5,6 +5,7 @@
     ./bash.nix
     ./kitty.nix
     ./nvim.nix
+    ./prompt.nix
     ./wm
   ];
 
