@@ -1,4 +1,4 @@
-{ lib } : {
+{
 
   programs.starship = {
     enable = true;
@@ -6,18 +6,19 @@
 
     settings = {
       add_newline = false;
-      format = lib.concatStrings [
-        "[](#161A1D)"
-        "$os"
-        "[](bg:#660708 fg:#161A1D)"
-        "$username"
-        "[](bg:#A4161A fg:#660708)"
-        "$directory"
-        "[](bg:#BA181B fg:#A4161A)"
-        "$git_branch"
-        "$git_status"
-        "[](#BA181B)"
-      ];
+      format = ''
+        [](#161A1D)\
+        $os\
+        [](bg:#660708 fg:#161A1D)\
+        $username\
+        [](bg:#A4161A fg:#660708)\
+        $directory\
+        [](bg:#BA181B fg:#A4161A)\
+        $git_branch\
+        $git_status\
+        [](#BA181B)\
+      '';
+
       os = {
         disabled = false;
         style = "bg:161A1D";
