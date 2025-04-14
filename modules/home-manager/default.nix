@@ -6,6 +6,7 @@
     ./kitty.nix
     ./nvim.nix
     ./prompt.nix
+    ./packages.nix
     ./wm
   ];
 
