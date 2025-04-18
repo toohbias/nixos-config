@@ -3,7 +3,6 @@
   home.packages = with pkgs; [
     spotify
     thunderbird
-    kicad
   ];
 
   nixpkgs.config.allowUnfreePredicate = pkg:
