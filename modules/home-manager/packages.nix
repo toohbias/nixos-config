@@ -4,6 +4,7 @@
     spotify
     thunderbird
     qucs-s
+    ngspice
   ];
 
   nixpkgs.config.allowUnfreePredicate = pkg:
