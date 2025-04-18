@@ -18,8 +18,13 @@
 	    languages = {
           enableLSP = true;
           enableTreesitter = true;
+          enableFormat = true;
 
           nix.enable = true;
+          markdown = {
+            enable = true;
+            extensions.render-markdown-nvim.enable = true;
+          };
         };
       };
     };
