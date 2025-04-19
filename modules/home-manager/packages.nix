@@ -2,6 +2,7 @@
   home.packages = with pkgs; [
     spotify
     anydesk
+    libreoffice
     thunderbird
     qucs-s
     ngspice
