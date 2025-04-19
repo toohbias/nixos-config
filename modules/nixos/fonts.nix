@@ -1,9 +1,8 @@
-{ pkgs, ... }: {
-
+{pkgs, ...}: {
   fonts.packages = with pkgs; [
-    (nerdfonts.override { fonts = [ "FiraCode" ]; })
+    (nerdfonts.override {fonts = ["FiraCode"];})
     fira-code
     dejavu_fonts
+    corefonts
   ];
-
 }
