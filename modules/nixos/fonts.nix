@@ -3,6 +3,6 @@
     (nerdfonts.override {fonts = ["FiraCode"];})
     fira-code
     dejavu_fonts
-    corefonts
+    liberation_ttf
   ];
 }
