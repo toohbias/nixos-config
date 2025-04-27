@@ -1,10 +1,10 @@
 {
-
   programs.bash = {
     enable = true;
     shellAliases = {
       gc = "sudo nix-collect-garbage -d";
       sd = "shutdown 0";
+      pic = "kitty icat";
     };
     bashrcExtra = ''
       function rebuild() {
@@ -59,5 +59,4 @@
       eval "$(starship init bash)"
     '';
   };
-
 }
