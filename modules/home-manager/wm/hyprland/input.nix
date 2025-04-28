@@ -1,17 +1,16 @@
 {
-
-  wayland.windowManager.hyprland.settings = {    
-
+  wayland.windowManager.hyprland.settings = {
     input = {
       kb_layout = "us,de";
+      kb_variant = "querty";
       kb_options = "caps:swapescape,grp:sclk_toggle,grp_led:scroll";
       numlock_by_default = true;
-      
+
       follow_mouse = 1;
       sensitivity = -1.0;
       force_no_accel = true;
     };
-    
+
     "$mainMod" = "SUPER";
 
     bind = [
@@ -23,8 +22,9 @@
       "$mainMod, F, exec, $fileManager"
       "$mainMod, V, togglefloating,"
       "$mainMod, Return, exec, $menu --show drun"
-      "$mainMod, P, pseudo, # dwindle"
-#     "$mainMod, J, togglesplit, # dwindle"
+      #     "$mainMod, J, togglesplit, # dwindle"
+
+      "$mainMod, Tab, exec, hyprctl switchxkblayout next"
 
       # Move focus with mainMod + arrow keys
       "$mainMod, h, movefocus, l"
@@ -58,10 +58,10 @@
       # Example special workspace (scratchpad)
       "$mainMod, S, togglespecialworkspace, magic"
       "$mainMod SHIFT, S, movetoworkspace, special:magic"
-      
+
       # Scroll through existing workspaces with mainMod + scroll
       "$mainMod, mouse_down, workspace, e+1"
-      "$mainMod, mouse_up, workspace, e-1"      
+      "$mainMod, mouse_up, workspace, e-1"
 
       # Laptop multimedia keys for volume and LCD brightness
       ",XF86AudioRaiseVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+"
@@ -70,17 +70,12 @@
       ",XF86AudioMicMute, exec, wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"
       ",XF86MonBrightnessUp, exec, brightnessctl s 10%+"
       ",XF86MonBrightnessDown, exec, brightnessctl s 10%-"
-
     ];
 
     bindm = [
-
       # Move/resize windows with mainMod + LMB/RMB and dragging
       "$mainMod, mouse:272, movewindow"
       "$mainMod, mouse:273, resizewindow"
-
     ];
-
   };
-
 }
