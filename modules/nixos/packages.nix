@@ -1,6 +1,5 @@
-{ pkgs, ... }: {
-
- environment.systemPackages = with pkgs; [
+{pkgs, ...}: {
+  environment.systemPackages = with pkgs; [
     # Desktop Apps
     brave
 
@@ -18,6 +17,6 @@
     # Other
     home-manager
     tree
+    unzip
   ];
-
 }
