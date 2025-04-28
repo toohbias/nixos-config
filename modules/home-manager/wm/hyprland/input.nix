@@ -2,8 +2,7 @@
   wayland.windowManager.hyprland.settings = {
     input = {
       kb_layout = "us,de";
-      kb_variant = "querty";
-      kb_options = "caps:swapescape,grp:sclk_toggle,grp_led:scroll";
+      kb_options = "caps:swapescape,grp_led:scroll";
       numlock_by_default = true;
 
       follow_mouse = 1;
@@ -24,7 +23,7 @@
       "$mainMod, Return, exec, $menu --show drun"
       #     "$mainMod, J, togglesplit, # dwindle"
 
-      "$mainMod, Tab, exec, hyprctl switchxkblayout next"
+      "$mainMod, Tab, exec, hyprctl switchxkblayout chicony-usb-keyboard next"
 
       # Move focus with mainMod + arrow keys
       "$mainMod, h, movefocus, l"
