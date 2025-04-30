@@ -6,7 +6,6 @@
     thunderbird
     qucs-s
     ngspice
-    jetbrains.idea-ultimate
   ];
 
   nixpkgs.config.allowUnfreePredicate = pkg:
