@@ -9,6 +9,7 @@
 
     # CLI utils
     neofetch
+    htop
     git
     starship
 
