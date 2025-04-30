@@ -15,7 +15,7 @@
           tabstop = 4;
         };
 
-        startplugins = [pkgs.vimPlugins.LazyVim];
+        startPlugins = [pkgs.vimPlugins.LazyVim];
 
         telescope.enable = true;
         autocomplete.blink-cmp.enable = true;
