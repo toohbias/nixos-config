@@ -1,4 +1,8 @@
-{inputs, ...}: {
+{
+  inputs,
+  pkgs,
+  ...
+}: {
   imports = [inputs.nvf.homeManagerModules.default];
 
   programs.nvf = {
@@ -10,6 +14,8 @@
           shiftwidth = 0;
           tabstop = 4;
         };
+
+        startplugins = [pkgs.vimPlugins.LazyVim];
 
         telescope.enable = true;
         autocomplete.blink-cmp.enable = true;
