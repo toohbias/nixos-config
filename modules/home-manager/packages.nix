@@ -6,12 +6,13 @@
     thunderbird
     qucs-s
     ngspice
+    jetbrains.idea-ultimate
   ];
 
   nixpkgs.config.allowUnfreePredicate = pkg:
     builtins.elem (pkgs.lib.getName pkg) [
       "spotify"
       "anydesk"
-      "jetbrains.idea-ultimate"
+      "idea-ultimate"
     ];
 }

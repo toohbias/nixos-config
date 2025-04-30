@@ -5,6 +5,7 @@
 
     # Coding
     neovim
+    tree-sitter
 
     # CLI utils
     neofetch

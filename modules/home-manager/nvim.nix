@@ -1,10 +1,9 @@
-{ inputs, ... }: {
-  
-  imports = [inputs.nvf.homeManagerModules.default ];
+{inputs, ...}: {
+  imports = [inputs.nvf.homeManagerModules.default];
 
   programs.nvf = {
     enable = true;
-    
+
     settings = {
       vim = {
         options = {
@@ -15,7 +14,7 @@
         telescope.enable = true;
         autocomplete.blink-cmp.enable = true;
 
-	    languages = {
+        languages = {
           enableLSP = true;
           enableTreesitter = true;
           enableFormat = true;
@@ -29,5 +28,4 @@
       };
     };
   };
-
 }
