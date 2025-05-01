@@ -22,12 +22,6 @@
     system = "x86_64-linux";
     pkgs = nixpkgs.legacyPackages.${system};
   in {
-    homeModules.default = {
-      programs.neovim.finalPackage = lazy-nvim-nix.packages.${system}.LazyVim;
-    };
-    nixosModules.default = {
-      programs.neovim.finalPackage = lazy-nvim-nix.packages.${system}.default;
-    };
     nixosConfigurations.tobi = nixpkgs.lib.nixosSystem {
       specialArgs = { inherit nixpkgs; };
       inherit system;
