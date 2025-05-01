@@ -1,5 +1,4 @@
 {
-  
   description = "My system configuration";
 
   inputs = {
@@ -10,31 +9,29 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    nvf = {
-      url = "github:notashelf/nvf";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
+    nvf.url = "github:notashelf/nvf";
   };
 
-  outputs = { nixpkgs, home-manager, ... } @ inputs: 
-  let 
+  outputs = {
+    nixpkgs,
+    home-manager,
+    ...
+  } @ inputs: let
     system = "x86_64-linux";
     pkgs = nixpkgs.legacyPackages.${system};
   in {
     nixosConfigurations.tobi = nixpkgs.lib.nixosSystem {
-      specialArgs = { inherit nixpkgs; };
+      specialArgs = {inherit nixpkgs;};
       inherit system;
-      modules = [ ./hosts/gmktec/configuration.nix ];
+      modules = [./hosts/gmktec/configuration.nix];
     };
 
     homeConfigurations.tobi = home-manager.lib.homeManagerConfiguration {
       inherit pkgs;
-      modules = [ ./hosts/gmktec/home.nix ];
+      modules = [./hosts/gmktec/home.nix];
       extraSpecialArgs = {
         inherit inputs;
       };
     };
   };
-
 }
