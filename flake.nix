@@ -10,16 +10,14 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-#   nvf = {
-#     url = "github:notashelf/nvf";
-#     inputs.nixpkgs.follows = "nixpkgs";
-#   };
-
-    lazy-nvim-nix.url = "github:josh/lazy-nvim-nix";
+    nvf = {
+      url = "github:notashelf/nvf";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
   };
 
-  outputs = { nixpkgs, home-manager, lazy-nvim-nix, ... } @ inputs: 
+  outputs = { nixpkgs, home-manager, self, lazy-nvim-nix, ... } @ inputs: 
   let 
     system = "x86_64-linux";
     pkgs = nixpkgs.legacyPackages.${system};
