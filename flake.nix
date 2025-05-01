@@ -17,7 +17,7 @@
 
   };
 
-  outputs = { nixpkgs, home-manager, self, lazy-nvim-nix, ... } @ inputs: 
+  outputs = { nixpkgs, home-manager, ... } @ inputs: 
   let 
     system = "x86_64-linux";
     pkgs = nixpkgs.legacyPackages.${system};
