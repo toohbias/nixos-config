@@ -1,5 +1,6 @@
 {pkgs, ...}: {
   home.packages = with pkgs; [
+    neovim	
     spotify
     anydesk
     libreoffice
