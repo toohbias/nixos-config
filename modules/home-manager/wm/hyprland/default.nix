@@ -11,7 +11,7 @@
     ./packages.nix
 
     ./wofi.nix
-    #   ./waybar
+    ./waybar
     #   ./hyprlock.nix
     ./hyprpaper.nix
   ];
