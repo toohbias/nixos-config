@@ -28,5 +28,5 @@
       };
     };
   };
-# programs.neovim.finalPackage = lazy-nvim-nix.packages.${system}.LazyVim;
+
 }
