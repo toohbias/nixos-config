@@ -17,7 +17,7 @@
 
         keymaps = [
           {
-            key = "<leader>ft";
+            key = "<leader>ee";
             mode = "n";
             silent = true;
             action = ":Neotree";
