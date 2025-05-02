@@ -12,6 +12,7 @@
     neofetch
     htop
     git
+    ripgrep
     starship
 
     # Sound
