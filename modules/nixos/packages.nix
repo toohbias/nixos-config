@@ -4,7 +4,7 @@
     brave
 
     # Coding
-    
+    neovim
     tree-sitter
     gcc
 
