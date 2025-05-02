@@ -17,10 +17,14 @@
 
         keymaps = [
           {
-            key = "<leader>ee";
+            key = "<leader>ef";
             mode = "n";
-            silent = true;
-            action = ":Neotree";
+            action = ":Neotree toggle<CR>";
+          }
+          {
+            key = "<leader>e";
+            mode = "n";
+            action = ":Neotree focus";
           }
         ];
 
