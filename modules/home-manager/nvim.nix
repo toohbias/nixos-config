@@ -1,4 +1,4 @@
-{ inputs, ... } : {
+{inputs, ...}: {
   imports = [inputs.nvf.homeManagerModules.default];
 
   programs.nvf = {
@@ -13,6 +13,7 @@
 
         telescope.enable = true;
         autocomplete.blink-cmp.enable = true;
+        filetree.neo-tree.enable = true;
 
         languages = {
           enableLSP = true;
@@ -28,5 +29,4 @@
       };
     };
   };
-
 }
