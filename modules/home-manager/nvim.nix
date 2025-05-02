@@ -15,6 +15,15 @@
         autocomplete.blink-cmp.enable = true;
         filetree.neo-tree.enable = true;
 
+        keymaps = [
+          {
+            key = "<leader>t";
+            mode = "n"
+            silent = true;
+            action = ":Neotree";
+          }
+        ];
+
         languages = {
           enableLSP = true;
           enableTreesitter = true;
