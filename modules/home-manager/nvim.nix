@@ -19,12 +19,12 @@
           {
             key = "<leader>ef";
             mode = "n";
-            action = ":Neotree toggle<CR>";
+            action = "<cmd>Neotree toggle<CR>";
           }
           {
             key = "<leader>e";
             mode = "n";
-            action = ":Neotree focus";
+            action = "<cmd>Neotree focus<CR>";
           }
         ];
 
