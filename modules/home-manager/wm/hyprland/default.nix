@@ -1,5 +1,4 @@
 {
-
   imports = [
     ./hyprland.nix
     ./autostart.nix
@@ -12,9 +11,8 @@
     ./packages.nix
 
     ./wofi.nix
-    ./waybar
-#   ./hyprlock.nix
+    #   ./waybar
+    #   ./hyprlock.nix
     ./hyprpaper.nix
   ];
-
 }
