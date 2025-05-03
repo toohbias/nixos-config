@@ -54,6 +54,9 @@
       "$mainMod SHIFT, 9, movetoworkspace, 9"
       "$mainMod SHIFT, 0, movetoworkspace, 10"
 
+      "$mainMod SHIFT, h, movecurrentworkspacetomonitor, l"
+      "$mainMod SHIFT, l, movecurrentworkspacetomonitor, r"
+
       # Example special workspace (scratchpad)
       "$mainMod, S, togglespecialworkspace, magic"
       "$mainMod SHIFT, S, movetoworkspace, special:magic"
