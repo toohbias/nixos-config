@@ -49,7 +49,20 @@
         //     }
         // },
         "hyprland/workspaces": {
-
+            "format": "{icon} {windows}",
+            "on-click": "activate",
+            "window-rewrite-default": "",
+            "window-rewrite": {
+                "class<Chromium>": "",
+                "title<.*youtube.*>": "",
+                "title<.*github.*>: "",
+                "class<kitty>": "",
+                "title<.*nvim.*>": "",
+                "class<thunderbird>": "",
+                "class<intellij>": "",
+                "class<libreoffice-writer>": "",
+                "class<libreoffice-impress>": "󱎐",
+            }
         },
         "keyboard-state": {
             "numlock": true,
