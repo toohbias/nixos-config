@@ -12,6 +12,7 @@
             "custom/media"
         ],
         "modules-center": [
+            "wlr/taskbar"
         ],
         "modules-right": [
             "mpd",
@@ -48,20 +49,24 @@
         //         "default": ""
         //     }
         // },
+        "wlr/taskbar": {
+            "format": "{title}"
+        },
         "hyprland/workspaces": {
             "format": "{icon} {windows}",
             "on-click": "activate",
             "window-rewrite-default": "",
             "window-rewrite": {
-                "class<Chromium>": "",
+                "class<ungoogled-chromium>": "",
                 "title<.*youtube.*>": "",
-                "title<.*github.*>: "",
+                "title<.*github.*>": "",
                 "class<kitty>": "",
                 "title<.*nvim.*>": "",
                 "class<thunderbird>": "",
-                "class<intellij>": "",
+                "class<idea-ultimate>": "",
                 "class<libreoffice-writer>": "",
                 "class<libreoffice-impress>": "󱎐",
+                "class<spotify>": ""
             }
         },
         "keyboard-state": {
