@@ -1,5 +1,4 @@
 {
-
   imports = [
     ./boot.nix
     ./audio.nix
@@ -10,6 +9,6 @@
     ./hyprland.nix
     ./packages.nix
     ./fonts.nix
+    ./print.nix
   ];
-
 }
