@@ -9,6 +9,6 @@
     ./hyprland.nix
     ./packages.nix
     ./fonts.nix
-    ./print.nix
+    ./printer/print.nix
   ];
 }
