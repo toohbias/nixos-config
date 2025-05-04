@@ -1,7 +1,7 @@
 {
   wayland.windowManager.hyprland.settings = {
     windowrule = [
-      "opaque, title:(.*)(Brave)$"
+      "opaque, title:(.*)(chromium)$"
     ];
 
     windowrulev2 = [

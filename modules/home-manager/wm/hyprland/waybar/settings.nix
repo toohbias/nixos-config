@@ -1,13 +1,10 @@
 {
   home.file.".config/waybar/config.jsonc".text = ''
-    // -*- mode: jsonc -*-
     {
-        // "layer": "top", // Waybar at top layer
-        // "position": "bottom", // Waybar position (top|bottom|left|right)
-        "height": 30, // Waybar height (to be removed for auto height)
-        // "width": 1280, // Waybar width
-        "spacing": 4, // Gaps between modules (4px)
-        // Choose the order of the modules
+        "layer": "top",
+        "position": "top",
+        "height": 30,
+        "spacing": 4,
         "modules-left": [
             "hyprland/workspaces",
             "sway/mode",
@@ -15,7 +12,6 @@
             "custom/media"
         ],
         "modules-center": [
-            "sway/window"
         ],
         "modules-right": [
             "mpd",
@@ -52,6 +48,9 @@
         //         "default": ""
         //     }
         // },
+        "hyprland/workspaces": {
+
+        },
         "keyboard-state": {
             "numlock": true,
             "capslock": true,

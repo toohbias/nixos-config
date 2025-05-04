@@ -1,7 +1,7 @@
 {pkgs, ...}: {
   environment.systemPackages = with pkgs; [
     # Desktop Apps
-    brave
+    ungoogled-chromium
 
     # Coding
     neovim
