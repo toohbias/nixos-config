@@ -22,7 +22,5 @@
     home-manager
     tree
     unzip
-
-    cups
   ];
 }
