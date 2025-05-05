@@ -9,6 +9,7 @@
             "hyprland/workspaces",
         ],
         "modules-center": [
+            "clock",
         ],
         "modules-right": [
             "pulseaudio",
@@ -16,8 +17,6 @@
             "cpu",
             "memory",
             "battery",
-            "battery#bat2",
-            "clock",
         ],
         "wlr/taskbar": {
             "format": "{title}"
@@ -66,9 +65,6 @@
             // "format-good": "", // An empty format will hide the module
             // "format-full": "",
             "format-icons": ["", "", "", "", ""]
-        },
-        "battery#bat2": {
-            "bat": "BAT2"
         },
         "network": {
             // "interface": "wlp2*", // (Optional) To force the use of this interface
