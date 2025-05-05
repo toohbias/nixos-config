@@ -13,14 +13,12 @@
         ],
         "modules-right": [
             "pulseaudio",
-            "network",
             "cpu",
             "memory",
+            "disk",
+            "network",
             "battery",
         ],
-        "wlr/taskbar": {
-            "format": "{title}"
-        },
         "hyprland/workspaces": {
             "format": "{icon} {windows}",
             "on-click": "activate",
@@ -44,37 +42,6 @@
             "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
             "format-alt": "{:%Y-%m-%d}"
         },
-        "cpu": {
-            "format": "{usage}% ",
-            "tooltip": false
-        },
-        "memory": {
-            "format": "{}% "
-        },
-        "battery": {
-            "states": {
-                // "good": 95,
-                "warning": 30,
-                "critical": 15
-            },
-            "format": "{capacity}% {icon}",
-            "format-full": "{capacity}% {icon}",
-            "format-charging": "{capacity}% ",
-            "format-plugged": "{capacity}% ",
-            "format-alt": "{time} {icon}",
-            // "format-good": "", // An empty format will hide the module
-            // "format-full": "",
-            "format-icons": ["", "", "", "", ""]
-        },
-        "network": {
-            // "interface": "wlp2*", // (Optional) To force the use of this interface
-            "format-wifi": "{essid} ({signalStrength}%) ",
-            "format-ethernet": "{ipaddr}/{cidr} ",
-            "tooltip-format": "{ifname} via {gwaddr} ",
-            "format-linked": "{ifname} (No IP) ",
-            "format-disconnected": "Disconnected ⚠",
-            "format-alt": "{ifname}: {ipaddr}/{cidr}"
-        },
         "pulseaudio": {
             // "scroll-step": 1, // %, can be a float
             "format": "{volume}% {icon} {format_source}",
@@ -93,6 +60,37 @@
                 "default": ["", "", ""]
             },
             "on-click": "pavucontrol"
+        },
+        "cpu": {
+            "format": "{usage}% ",
+            "tooltip": false
+        },
+        "memory": {
+            "format": "{}% "
+        },
+        "network": {
+            // "interface": "wlp2*", // (Optional) To force the use of this interface
+            "format-wifi": "{essid} ({signalStrength}%) ",
+            "format-ethernet": "{ipaddr}/{cidr} ",
+            "tooltip-format": "{ifname} via {gwaddr} ",
+            "format-linked": "{ifname} (No IP) ",
+            "format-disconnected": "Disconnected ⚠",
+            "format-alt": "{ifname}: {ipaddr}/{cidr}"
+        },
+        "battery": {
+            "states": {
+                // "good": 95,
+                "warning": 30,
+                "critical": 15
+            },
+            "format": "{capacity}% {icon}",
+            "format-full": "{capacity}% {icon}",
+            "format-charging": "{capacity}% ",
+            "format-plugged": "{capacity}% ",
+            "format-alt": "{time} {icon}",
+            // "format-good": "", // An empty format will hide the module
+            // "format-full": "",
+            "format-icons": ["", "", "", "", ""]
         },
     }
   '';
