@@ -10,14 +10,12 @@
     }
 
     #clock,
-    #battery,
+    #pulseaudio
     #cpu,
     #memory,
     #disk,
     #network,
-    #pulseaudio,
-    #power-profiles-daemon,
-    #mpd {
+    #battery {
         padding: 0 10px;
         color: #ffffff;
     }
@@ -49,25 +47,6 @@
     #battery.charging, #battery.plugged {
         color: #ffffff;
         background-color: #26A65B;
-    }
-
-    #power-profiles-daemon {
-        padding-right: 15px;
-    }
-
-    #power-profiles-daemon.performance {
-        background-color: #f53c3c;
-        color: #ffffff;
-    }
-
-    #power-profiles-daemon.balanced {
-        background-color: #2980b9;
-        color: #ffffff;
-    }
-
-    #power-profiles-daemon.power-saver {
-        background-color: #2ecc71;
-        color: #000000;
     }
 
     #cpu {

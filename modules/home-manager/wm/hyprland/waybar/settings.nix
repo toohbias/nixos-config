@@ -54,13 +54,13 @@
             },
         },
         "cpu": {
-            "format": "{}% "
+            "format": "{usage}% "
         },
         "memory": {
-            "format": "{}% "
+            "format": "{percentage}% "
         },
         "disk": {
-            "format": "{}% 󰋊"
+            "format": "{percentage_used}% 󰋊"
         },
         "network": {
             "format": "󰤨",
