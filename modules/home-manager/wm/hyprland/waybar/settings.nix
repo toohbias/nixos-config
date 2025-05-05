@@ -57,13 +57,13 @@
             "on-click": "activate",
             "window-rewrite-default": "",
             "window-rewrite": {
-                "class<ungoogled-chromium>": "",
-                "title<.*youtube.*>": "",
+                "class<chromium-browser>": "",
+                "title<.*YouTube.*>": "",
                 "title<.*github.*>": "",
                 "class<kitty>": "",
                 "title<.*nvim.*>": "",
                 "class<thunderbird>": "",
-                "class<idea-ultimate>": "",
+                "class<jetbrains-idea>": "",
                 "class<libreoffice-writer>": "",
                 "class<libreoffice-impress>": "󱎐",
                 "class<spotify>": ""
