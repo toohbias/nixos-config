@@ -59,7 +59,7 @@
             "window-rewrite": {
                 "class<chromium-browser>": "",
                 "title<.*YouTube.*>": "",
-                "title<.*github.*>": "",
+                "title<.*/.*at.*>": "",
                 "title<.*Stack Overflow.*>": "",
                 "class<kitty>": "",
                 "title<nvim>": "",
