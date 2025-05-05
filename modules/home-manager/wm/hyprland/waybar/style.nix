@@ -1,9 +1,8 @@
 {
   programs.waybar.style = ''
     * {
-        /* `otf-font-awesome` is required to be installed for icons */
-        font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
-        font-size: 13px;
+        font-family: FontAwesome, sans-serif;
+        font-size: 15px;
     }
 
     window#waybar {
