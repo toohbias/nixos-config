@@ -4,6 +4,7 @@
     shellAliases = {
       gc = "sudo nix-collect-garbage -d";
       sd = "shutdown 0";
+      rb = "reboot";
       pic = "kitty icat";
     };
     bashrcExtra = ''
@@ -53,6 +54,11 @@
             >    git commit -m [message]"
         fi
         popd
+      }
+
+      function mkcd() {
+        mkdir $1
+        cd $1
       }
 
       export STARSHIP_CONFIG="$HOME/.config/starship.toml"
