@@ -38,18 +38,11 @@
             }
         },
         "clock": {
-            // "timezone": "America/New_York",
-            "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-            "format-alt": "{:%Y-%m-%d}"
+            "format": "{:%R  %A %b %d}"
         },
         "pulseaudio": {
-            // "scroll-step": 1, // %, can be a float
-            "format": "{volume}% {icon} {format_source}",
-            "format-bluetooth": "{volume}% {icon} {format_source}",
-            "format-bluetooth-muted": " {icon} {format_source}",
-            "format-muted": " {format_source}",
-            "format-source": "{volume}% ",
-            "format-source-muted": "",
+            "format": "{volume}% {icon}",
+            "format-bluetooth": "{volume}% {icon}",
             "format-icons": {
                 "headphone": "",
                 "hands-free": "",
@@ -59,23 +52,19 @@
                 "car": "",
                 "default": ["", "", ""]
             },
-            "on-click": "pavucontrol"
         },
         "cpu": {
-            "format": "{usage}% ",
-            "tooltip": false
+            "format": "{}% "
         },
         "memory": {
-            "format": "{}% "
+            "format": "{}% "
+        },
+        "disk": {
+            "format": "{}% 󰋊"
         },
         "network": {
-            // "interface": "wlp2*", // (Optional) To force the use of this interface
-            "format-wifi": "{essid} ({signalStrength}%) ",
-            "format-ethernet": "{ipaddr}/{cidr} ",
-            "tooltip-format": "{ifname} via {gwaddr} ",
-            "format-linked": "{ifname} (No IP) ",
-            "format-disconnected": "Disconnected ⚠",
-            "format-alt": "{ifname}: {ipaddr}/{cidr}"
+            "format": "󰤨",
+            "format-disconnected": "󰤮",
         },
         "battery": {
             "states": {
