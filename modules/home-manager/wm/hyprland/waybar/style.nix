@@ -34,10 +34,6 @@
     #workspaces button {
         color: rgba(255, 255, 255, 0.75);
     }
-    #workspaces button:hover {
-        box-shadow: inherit;
-        text-shadow: inherit:
-    }
     #custom-spacer {
         color: #595959;
     }
