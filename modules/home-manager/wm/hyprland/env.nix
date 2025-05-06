@@ -8,7 +8,7 @@
       "QT_QPA_PLATFORM,wayland"
 
       "HYPRCURSOR_THEME,McMojave"
-      "XCURSOR_SIZE,24"
+      "XCURSOR_SIZE,32"
     ];
   };
 }
