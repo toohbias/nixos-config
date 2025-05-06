@@ -69,7 +69,7 @@
         },
         "network": {
             "format": "  {bandwidthDownBytes}  {bandwidthUpBytes}",
-            "format-disconnected": "󰤮 ",
+            "format-disconnected": "󰤭 ",
         },
     }
   '';
