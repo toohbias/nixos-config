@@ -10,6 +10,8 @@
     };
 
     nvf.url = "github:notashelf/nvf";
+
+    mcmojave-hyprcursor.url = "github:libadoxon/mcmojave-hyprcursor";
   };
 
   outputs = {
