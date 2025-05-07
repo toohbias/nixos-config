@@ -34,7 +34,7 @@
                 "title<.*/.*at.*>": " ",
                 "title<.*Stack Overflow.*>": "",
                 "class<kitty>": "",
-                "title<nvim>": " ",
+                "title<nvim.*>": " ",
                 "class<thunderbird>": " ",
                 "class<jetbrains-idea>": "",
                 "class<libreoffice-writer>": " ",

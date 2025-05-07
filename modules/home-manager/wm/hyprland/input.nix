@@ -20,7 +20,7 @@
       "$mainMod, M, exit,"
       "$mainMod, F, exec, $fileManager"
       "$mainMod, V, togglefloating,"
-      "$mainMod, Return, exec, $menu --show drun"
+      "$mainMod, Return, exec, $menu --show drun -a"
       "$mainMod, A, togglesplit, # dwindle"
 
       "$mainMod, Tab, exec, hyprctl switchxkblayout chicony-usb-keyboard next"
