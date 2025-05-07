@@ -1,5 +1,5 @@
 {
-  programs.waybar.enable = true;
+  programs.wofi.enable = true;
 
   imports = [
     ./config.nix

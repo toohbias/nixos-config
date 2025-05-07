@@ -10,7 +10,7 @@
 
     ./packages.nix
 
-    ./wofi.nix
+    ./wofi
     ./waybar
     #   ./hyprlock.nix
     ./hyprpaper.nix
