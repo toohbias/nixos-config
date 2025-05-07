@@ -1,5 +1,4 @@
-{ lib, ... }: {
-
+{lib, ...}: {
   programs.starship = {
     enable = true;
     enableBashIntegration = true;
@@ -7,9 +6,9 @@
     settings = {
       add_newline = true;
       format = lib.concatStrings [
-        "[ ](#696969)"
+        "[ ](#595959)"
         "$username"
-        "[ ](bg:#BA181B fg:#696969)"
+        "[ ](bg:#BA181B fg:#595959)"
         "$directory"
         "$git_branch"
         "$git_status"
@@ -17,8 +16,8 @@
       ];
       username = {
         show_always = true;
-        style_user = "bg:#696969";
-        style_root = "bg:#696969 red";
+        style_user = "bg:#595959";
+        style_root = "bg:#595959 red";
         format = "[󱄅 $user]($style)";
       };
       directory = {
@@ -39,5 +38,4 @@
       };
     };
   };
-
 }
