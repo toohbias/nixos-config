@@ -1,5 +1,4 @@
-{ pkgs, ... }: {
-
+{pkgs, ...}: {
   services.xserver = {
     enable = true;
 
@@ -8,7 +7,7 @@
       wayland = true;
     };
   };
- 
+
   programs.hyprland = {
     enable = true;
     withUWSM = true;
@@ -18,7 +17,7 @@
   environment.systemPackages = with pkgs; [
     hyprpaper
     kitty
-    dunst
+    mako
     libnotify
     qt6.qtwayland
     wofi
@@ -34,5 +33,4 @@
     wl-clipboard
     wlroots
   ];
-
 }
