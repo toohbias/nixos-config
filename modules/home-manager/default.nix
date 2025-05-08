@@ -6,6 +6,6 @@
     ./nvim.nix
     ./prompt.nix
     ./packages.nix
-    ./wm
+    ./hyprland
   ];
 }
