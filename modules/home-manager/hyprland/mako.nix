@@ -3,12 +3,12 @@
     enable = true;
 
     backgroundColor = "#000000BF";
-    borderColor = "#595959BF";
-    borderRadius = 10;
+    borderColor = "#BA181BFF";
+    borderRadius = 9;
     borderSize = 2;
     defaultTimeout = 5000;
     font = "FiraCode Nerd Font";
-    margin = "5, 10, 5";
+    margin = "16, 16, -8";
     padding = "2, 10";
     textColor = "#FFFFFFBF";
   };
