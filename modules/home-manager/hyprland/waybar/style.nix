@@ -13,7 +13,7 @@
         margin: 8px 8px 0px;
         border-radius: 10px;
         background: rgba(0, 0, 0, 0.75);
-        border: 2px solid rgba(89, 89, 89, 0.67);
+        border: 2px solid rgba(89, 89, 89, 0.75);
     }
     .modules-center {
         padding: 2px 10px;
@@ -21,7 +21,7 @@
         border-radius: 10px;
         background: rgba(0, 0, 0, 0.75);
         color: rgba(255, 255, 255, 0.75);
-        border: 2px solid rgba(89, 89, 89, 0.67);
+        border: 2px solid rgba(89, 89, 89, 0.75);
     }
     .modules-right {
         padding: 2px 10px;
@@ -29,7 +29,7 @@
         border-radius: 10px;
         background: rgba(0, 0, 0, 0.75);
         color: rgba(255, 255, 255, 0.75);
-        border: 2px solid rgba(89, 89, 89, 0.67);
+        border: 2px solid rgba(89, 89, 89, 0.75);
     }
     #workspaces button {
         padding: 0px;

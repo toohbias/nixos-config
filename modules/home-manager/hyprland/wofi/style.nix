@@ -19,7 +19,7 @@
         background: transparent;
         color: rgba(255, 255, 255, 0.75);
         border-radius: 8px;
-        border: 2px solid rgba(89, 89, 89, 0.67);
+        border: 2px solid rgba(89, 89, 89, 0.75);
     }
     #input:focus {
         box-shadow: none;
