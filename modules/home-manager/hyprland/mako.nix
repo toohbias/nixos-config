@@ -4,7 +4,7 @@
 
     backgroundColor = "#000000BF";
     borderColor = "#BA181BFF";
-    borderRadius = 9;
+    borderRadius = 8;
     borderSize = 2;
     defaultTimeout = 5000;
     font = "FiraCode Nerd Font";
