@@ -61,6 +61,13 @@
         cd $1
       }
 
+      function update() {
+        pushd ~/nix
+        nix flake update
+        popd
+        rebuild -c
+      }
+
       export STARSHIP_CONFIG="$HOME/.config/starship.toml"
       eval "$(starship init bash)"
     '';
