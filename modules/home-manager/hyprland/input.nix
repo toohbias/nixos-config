@@ -19,10 +19,9 @@
 
       "$mainMod, T, exec, $terminal"
       "$mainMod, B, exec, $browser"
-      "$mainMod, F, exec, $fileManager"
       "$mainMod, Q, killactive,"
       "$mainMod, M, exit,"
-      "$mainMod, V, togglefloating,"
+      "$mainMod, F, togglefloating,"
       "$mainMod, A, togglesplit, # dwindle"
 
       "$mainMod, Tab, exec, hyprctl switchxkblayout chicony-usb-keyboard next"
@@ -66,14 +65,6 @@
       # Scroll through existing workspaces with mainMod + scroll
       "$mainMod, mouse_down, workspace, e+1"
       "$mainMod, mouse_up, workspace, e-1"
-
-      # Laptop multimedia keys for volume and LCD brightness
-      ",XF86AudioRaiseVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+"
-      ",XF86AudioLowerVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
-      ",XF86AudioMute, exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
-      ",XF86AudioMicMute, exec, wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"
-      ",XF86MonBrightnessUp, exec, brightnessctl s 10%+"
-      ",XF86MonBrightnessDown, exec, brightnessctl s 10%-"
     ];
 
     bindm = [
