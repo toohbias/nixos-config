@@ -1,4 +1,4 @@
-{
+{ config, ... }: {
   programs.wofi.style = ''
     * {
         font-family: "FiraCode Nerd Font";
@@ -6,9 +6,9 @@
         font-size: 15px;
     }
     #window {
-        background: rgba(0, 0, 0, 0.75);
-        border-radius:10px;
-        border: 2px solid #FFFFFF
+        background: ${config.theme.background};
+        border-radius: 10px;
+        border: 2px solid ${config.theme.active};
     }
     #outer-box {
         padding: 8px;
@@ -17,19 +17,19 @@
         padding: 2px 8px;
         margin: 0px 0px 8px;
         background: transparent;
-        color: rgba(255, 255, 255, 0.75);
+        color: ${config.theme.text};
         border-radius: 8px;
-        border: 2px solid rgba(89, 89, 89, 0.75);
+        border: 2px solid ${config.theme.inactive};
     }
     #input:focus {
         box-shadow: none;
-        border: 2px solid #FFFFFF
+        border: 2px solid ${config.theme.active};
     }
     #text {
-        color: rgba(255, 255, 255, 0.75);
+        color: ${config.theme.text};
     }
     #entry:selected {
-        background: #BA181B;
+        background: ${config.theme.red};
     }
   '';
 }

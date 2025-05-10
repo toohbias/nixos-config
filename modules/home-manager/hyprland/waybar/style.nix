@@ -1,4 +1,4 @@
-{
+{ config, ... }: {
   programs.waybar.style = ''
     * {
         font-family: "FiraCode Nerd Font";
@@ -12,31 +12,31 @@
         padding: 2px 10px;
         margin: 8px 8px 0px;
         border-radius: 10px;
-        background: rgba(0, 0, 0, 0.75);
-        border: 2px solid rgba(89, 89, 89, 0.75);
+        background: ${config.theme.background};
+        border: 2px solid ${config.theme.inactive};
     }
     .modules-center {
         padding: 2px 10px;
         margin: 10px 10px 0px;
         border-radius: 10px;
-        background: rgba(0, 0, 0, 0.75);
-        color: rgba(255, 255, 255, 0.75);
-        border: 2px solid rgba(89, 89, 89, 0.75);
+        background: ${config.theme.background};
+        color: ${config.theme.text};
+        border: 2px solid ${config.theme.inactive};
     }
     .modules-right {
         padding: 2px 10px;
         margin: 10px 10px 0px;
         border-radius: 10px;
-        background: rgba(0, 0, 0, 0.75);
-        color: rgba(255, 255, 255, 0.75);
-        border: 2px solid rgba(89, 89, 89, 0.75);
+        background: ${config.theme.background};
+        color: ${config.theme.text};
+        border: 2px solid ${config.theme.inactive};
     }
     #workspaces button {
         padding: 0px;
-        color: rgba(255, 255, 255, 0.75);
+        color: ${config.theme.text};
     }
     #custom-spacer {
-        color: #595959;
+        color: ${config.theme.background_nt};
     }
   '';
 }

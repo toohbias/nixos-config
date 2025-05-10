@@ -1,4 +1,4 @@
-{
+{ config, ... }: {
   wayland.windowManager.hyprland.settings = {
     monitor = [
       "HDMI-A-1,1920x1080@60,0x0,1"
@@ -16,8 +16,8 @@
 
       border_size = 2;
 
-      "col.active_border" = "rgba(ffffffff)";
-      "col.inactive_border" = "rgba(595959aa)";
+      "col.active_border" = "${config.theme.active}";
+      "col.inactive_border" = "${config.theme.inactive}";
 
       resize_on_border = false;
 
