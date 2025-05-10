@@ -15,7 +15,7 @@
     bind = [
       # Open random apps
       "$mainMod, Return, exec, $menu --show drun -a"
-      "$mainMod, V, exec, cliphist list | wofi --dmenu | cliphist decode | wl-copy"
+      "$mainMod, V, exec, cliphist list | wofi -S dmenu | cliphist decode | wl-copy"
 
       "$mainMod, T, exec, $terminal"
       "$mainMod, B, exec, $browser"
