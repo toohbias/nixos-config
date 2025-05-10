@@ -22,5 +22,7 @@
     home-manager
     tree
     unzip
+
+    wl-clipboard
   ];
 }
