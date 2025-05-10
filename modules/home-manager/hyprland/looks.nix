@@ -16,8 +16,8 @@
 
       border_size = 2;
 
-      "col.active_border" = "${config.theme.active}";
-      "col.inactive_border" = "${config.theme.inactive}";
+      "col.active_border" = "rgba(${config.theme.active_nt}BF)";
+      "col.inactive_border" = "rgba(${config.theme.inactive_nt}BF)";
 
       resize_on_border = false;
 

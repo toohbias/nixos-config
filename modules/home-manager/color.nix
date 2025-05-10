@@ -9,9 +9,10 @@
         text = "rgba(255, 255, 255, 0.75)";
         red = "rgba(186, 24, 27, 1.0)";
 
-        background_nt = "#000000";
-        inactive_nt = "#595959";
-        text_nt = "#FFFFFF";
+        active_nt = "FFFFFF";
+        background_nt = "000000";
+        inactive_nt = "595959";
+        text_nt = "FFFFFF";
       };
     };
 }
