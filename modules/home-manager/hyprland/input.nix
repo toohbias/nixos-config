@@ -14,13 +14,15 @@
 
     bind = [
       # Open random apps
+      "$mainMod, Return, exec, $menu --show drun -a"
+      "$mainMod, V, exec, cliphist list | wofi --dmenu | cliphist decode | wl-copy"
+
       "$mainMod, T, exec, $terminal"
       "$mainMod, B, exec, $browser"
+      "$mainMod, F, exec, $fileManager"
       "$mainMod, Q, killactive,"
       "$mainMod, M, exit,"
-      "$mainMod, F, exec, $fileManager"
       "$mainMod, V, togglefloating,"
-      "$mainMod, Return, exec, $menu --show drun -a"
       "$mainMod, A, togglesplit, # dwindle"
 
       "$mainMod, Tab, exec, hyprctl switchxkblayout chicony-usb-keyboard next"
