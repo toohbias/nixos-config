@@ -16,6 +16,7 @@
       # Open random apps
       "$mainMod, Return, exec, $menu --show drun -a"
       "$mainMod, V, exec, cliphist list | wofi -S dmenu | cliphist decode | wl-copy"
+      "$mainMod SHIFT, V, exec, cliphist wipe"
 
       "$mainMod, T, exec, $terminal"
       "$mainMod, B, exec, $browser"
@@ -55,9 +56,9 @@
       "$mainMod SHIFT, 9, movetoworkspace, 9"
       "$mainMod SHIFT, 0, movetoworkspace, 10"
 
-      "$mainMod SHIFT, h, movecurrentworkspacetomonitor, l"
-      "$mainMod SHIFT, l, movecurrentworkspacetomonitor, r"
-
+      "$mainMod SHIFT, h, swapwindow, l"
+      "$mainMod SHIFT, l, swapwindow, r"
+            
       # Example special workspace (scratchpad)
       "$mainMod, S, togglespecialworkspace, magic"
       "$mainMod SHIFT, S, movetoworkspace, special:magic"
