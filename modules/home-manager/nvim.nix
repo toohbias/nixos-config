@@ -11,6 +11,8 @@
           tabstop = 4;
         };
 
+        useSystemClipboard = true;
+
         telescope.enable = true;
         autocomplete.blink-cmp.enable = true;
         filetree.neo-tree.enable = true;
