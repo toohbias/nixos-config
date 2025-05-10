@@ -5,6 +5,7 @@
     ./kitty.nix
     ./nvim.nix
     ./prompt.nix
+    ./clipboard.nix
     ./packages.nix
     ./hyprland
   ];
