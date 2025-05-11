@@ -6,7 +6,7 @@
     ./nvim.nix
     ./prompt.nix
     ./packages.nix
-    ./color.nix
+    ./theme.nix
     ./hyprland
   ];
 }

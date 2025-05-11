@@ -14,7 +14,7 @@
       gaps_in = 4;
       gaps_out = 8;
 
-      border_size = 2;
+      border_size = config.theme.border_size;
 
       "col.active_border" = "rgba(${config.theme.active_nt}BF)";
       "col.inactive_border" = "rgba(${config.theme.inactive_nt}BF)";
@@ -27,10 +27,10 @@
     };
 
     decoration = {
-      rounding = 10;
+      rounding = config.theme.radius_out;
 
-      active_opacity = 0.75;
-      inactive_opacity = 0.75;
+      active_opacity = config.theme.opacity;
+      inactive_opacity = config.theme.opacity;
 
       shadow = {
         enabled = true;
