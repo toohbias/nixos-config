@@ -18,6 +18,8 @@
         radius_out = 10;
         radius_in = 8;
         border_size = 2;
+
+        font = "FiraCode Nerd Font";
       };
     };
 }

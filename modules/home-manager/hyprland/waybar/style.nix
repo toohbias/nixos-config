@@ -1,7 +1,7 @@
 { config, ... }: {
   programs.waybar.style = ''
     * {
-        font-family: "FiraCode Nerd Font";
+        font-family: ${config.theme.font};
         font-weight: 500;
         font-size: 15px;
     }
@@ -11,25 +11,25 @@
     .modules-left {
         padding: 2px 10px;
         margin: 8px 8px 0px;
-        border-radius: 10px;
+        border-radius: ${toString config.theme.radius_out}px;
         background: ${config.theme.background};
-        border: 2px solid ${config.theme.inactive};
+        border: ${toString config.theme.border_size}px solid ${config.theme.inactive};
     }
     .modules-center {
         padding: 2px 10px;
-        margin: 10px 10px 0px;
-        border-radius: 10px;
+        margin: 8px 8px 0px;
+        border-radius: ${toString config.theme.radius_out}px;
         background: ${config.theme.background};
         color: ${config.theme.text};
-        border: 2px solid ${config.theme.inactive};
+        border: ${toString config.theme.border_size}px solid ${config.theme.inactive};
     }
     .modules-right {
         padding: 2px 10px;
-        margin: 10px 10px 0px;
-        border-radius: 10px;
+        margin: 8px 8px 0px;
+        border-radius: ${toString config.theme.radius_out}px;
         background: ${config.theme.background};
         color: ${config.theme.text};
-        border: 2px solid ${config.theme.inactive};
+        border: ${toString config.theme.border_size}px solid ${config.theme.inactive};
     }
     #workspaces button {
         padding: 0px;
