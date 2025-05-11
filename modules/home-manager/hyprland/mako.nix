@@ -2,7 +2,7 @@
   services.mako = {
     enable = true;
 
-    backgroundColor = "${config.theme.background}";
+    backgroundColor = config.theme.background;
     borderColor = "${config.theme.red}";
     borderRadius = config.theme.radius_in;
     borderSize = config.theme.border_size;
