@@ -10,10 +10,12 @@
         text = "rgba(255, 255, 255, ${toString config.theme.opacity})";
         red = "rgba(186, 24, 27, 1.0)";
 
+        opacity_nt = "BF";
         active_nt = "FFFFFF";
         background_nt = "000000";
         inactive_nt = "595959";
         text_nt = "FFFFFF";
+        red_nt = "BA181B";
 
         radius_out = 10;
         radius_in = 8;
