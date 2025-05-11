@@ -58,6 +58,9 @@
 
       "$mainMod SHIFT, h, swapwindow, l"
       "$mainMod SHIFT, l, swapwindow, r"
+
+      "$mainMod CTRL, h, movecurrentworkspacetomonitor, l"
+      "$mainMod CTRL, l, movecurrentworkspacetomonitor, r"
             
       # Example special workspace (scratchpad)
       "$mainMod, S, togglespecialworkspace, magic"
