@@ -9,11 +9,12 @@
   };
 
   services.displayManager = {
+    enable = true;
     autoLogin = {
       enable = true;
       user = "tobi";
     };
-    defaultSession = "hyprland-uwsm";
+    defaultSession = "none+hyprland-uwsm";
   };
 
   programs.hyprland = {
