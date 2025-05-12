@@ -8,13 +8,14 @@
 #   };
   };
 
-  services.displayManager = {
+  services.greetd = {
     enable = true;
-    autoLogin = {
-      enable = true;
-      user = "tobi";
+    settings = {
+      initial_session = {
+        command = "Hyprland";
+        user = "tobi";
+      };
     };
-    defaultSession = "hyprland-uwsm";
   };
 
   programs.hyprland = {
