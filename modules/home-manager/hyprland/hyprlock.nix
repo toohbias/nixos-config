@@ -16,4 +16,6 @@
     };
   };
 
+  xdg.configFile."hypr/hyprlock.conf".force = true;
+
 }
