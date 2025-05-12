@@ -8,10 +8,7 @@
 #   };
   };
 
-  services.displayManager.autoLogin = {
-    enable = true;
-    user = "tobi";
-  };
+  services.getty.autologinUser = "tobi";
 
   programs.hyprland = {
     enable = true;
