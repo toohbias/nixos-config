@@ -17,6 +17,8 @@
         text_nt = "FFFFFF";
         red_nt = "BA181B";
 
+        transparent = "rgba(00000000)";
+
         radius_out = 10;
         radius_in = 8;
         border_size = 2;

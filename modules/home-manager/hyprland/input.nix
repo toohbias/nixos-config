@@ -57,6 +57,8 @@
       "$mainMod SHIFT, 0, movetoworkspace, 10"
 
       "$mainMod SHIFT, h, swapwindow, l"
+      "$mainMod SHIFT, j, swapwindow, d"
+      "$mainMod SHIFT, k, swapwindow, u"
       "$mainMod SHIFT, l, swapwindow, r"
 
       "$mainMod CTRL, h, movecurrentworkspacetomonitor, l"
