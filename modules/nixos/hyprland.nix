@@ -8,7 +8,13 @@
 #   };
   };
 
-  services.getty.autologinUser = "tobi";
+  services.displayManager = {
+    autoLogin = {
+      enable = true;
+      user = "tobi";
+    };
+    defaultSession = "hyprland-uwsm";
+  };
 
   programs.hyprland = {
     enable = true;
