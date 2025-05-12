@@ -14,7 +14,7 @@
       enable = true;
       user = "tobi";
     };
-    defaultSession = "none+hyprland-uwsm";
+    defaultSession = "hyprland-uwsm";
   };
 
   programs.hyprland = {
