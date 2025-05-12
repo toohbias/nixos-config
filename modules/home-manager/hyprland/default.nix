@@ -12,7 +12,7 @@
     ./wofi
     ./waybar
     ./mako.nix
-    #   ./hyprlock.nix
+    ./hyprlock.nix
     ./hyprpaper.nix
   ];
 }
