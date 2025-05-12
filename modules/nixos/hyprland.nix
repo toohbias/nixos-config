@@ -10,6 +10,7 @@
 
   services.displayManager.autoLogin = {
     enable = true;
+    user = "tobi";
   };
 
   programs.hyprland = {
