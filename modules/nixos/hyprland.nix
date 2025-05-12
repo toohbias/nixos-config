@@ -11,10 +11,11 @@
   services.greetd = {
     enable = true;
     settings = {
-      initial_session = {
+      default_session = {
         command = "Hyprland";
         user = "tobi";
       };
+#     default_session = initial_session;
     };
   };
 
