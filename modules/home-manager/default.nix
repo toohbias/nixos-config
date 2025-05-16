@@ -8,5 +8,7 @@
     ./packages.nix
     ./theme.nix
     ./hyprland
+
+    ./coding
   ];
 }

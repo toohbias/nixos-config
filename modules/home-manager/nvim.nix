@@ -11,7 +11,16 @@
           tabstop = 4;
         };
 
-        useSystemClipboard = true;
+#       useSystemClipboard = true;
+
+        keymaps = [
+          {
+            key = "y";
+            mode = "n";
+            silent = true;
+            action = "+y";
+          }
+        ];
 
         telescope.enable = true;
         autocomplete.blink-cmp.enable = true;
