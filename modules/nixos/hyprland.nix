@@ -1,11 +1,6 @@
 {
   services.xserver = {
     enable = true;
-
-#   displayManager.gdm = {
-#     enable = true;
-#     wayland = true;
-#   };
   };
 
   services.greetd = {
@@ -15,7 +10,6 @@
         command = "Hyprland";
         user = "tobi";
       };
-#     default_session = initial_session;
     };
   };
 
