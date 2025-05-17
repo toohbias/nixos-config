@@ -30,6 +30,9 @@
           enableTreesitter = true;
           enableFormat = true;
 
+          java.enable = true;
+          clang.enable = true;
+
           nix.enable = true;
           markdown = {
             enable = true;
