@@ -10,5 +10,6 @@
     image_size = 24;
     key_up = "Ctrl-k";
     key_down = "Ctrl-j";
+    key_expand = "Ctrl-e";
   };
 }
