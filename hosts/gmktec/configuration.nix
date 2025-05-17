@@ -12,13 +12,12 @@
 
   networking.hostName = "nixos";
 
-  # services.xserver = {
-  #   enable = true;
-  #   desktopmanager = {
-  #     xfce.enable = true;
-  #   };
-  #   displaymanager.defaultsession = "xfce";
-  # };
+    services.xserver = {
+      enable = true;
+      desktopManager = {
+        xfce.enable = true;
+      };
+    };
 
   # some programs need suid wrappers, can be configured further or are
   # started in user sessions.
