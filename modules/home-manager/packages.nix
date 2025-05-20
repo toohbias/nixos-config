@@ -7,8 +7,7 @@
     qucs-s
     ngspice
     jetbrains.idea-ultimate
-    bottles
-  ];
+ ];
 
   nixpkgs.config.allowUnfreePredicate = pkg:
     builtins.elem (pkgs.lib.getName pkg) [
