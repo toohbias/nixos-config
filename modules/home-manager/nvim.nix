@@ -20,6 +20,11 @@
           }
         ];
 
+        utility.images.image-nvim = {
+          enable = true;
+          setupOpts.backend = "kitty";
+        };
+
         telescope.enable = true;
         autocomplete.blink-cmp.enable = true;
         filetree.neo-tree.enable = true;
