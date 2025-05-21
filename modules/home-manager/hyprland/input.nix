@@ -27,6 +27,8 @@
 
       "$mainMod, Tab, exec, hyprctl switchxkblayout chicony-usb-keyboard next"
 
+      "$mainMod, E, exec, hyprlock"
+
       # Move focus with mainMod + arrow keys
       "$mainMod, h, movefocus, l"
       "$mainMod, l, movefocus, r"
