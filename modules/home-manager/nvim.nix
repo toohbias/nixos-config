@@ -22,7 +22,10 @@
 
         utility.images.image-nvim = {
           enable = true;
-          setupOpts.backend = "kitty";
+          setupOpts = {
+            backend = "kitty";
+            integrations.markdown.clearInInsertMode = true;
+          };
         };
 
         telescope.enable = true;
