@@ -24,7 +24,7 @@
           enable = true;
           setupOpts = {
             backend = "kitty";
-            integrations.markdown.clearInInsertMode = true;
+            integrations.markdown.onlyRenderAtCursor = true;
           };
         };
 
