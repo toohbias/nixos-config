@@ -2,7 +2,7 @@
   wayland.windowManager.hyprland.settings = {
     windowrule = [
       "opaque, title:(.*)(Chromium)$"
-      "opaque, title: class:(src)(.*)$"
+      "opaque, class:jetbrains-idea$"
     ];
 
     windowrulev2 = [
