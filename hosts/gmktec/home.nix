@@ -6,7 +6,7 @@
   home = {
     username = "tobi";
     homeDirectory = "/home/tobi";
-    stateVersion = "24.11";
+    stateVersion = "25.05";
   };
 
   news.display = "silent";
