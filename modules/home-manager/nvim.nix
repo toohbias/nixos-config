@@ -44,7 +44,7 @@
           nix.enable = true;
           markdown = {
             enable = true;
-            extensions.render-markdown-nvim.enable = true;
+            extensions.markview-nvim.enable = true;
           };
         };
       };
