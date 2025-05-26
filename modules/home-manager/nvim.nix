@@ -22,13 +22,13 @@
             key = "<leader>ef";
             mode = "n";
             silent = true;
-            action = ":Neotree toggle";
+            action = ":Neotree toggle<CR>";
           }
           {
             key = "<leader>e";
             mode = "n";
             silent = true;
-            action = ":Neotree";
+            action = ":Neotree<CR>";
           }
         ];
 
