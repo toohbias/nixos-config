@@ -18,6 +18,18 @@
             silent = true;
             action = ''"+y'';
           }
+          {
+            key = "<leader>ef";
+            mode = "n";
+            silent = true;
+            action = ":Neotree toggle";
+          }
+          {
+            key = "<leader>e";
+            mode = "n";
+            silent = true;
+            action = ":Neotree";
+          }
         ];
 
         utility.images.image-nvim = {
