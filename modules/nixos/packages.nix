@@ -25,5 +25,7 @@
 
     wl-clipboard
     cliphist
+
+    greetd.tuigreet
   ];
 }

@@ -1,4 +1,4 @@
-{
+{ pkgs, ... }: {
 
   services.greetd = {
     enable = true;
@@ -8,8 +8,8 @@
         user = "tobi";
       };
       default_session = {
-        command = "startxfce4 --wayland";
-        user = "tobi";
+        command = "${pkgs.greetd.tuigreet}/bin/tuigreet --sessions ${config.services.xserver.displayManager.sessionData.desktops}/share/wayland-sessions";
+        user = "greeter";
       };
     };
   };
