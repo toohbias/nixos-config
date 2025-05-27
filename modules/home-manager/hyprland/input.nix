@@ -15,7 +15,7 @@
     bind = [
       # Open random apps
       "$mainMod, Return, exec, $menu --show drun -a"
-      "$mainMod, V, exec, cliphist list | wofi -S dmenu | cliphist decode | wl-copy"
+      "$mainMod, V, exec, cliphist list | $menu -S dmenu | cliphist decode | wl-copy"
       "$mainMod SHIFT, V, exec, cliphist wipe"
 
       "$mainMod, T, exec, $terminal"
@@ -24,6 +24,8 @@
       "$mainMod, M, exit,"
       "$mainMod, F, togglefloating,"
       "$mainMod, A, togglesplit, # dwindle"
+
+      "$mainMod, O, setprop, activewindow opaque toggle"
 
       "$mainMod, Tab, exec, hyprctl switchxkblayout chicony-usb-keyboard next"
 
