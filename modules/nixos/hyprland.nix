@@ -6,8 +6,12 @@
   services.greetd = {
     enable = true;
     settings = {
-      default_session = {
+      initial_session = {
         command = "Hyprland";
+        user = "tobi";
+      };
+      default_session = {
+        command = "startxfce4 --wayland";
         user = "tobi";
       };
     };
