@@ -6,7 +6,7 @@
     ./locale.nix
     ./user.nix
     ./auto.nix
-    ./hyprland.nix
+    ./sessions.nix
     ./packages.nix
     ./fonts.nix
     ./printer/print.nix

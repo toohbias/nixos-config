@@ -1,7 +1,4 @@
 {
-  services.xserver = {
-    enable = true;
-  };
 
   services.greetd = {
     enable = true;
@@ -17,9 +14,18 @@
     };
   };
 
+  services.xserver = {
+    enable = true;
+    desktopManager.xfce = {
+      enable = true;
+      enableWaylandSession = true;
+    };
+  };
+
   programs.hyprland = {
     enable = true;
     withUWSM = true;
     xwayland.enable = true;
   };
+
 }
