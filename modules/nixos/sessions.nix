@@ -1,4 +1,4 @@
-{ pkgs, config, ... }: {
+{ pkgs, ... }: {
 
   services.greetd = {
     enable = true;
@@ -8,7 +8,7 @@
         user = "tobi";
       };
       default_session = {
-        command = "${pkgs.greetd.tuigreet}/bin/tuigreet --sessions ${config.services.xserver.displayManager.sessionData.desktops}/share/wayland-sessions";
+        command = "${pkgs.greetd.tuigreet}/bin/tuigreet --sessions";
         user = "greeter";
       };
     };

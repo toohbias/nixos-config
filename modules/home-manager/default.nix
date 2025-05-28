@@ -7,8 +7,7 @@
     ./prompt.nix
     ./packages.nix
     ./theme.nix
+    ./coding.nix
     ./hyprland
-
-    ./coding
   ];
 }
