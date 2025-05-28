@@ -52,6 +52,7 @@
 
           java.enable = true;
           clang.enable = true;
+          rust.enable = true;
 
           nix.enable = true;
           markdown = {
