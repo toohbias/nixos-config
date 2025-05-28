@@ -14,6 +14,22 @@
     };
   };
 
+  programs.uwsm = {
+    enable = true;
+    waylandCompositors = {
+      hyprland = {
+        prettyName = "Hyprland";
+        comment = "Hyprland compositor managed by UWSM";
+        binPath = "/run/current-system/sw/bin/Hyprland";
+      };
+      xfce = {
+        prettyName = "Xfce";
+        comment = "Xfce compositor managed by UWSM";
+        binPath = "/run/current-system/sw/bin/startxfce4";
+      };
+    };
+  };
+
   services.xserver = {
     enable = true;
     desktopManager.xfce = {
@@ -24,7 +40,6 @@
 
   programs.hyprland = {
     enable = true;
-    withUWSM = true;
     xwayland.enable = true;
   };
 
