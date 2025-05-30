@@ -17,9 +17,13 @@
     StackingWM = {
       name = "StackingWM";
       genericName = "Window Manager with IntelliJ";
-      exec = "labwc --startup idea-ultimate";
+      exec = "labwc --session idea-ultimate";
       terminal = false;
     };
   };
+  xdg.configFile."labwc/environment".text = ''
+    XKB_DEFAULT_LAYOUT=us
+    XKB_DEFAULT_OPTIONS=caps:swapescape,grp_led:scroll
+  '';
 
 }
