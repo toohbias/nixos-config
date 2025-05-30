@@ -6,5 +6,10 @@
   i18n.extraLocaleSettings = {
     LC_NUMBERIC = "de_DE.UTF-8";
   };
+ 
+  services.xserver.xkb = {
+    layout = "us,de";
+    options = "caps:swapescape,grp_led:scroll";
+  };
 
 }

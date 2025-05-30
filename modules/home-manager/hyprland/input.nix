@@ -1,8 +1,6 @@
 {
   wayland.windowManager.hyprland.settings = {
     input = {
-      kb_layout = "us,de";
-      kb_options = "caps:swapescape,grp_led:scroll";
       numlock_by_default = true;
 
       follow_mouse = 1;
