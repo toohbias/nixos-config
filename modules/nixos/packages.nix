@@ -24,5 +24,7 @@
 
     wl-clipboard
     cliphist
+
+    labwc
   ];
 }

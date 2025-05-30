@@ -13,4 +13,13 @@
     rustup
   ];
 
+  xdg.desktopEntries = {
+    StackingWM = {
+      name = "StackingWM";
+      genericName = "Window Manager with IntelliJ";
+      exec = "labwc --startup idea-ultimate";
+      terminal = false;
+    };
+  };
+
 }
