@@ -30,6 +30,18 @@
             silent = true;
             action = ":Neotree<CR>";
           }
+          {
+            key = "<leader>x";
+            mode = "n";
+            silent = true;
+            action = "0f[lrx<CR>";
+          }
+          {
+            key = "<leader>-";
+            mode = "n";
+            silent = true;
+            action = "0f[lr-<CR>";
+          }
         ];
 
         utility = {
