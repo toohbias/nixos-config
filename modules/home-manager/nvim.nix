@@ -28,7 +28,7 @@
             action = ":Neotree<CR>";
           }
           {
-            key = "<leader>mc";
+            key = "<leader>mx";
             mode = "n";
             action = "0f[lrx<C-V><esc>";
           }
@@ -38,7 +38,7 @@
             action = "0f[lr-<C-V><esc>";
           }
           {
-            key = "<leader>mu";
+            key = "<leader>m ";
             mode = "n";
             action = "0f[lr <C-V><esc>";
           }
