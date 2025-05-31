@@ -38,6 +38,7 @@
             setupOpts = {
               backend = "kitty";
               integrations.markdown.onlyRenderAtCursor = true;
+            };
           };
           motion.flash-nvim.enable = true;
         };
