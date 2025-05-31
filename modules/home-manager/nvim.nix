@@ -15,32 +15,32 @@
           {
             key = "y";
             mode = "n";
-            silent = true;
             action = ''"+y'';
           }
           {
             key = "<leader>ef";
             mode = "n";
-            silent = true;
             action = ":Neotree toggle<CR>";
           }
           {
             key = "<leader>e";
             mode = "n";
-            silent = true;
             action = ":Neotree<CR>";
           }
           {
-            key = "<leader>x";
+            key = "<leader>mc";
             mode = "n";
-            silent = true;
-            action = "0f[lrx<CR>";
+            action = "0f[lrx<C-V><esc>";
           }
           {
-            key = "<leader>-";
+            key = "<leader>m-";
             mode = "n";
-            silent = true;
-            action = "0f[lr-<CR>";
+            action = "0f[lr-<C-V><esc>";
+          }
+          {
+            key = "<leader>mu";
+            mode = "n";
+            action = "0f[lr <C-V><esc>";
           }
         ];
 
