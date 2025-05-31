@@ -32,12 +32,14 @@
           }
         ];
 
-        utility.images.image-nvim = {
-          enable = true;
-          setupOpts = {
-            backend = "kitty";
-            integrations.markdown.onlyRenderAtCursor = true;
+        utility = {
+          images.image-nvim = {
+            enable = true;
+            setupOpts = {
+              backend = "kitty";
+              integrations.markdown.onlyRenderAtCursor = true;
           };
+          motion.flash-nvim.enable = true;
         };
 
         telescope.enable = true;
