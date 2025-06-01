@@ -30,17 +30,17 @@
           {
             key = "<leader>mx";
             mode = "n";
-            action = "0f[lrx<C-V><esc>";
+            action = "0f[lrx<C-V><esc>$";
           }
           {
             key = "<leader>m-";
             mode = "n";
-            action = "0f[lr-<C-V><esc>";
+            action = "0f[lr-<C-V><esc>$";
           }
           {
             key = "<leader>m ";
             mode = "n";
-            action = "0f[lr <C-V><esc>";
+            action = "0f[lr <C-V><esc>$";
           }
         ];
 
