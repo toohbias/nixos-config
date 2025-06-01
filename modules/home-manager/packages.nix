@@ -7,7 +7,7 @@
     qucs-s
     ngspice
     jetbrains.idea-ultimate
-    davinci-resolve
+    shotcut
  ];
 
   nixpkgs.config.allowUnfreePredicate = pkg:
@@ -15,6 +15,5 @@
       "spotify"
       "anydesk"
       "idea-ultimate"
-      "davinci-resolve"
     ];
 }
