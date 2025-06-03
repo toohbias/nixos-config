@@ -1,5 +1,7 @@
 {pkgs, ...}: {
   home.packages = with pkgs; [
+    libnotify
+
     spotify
     anydesk
     libreoffice

@@ -76,8 +76,13 @@
       # Scroll through existing workspaces with mainMod + scroll
       "$mainMod, mouse_down, workspace, e+1"
       "$mainMod, mouse_up, workspace, e-1"
-    ];
 
+      "$mainMod SHIFT, W, exec, hyprshot -o ~/Pictures/Screenshots -m window"
+      "$mainMod SHIFT, R, exec, hyprshot -o ~/Pictures/Screenshots -m region"
+      "$mainMod SHIFT, M, exec, hyprshot -o ~/Pictures/Screenshots -m output"
+      "$mainMod SHIFT, A, exec, hyprshot -o ~/Pictures/Screenshots -m active"
+    ];
+    
     bindm = [
       # Move/resize windows with mainMod + LMB/RMB and dragging
       "$mainMod, mouse:272, movewindow"
