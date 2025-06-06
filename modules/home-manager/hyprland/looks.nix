@@ -15,7 +15,6 @@
       gaps_out = 8;
 
       border_size = config.theme.border_size;
-
       "col.active_border" = "rgba(${config.theme.active_nt}${config.theme.opacity_nt})";
       "col.inactive_border" = "rgba(${config.theme.inactive_nt}${config.theme.opacity_nt})";
 
