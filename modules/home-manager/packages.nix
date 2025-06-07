@@ -10,6 +10,7 @@
     ngspice
     jetbrains.idea-ultimate
     shotcut
+    gimp
  ];
 
   nixpkgs.config.allowUnfreePredicate = pkg:
