@@ -11,6 +11,9 @@
 
     # Rust
     rustup
+
+    # Python
+    jupyter
   ];
 
   xdg.desktopEntries = {

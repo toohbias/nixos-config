@@ -68,8 +68,9 @@
           java.enable = true;
           clang.enable = true;
           rust.enable = true;
+          python.enable = true;
 
-          nix.enable = true;
+          #nix.enable = true; # has to build from source and is huge and isnt as useful anymore
           markdown = {
             enable = true;
             extensions.markview-nvim.enable = true;
