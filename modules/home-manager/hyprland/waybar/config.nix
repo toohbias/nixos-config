@@ -41,7 +41,7 @@
                 "class<libreoffice-writer>": " ",
                 "class<libreoffice-impress>": "󱎐 ",
                 "class<spotify>": " ",
-                "initialTitle<GNU Image Manipulation Program>:  "
+                "initialTitle<GNU Image Manipulation Program>": " "
             }
         },
         "clock": {
