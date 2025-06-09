@@ -37,9 +37,11 @@
                 "title<nvim.*>": " ",
                 "class<thunderbird>": " ",
                 "class<jetbrains-idea>": "",
+                "class<labwc>": "",
                 "class<libreoffice-writer>": " ",
                 "class<libreoffice-impress>": "󱎐 ",
-                "class<spotify>": " "
+                "class<spotify>": " ",
+                "initialTitle<GNU Image Manipulation Program>:  "
             }
         },
         "clock": {
