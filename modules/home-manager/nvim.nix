@@ -64,7 +64,7 @@
               treesitter = "<leader>S";
             };
           };
-          surround {
+          surround = {
             enable = true;
             useVendoredKeybindings = false;
           };
