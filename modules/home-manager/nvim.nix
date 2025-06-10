@@ -14,7 +14,7 @@
         keymaps = [
           {
             key = "y";
-            mode = " ";
+            mode = ["n" "x"];
             action = ''"+y'';
           }
           {
@@ -48,6 +48,8 @@
             action = "0f[lr <C-V><esc>$";
           }
         ];
+
+        binds.whichKey.enable = true;
 
         utility = {
           images.image-nvim = {
