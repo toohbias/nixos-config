@@ -64,7 +64,10 @@
               treesitter = "<leader>S";
             };
           };
-          surround.enable = true;
+          surround {
+            enable = true;
+            useVendoredKeybindings = false;
+          };
         };
 
         telescope.enable = true;
