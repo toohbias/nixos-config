@@ -49,8 +49,6 @@
           }
         ];
 
-        binds.whichKey.enable = true;
-
         utility = {
           images.image-nvim = {
             enable = true;
@@ -59,12 +57,20 @@
               integrations.markdown.onlyRenderAtCursor = true;
             };
           };
-          motion.flash-nvim.enable = true;
+          motion.flash-nvim = {
+            enable = true;
+            mappings = {
+              jump = "<leader>s";
+              treesitter = "<leader>S";
+            };
+          };
+          surround.enable = true;
         };
 
         telescope.enable = true;
         autocomplete.blink-cmp.enable = true;
         filetree.neo-tree.enable = true;
+        binds.whichKey.enable = true;
 
         lsp.enable = true;
 
