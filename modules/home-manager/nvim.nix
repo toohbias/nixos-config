@@ -14,8 +14,12 @@
         keymaps = [
           {
             key = "y";
-            mode = "n";
             action = ''"+y'';
+          }
+          {
+            key = "p";
+            mode = "n";
+            action = ''"+p'';
           }
           {
             key = "<leader>ef";
