@@ -14,6 +14,7 @@
         keymaps = [
           {
             key = "y";
+            mode "n";
             action = ''"+y'';
           }
           {
