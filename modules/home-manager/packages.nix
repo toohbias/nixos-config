@@ -2,6 +2,7 @@
   home.packages = with pkgs; [
     libnotify
 
+    spotifyd
     spotify
     anydesk
     libreoffice

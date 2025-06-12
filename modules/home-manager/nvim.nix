@@ -47,6 +47,11 @@
             mode = "n";
             action = "0f[lr <C-V><esc>$";
           }
+          {
+            key = "<leader>mc";
+            mode = "n";
+            action = "I- [ ] <esc>$";
+          }
         ];
 
         utility = {

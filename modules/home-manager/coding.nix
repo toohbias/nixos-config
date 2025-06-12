@@ -8,6 +8,7 @@
 
     # C
     gcc
+    gdb
 
     # Rust
     rustup
