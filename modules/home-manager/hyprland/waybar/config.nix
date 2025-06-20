@@ -32,16 +32,16 @@
                 "class<chromium-browser>": " ",
                 "title<.*YouTube.*>": " ",
                 "title<.*/.*at.*>": " ",
-                "title<.*Stack Overflow.*>": "",
-                "class<kitty>": "",
+                "title<.*Stack Overflow.*>": " ",
+                "class<kitty>": " ",
                 "title<nvim.*>": " ",
                 "class<thunderbird>": " ",
-                "class<jetbrains-idea>": "",
-                "class<labwc>": "",
+                "class<jetbrains-idea>": " ",
+                "class<labwc>": " ",
                 "class<libreoffice-writer>": " ",
                 "class<libreoffice-impress>": "󱎐 ",
                 "class<spotify>": " ",
-                "initialTitle<GNU Image Manipulation Program>": " "
+                "class<Gimp.*>": " "
             }
         },
         "clock": {
