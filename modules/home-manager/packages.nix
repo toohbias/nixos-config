@@ -9,6 +9,8 @@
     jetbrains.idea-ultimate
     shotcut
     gimp
+
+    wine
  ];
 
   nixpkgs.config.allowUnfreePredicate = pkg:
