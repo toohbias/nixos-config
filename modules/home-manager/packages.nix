@@ -9,8 +9,7 @@
     jetbrains.idea-ultimate
     shotcut
     gimp
-
-    wine
+    discord
  ];
 
   nixpkgs.config.allowUnfreePredicate = pkg:
@@ -18,5 +17,6 @@
       "spotify"
       "anydesk"
       "idea-ultimate"
+      "discord"
     ];
 }
