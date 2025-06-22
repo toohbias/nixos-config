@@ -41,7 +41,8 @@
                 "class<libreoffice-writer>": " ",
                 "class<libreoffice-impress>": "󱎐 ",
                 "class<spotify>": " ",
-                "class<Gimp.*>": " "
+                "class<Gimp.*>": " ",
+                "class<discord>": " "
             }
         },
         "clock": {
