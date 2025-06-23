@@ -10,7 +10,6 @@
     shotcut
     gimp
     discord
-    xfce.thunar
  ];
 
   nixpkgs.config.allowUnfreePredicate = pkg:
