@@ -8,12 +8,12 @@
     tree-sitter
 
     # CLI utils
-    wget
     neofetch
     htop
     git
     ripgrep
     starship
+    fzf
 
     # Sound
     pulseaudio
