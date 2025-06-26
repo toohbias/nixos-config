@@ -9,14 +9,12 @@
     jetbrains.idea-ultimate
     shotcut
     gimp
-    discord
- ];
+  ];
 
   nixpkgs.config.allowUnfreePredicate = pkg:
     builtins.elem (pkgs.lib.getName pkg) [
       "spotify"
       "anydesk"
       "idea-ultimate"
-      "discord"
     ];
 }
