@@ -1,5 +1,5 @@
 let
-  wpdir = "~/Pictures/wallpaper/red1.png";
+  wpdir = "~/pic/wallpaper/red1.png";
 in {
 
   services.hyprpaper = {

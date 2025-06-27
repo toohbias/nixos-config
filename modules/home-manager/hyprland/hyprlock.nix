@@ -5,7 +5,7 @@
 
     settings = {
       background = {
-        path = "~/Pictures/wallpaper/red1_lock_input.png";
+        path = "~/pic/wallpaper/red1_lock_input.png";
         blur_passes = 0;
       };
 
