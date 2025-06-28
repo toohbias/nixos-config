@@ -1,8 +1,7 @@
 {
   imports = [
-    ./boot.nix
+    ./system.nix
     ./audio.nix
-    ./networkmanager.nix
     ./locale.nix
     ./user.nix
     ./auto.nix
