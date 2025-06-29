@@ -75,7 +75,7 @@
           {
             key = "<leader>rr";
             mode = "n";
-            action = ":!cargo run";
+            action = ":!cargo run<CR>";
           }
         ];
 
