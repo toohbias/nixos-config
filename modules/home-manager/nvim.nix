@@ -52,6 +52,31 @@
             mode = "n";
             action = "I- [ ] <esc>$";
           }
+          {
+            key = "<leader>rc";
+            mode = "n";
+            action = ":!gcc <C-R>% -o test -lm; ./test<CR>";
+          }
+          {
+            key = "<leader>rcpp";
+            mode = "n";
+            action = ":!g++ <C-R>% -o test; ./test<CR>";
+          }
+          {
+            key = "<leader>rp";
+            mode = "n";
+            action = ":!python3 <C-R>%<CR>";
+          }
+          {
+            key = "<leader>rj";
+            mode = "n";
+            action = ":!javac <C-R>%; java %:r<CR>";
+          }
+          {
+            key = "<leader>rr";
+            mode = "n";
+            action = ":!cargo run";
+          }
         ];
 
         utility = {
