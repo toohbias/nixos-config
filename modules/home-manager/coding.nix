@@ -9,7 +9,7 @@
     # C
     gcc
     gdb
-    ninja
+    gnumake
     cmakeWithGui
 
     # opengl
