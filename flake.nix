@@ -39,10 +39,10 @@
 
     devShells.${system} = {
       default = pkgs.mkShell {
-        packages = with pkgs; [
+        nativeBuildInputs = [ pkg-config ];
+        buildInputs = [
           glfw
           wayland-scanner
-          pkg-config
         ];
         shellHook = ''
           cd $ORIGINAL_DIR
