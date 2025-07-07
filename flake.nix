@@ -42,6 +42,7 @@
         nativeBuildInputs = with pkgs; [ pkg-config ];
         buildInputs = with pkgs; [
           glfw
+          wayland
           wayland-scanner
         ];
         shellHook = ''
