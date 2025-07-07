@@ -39,8 +39,8 @@
 
     devShells.${system} = {
       default = pkgs.mkShell {
-        nativeBuildInputs = [ pkg-config ];
-        buildInputs = [
+        nativeBuildInputs = with pkgs; [ pkg-config ];
+        buildInputs = with pkgs; [
           glfw
           wayland-scanner
         ];
