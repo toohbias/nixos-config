@@ -38,13 +38,18 @@
     };
 
     devShells.${system} = {
-      default = pkgs.mkShell {
+      opengl = pkgs.mkShell {
         nativeBuildInputs = with pkgs; [ pkg-config ];
         buildInputs = with pkgs; [
-          libxkbcommon
+          glfw-wayland
           wayland
-          wayland-scanner
+          libxkbcommon
         ];
+        LD_LIBRARY_PATH = pkgs.lib.makeLibraryPath (with pkgs; [ 
+          wayland 
+          libxkbcommon
+          libglvnd
+        ]);
         shellHook = ''
           cd $ORIGINAL_DIR
         '';
