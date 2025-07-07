@@ -13,7 +13,7 @@
     cmakeWithGui
 
     # opengl
-    # glfw
+    glfw
     wayland-scanner
     pkg-config
 

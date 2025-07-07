@@ -35,5 +35,14 @@
         inherit inputs;
       };
     };
+
+    devShells.${system} = {
+      default = pkgs.mkShell {
+        packages = with pkgs; [ nodejs ];
+        shellHook = ''
+          cd $ORIGINAL_DIR
+        '';
+      };
+    };
   };
 }

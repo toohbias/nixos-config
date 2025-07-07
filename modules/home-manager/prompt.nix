@@ -1,4 +1,4 @@
-{lib, ...}: {
+{lib, config, ...}: {
   programs.starship = {
     enable = true;
     enableBashIntegration = true;
@@ -6,35 +6,41 @@
     settings = {
       add_newline = true;
       format = lib.concatStrings [
-        "[ ](#595959)"
+        "[ ](#${config.theme.inactive_nt})"
         "$username"
-        "[ ](bg:#BA181B fg:#595959)"
+        "[ ](bg:#${config.theme.red_nt} fg:#${config.theme.inactive_nt})"
         "$directory"
         "$git_branch"
         "$git_status"
-        "[  ](#BA181B)"
+        "$nix_shell"
+        "[  ](#${config.theme.red_nt})"
       ];
       username = {
         show_always = true;
-        style_user = "bg:#595959";
-        style_root = "bg:#595959 red";
+        style_user = "bg:#${config.theme.inactive_nt}";
+        style_root = "bg:#${config.theme.inactive_nt} red";
         format = "[󱄅 $user]($style)";
       };
       directory = {
         truncation_length = 3;
         truncation_symbol = ".../";
         home_symbol = "~";
-        style = "bg:#BA181B";
+        style = "bg:#${config.theme.red_nt}";
         format = "[$path]($style)";
       };
       git_branch = {
         symbol = "";
-        style = "bg:#BA181B";
+        style = "bg:#${config.theme.red_nt}";
         format = "[ on $symbol $branch]($style)";
       };
       git_status = {
-        style = "bg:#BA181B";
+        style = "bg:#${config.theme.red_nt}";
         format = "[ \\[$all_status\\]]($style)";
+      };
+      nix_shell = {
+        symbol = "🐚";
+        style = "bg:#${config.theme.red_nt}";
+        format = "[ $symbol]($style)";
       };
     };
   };
