@@ -10,7 +10,7 @@
     gcc
     gdb
     gnumake
-    cmakeWithGui
+    cmake
 
     # Rust
     rustup

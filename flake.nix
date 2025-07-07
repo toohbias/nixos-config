@@ -11,7 +11,10 @@
 
     nvf.url = "github:notashelf/nvf";
 
-    mcmojave-hyprcursor.url = "github:libadoxon/mcmojave-hyprcursor";
+    mcmojave-hyprcursor = {
+      url = "github:libadoxon/mcmojave-hyprcursor";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = {
