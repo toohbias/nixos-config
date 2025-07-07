@@ -12,12 +12,6 @@
     gnumake
     cmakeWithGui
 
-    # opengl
-    glfw
-    wayland-scanner
-    pkg-config
-
-
     # Rust
     rustup
 

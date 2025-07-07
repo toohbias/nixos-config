@@ -21,16 +21,17 @@
   } @ inputs: let
     system = "x86_64-linux";
     pkgs = nixpkgs.legacyPackages.${system};
+    host = "gmktec";
   in {
     nixosConfigurations.tobi = nixpkgs.lib.nixosSystem {
       specialArgs = {inherit nixpkgs;};
       inherit system;
-      modules = [./hosts/gmktec/configuration.nix];
+      modules = [./hosts/${host}/configuration.nix];
     };
 
     homeConfigurations.tobi = home-manager.lib.homeManagerConfiguration {
       inherit pkgs;
-      modules = [./hosts/gmktec/home.nix];
+      modules = [./hosts/${host}/home.nix];
       extraSpecialArgs = {
         inherit inputs;
       };
@@ -38,7 +39,11 @@
 
     devShells.${system} = {
       default = pkgs.mkShell {
-        packages = with pkgs; [ nodejs ];
+        packages = with pkgs; [
+          glfw
+          wayland-scanner
+          pkg-config
+        ];
         shellHook = ''
           cd $ORIGINAL_DIR
         '';
