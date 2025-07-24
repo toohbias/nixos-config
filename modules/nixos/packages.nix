@@ -27,5 +27,7 @@
     cliphist
 
     labwc
+
+    libinput
   ];
 }

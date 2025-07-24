@@ -9,6 +9,7 @@
     ./packages.nix
     ./fonts.nix
     ./virtual.nix
+    ./util.nix
     ./printer/print.nix
   ];
 }
