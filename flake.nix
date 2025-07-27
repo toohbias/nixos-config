@@ -44,6 +44,7 @@
           glfw-wayland
           wayland
           libxkbcommon
+          wayland-scanner
         ];
         LD_LIBRARY_PATH = pkgs.lib.makeLibraryPath (with pkgs; [ 
           wayland 
