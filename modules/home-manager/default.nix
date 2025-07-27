@@ -9,6 +9,7 @@
     ./packages.nix
     ./theme.nix
     ./coding.nix
+    ./dirs.nix
     ./hyprland
   ];
 }
