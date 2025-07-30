@@ -89,6 +89,8 @@
           }
         ];
 
+        highlight.Normal.bg = "Black";
+
         utility = {
           images.image-nvim = {
             enable = true;
