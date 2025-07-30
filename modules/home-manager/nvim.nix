@@ -77,6 +77,16 @@
             mode = "n";
             action = ":!cargo run<CR>";
           }
+          {
+            key = "<leader>rt";
+            mode = "n";
+            action = ":!typst compile<CR>";
+          }
+          {
+            key = "<leader>p";
+            mode = "n";
+            action = ":TypstPreview<CR>"
+          }
         ];
 
         utility = {
