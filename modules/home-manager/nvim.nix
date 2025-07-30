@@ -85,7 +85,7 @@
           {
             key = "<leader>p";
             mode = "n";
-            action = ":TypstPreview<CR>"
+            action = ":TypstPreview<CR>";
           }
         ];
 
