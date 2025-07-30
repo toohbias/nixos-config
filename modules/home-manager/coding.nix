@@ -17,6 +17,9 @@
 
     # Python
     jupyter
+
+    # Typst
+    typst
   ];
 
   xdg.desktopEntries = {

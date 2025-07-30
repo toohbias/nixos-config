@@ -116,8 +116,8 @@
           rust.enable = true;
           assembly.enable = true;
           python.enable = true;
+          typst.enable = true;
 
-          #nix.enable = true; # has to build from source and is huge and isnt as useful anymore
           markdown = {
             enable = true;
             extensions.markview-nvim.enable = true;
