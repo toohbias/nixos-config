@@ -10,6 +10,7 @@
     ./theme.nix
     ./coding.nix
     ./dirs.nix
+    ./tmux.nix
     ./hyprland
   ];
 }
