@@ -87,6 +87,26 @@
             mode = "n";
             action = ":TypstPreview<CR>";
           }
+          {
+            key = "<C-h>";
+            mode = "n";
+            action = ":silent !tmux select-pane -L<CR";
+          }
+          {
+            key = "<C-j>";
+            mode = "n";
+            action = ":silent !tmux select-pane -D<CR";
+          }
+          {
+            key = "<C-k>";
+            mode = "n";
+            action = ":silent !tmux select-pane -U<CR";
+          }
+          {
+            key = "<C-l>";
+            mode = "n";
+            action = ":silent !tmux select-pane -R<CR";
+          }
         ];
 
         highlight.Normal.bg = "Black";
