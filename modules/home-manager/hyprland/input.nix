@@ -23,6 +23,7 @@
       "$mainMod, Q, killactive,"
       "$mainMod, M, exit,"
       "$mainMod, F, togglefloating,"
+      "$mainMod SHIFT, F, fullscreen,"
       "$mainMod, A, togglesplit, # dwindle"
 
       "$mainMod, O, setprop, activewindow opaque toggle"
