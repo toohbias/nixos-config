@@ -148,7 +148,10 @@
           rust.enable = true;
           assembly.enable = true;
           python.enable = true;
-          typst.enable = true;
+          typst.enable = {
+            enable = true;
+            extensions.typst-preview-nvim.enable = true;
+          }
 
           markdown = {
             enable = true;
