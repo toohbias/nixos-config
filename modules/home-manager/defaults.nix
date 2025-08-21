@@ -25,6 +25,8 @@
         "x-scheme-handler/https" = "chromium-browser.desktop";
       };
     };
+
+    xdg.configFile."mimeapps.list".force = true;
   };
 
 }
