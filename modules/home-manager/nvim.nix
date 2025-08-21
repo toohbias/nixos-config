@@ -151,7 +151,7 @@
           typst.enable = {
             enable = true;
             extensions.typst-preview-nvim.enable = true;
-          }
+          };
 
           markdown = {
             enable = true;
