@@ -9,7 +9,7 @@
     ./packages.nix
     ./theme.nix
     ./coding.nix
-    ./dirs.nix
+    ./defaults.nix
     ./tmux.nix
     ./hyprland
   ];
