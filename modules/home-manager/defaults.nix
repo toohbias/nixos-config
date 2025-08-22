@@ -1,4 +1,4 @@
-{
+{ pkgs, ...}: {
 
   xdg = {
     enable = true;
@@ -30,5 +30,7 @@
 
     configFile."mimeapps.list".force = true;
   };
+
+  environment.sessionVariables.DEFAULT_BROWSER = "${pkgs.ungoogled-chromium}/bin/chromium";
 
 }
