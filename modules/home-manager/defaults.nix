@@ -31,6 +31,6 @@
     configFile."mimeapps.list".force = true;
   };
 
-  environment.sessionVariables.DEFAULT_BROWSER = "${pkgs.ungoogled-chromium}/bin/chromium";
+  home.sessionVariables.DEFAULT_BROWSER = "${pkgs.ungoogled-chromium}/bin/chromium";
 
 }
