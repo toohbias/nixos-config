@@ -36,7 +36,7 @@
         color: ${config.theme.text};
     }
     #custom-spacer {
-        color: #${config.theme.background_nt};
+        color: #${config.theme.inactive_nt};
     }
   '';
 }
