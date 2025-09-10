@@ -53,12 +53,12 @@
             "format": "{volume}% {icon}",
             "format-bluetooth": "{volume}% {icon}",
             "format-icons": {
-                "headphone": "",
+                "headphone": " ",
                 "hands-free": "",
-                "headset": "",
-                "phone": "",
-                "portable": "",
-                "car": "",
+                "headset": " ",
+                "phone": " ",
+                "portable": " ",
+                "car": " ",
                 "default": " "
             },
         },

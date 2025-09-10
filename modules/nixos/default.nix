@@ -10,6 +10,7 @@
     ./fonts.nix
     ./virtual.nix
     ./util.nix
+    ./bluetooth.nix
     ./printer/print.nix
   ];
 }
