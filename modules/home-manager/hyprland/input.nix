@@ -78,10 +78,10 @@
       "$mainMod, mouse_down, workspace, e+1"
       "$mainMod, mouse_up, workspace, e-1"
 
-      "$mainMod SHIFT, W, exec, hyprshot -o ~/Pictures/Screenshots -m window"
-      "$mainMod SHIFT, R, exec, hyprshot -o ~/Pictures/Screenshots -m region"
-      "$mainMod SHIFT, M, exec, hyprshot -o ~/Pictures/Screenshots -m output"
-      "$mainMod SHIFT, A, exec, hyprshot -o ~/Pictures/Screenshots -m active"
+      "$mainMod SHIFT, W, exec, hyprshot -o ~/pic/Screenshots -m window"
+      "$mainMod SHIFT, R, exec, hyprshot -o ~/pic/Screenshots -m region"
+      "$mainMod SHIFT, M, exec, hyprshot -o ~/pic/Screenshots -m output"
+      "$mainMod SHIFT, A, exec, hyprshot -o ~/pic/Screenshots -m active"
     ];
     
     bindm = [
