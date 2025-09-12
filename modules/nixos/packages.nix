@@ -15,9 +15,6 @@
     starship
     fzf
 
-    # Sound
-    pulseaudio
-
     # Other
     home-manager
     tree
