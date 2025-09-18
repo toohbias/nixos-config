@@ -1,6 +1,6 @@
 {pkgs, ...}: {
   home.packages = with pkgs; [
-    spotify
+    spotify-player
     anydesk
     libreoffice
     thunderbird
@@ -14,7 +14,6 @@
 
   nixpkgs.config.allowUnfreePredicate = pkg:
     builtins.elem (pkgs.lib.getName pkg) [
-      "spotify"
       "anydesk"
       "idea-ultimate"
       "discord"
