@@ -11,6 +11,11 @@
           tabstop = 4;
         };
 
+        statusline.lualine = {
+          enable = true;
+
+        };
+
         keymaps = [
           {
             key = "y";

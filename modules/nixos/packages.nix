@@ -9,7 +9,7 @@
 
     # CLI utils
     neofetch
-    htop
+    btop
     git
     ripgrep
     starship
