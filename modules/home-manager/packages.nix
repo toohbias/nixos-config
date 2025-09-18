@@ -18,4 +18,11 @@
       "idea-ultimate"
       "discord"
     ];
+
+  xdg.desktopEntries = {
+    Spotify = {
+      name = "Spotify";
+      exec = "kitty spotify_player";
+    };
+  };
 }

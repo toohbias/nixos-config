@@ -8,12 +8,11 @@
     tree-sitter
 
     # CLI utils
-    neofetch
+    fastfetch
     btop
     git
     ripgrep
     starship
-    fzf
 
     # Other
     home-manager
@@ -22,8 +21,6 @@
 
     wl-clipboard
     cliphist
-
-    labwc
 
     libinput
   ];
