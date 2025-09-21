@@ -13,7 +13,6 @@
 
         statusline.lualine = {
           enable = true;
-
         };
 
         keymaps = [
@@ -146,6 +145,7 @@
           setupOpts = {
             logo = "https://avatars.githubusercontent.com/u/6471485?s=48&v=4";
             main_image = "logo";
+            global_timer = true;
           };
         };
 
