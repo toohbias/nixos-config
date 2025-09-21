@@ -141,6 +141,13 @@
         autocomplete.blink-cmp.enable = true;
         filetree.neo-tree.enable = true;
         binds.whichKey.enable = true;
+        presence.neocord = {
+          enable = true;
+          setupOpts = {
+            logo = "https://avatars.githubusercontent.com/u/6471485?s=48&v=4";
+            main_image = "logo";
+          };
+        };
 
         lsp.enable = true;
 
