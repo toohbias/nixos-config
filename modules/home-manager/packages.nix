@@ -4,8 +4,7 @@
     anydesk
     libreoffice
     thunderbird
-    qucs-s
-    ngspice
+    kicad
     jetbrains.idea-ultimate
     shotcut
     gimp
