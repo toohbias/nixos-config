@@ -164,7 +164,7 @@
             enable = true;
             extensions = {
               typst-preview-nvim.enable = true;
-              typst-concealer.enable = true;
+              # typst-concealer.enable = true;
             };
           };
 
