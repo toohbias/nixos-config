@@ -163,7 +163,10 @@
 
           typst = {
             enable = true;
-            extensions.typst-preview-nvim.enable = true;
+            extensions = {
+              typst-preview-nvim.enable = true;
+              typst-concealer.enable = true;
+            };
           };
 
           markdown = {
