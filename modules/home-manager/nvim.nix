@@ -93,7 +93,8 @@
           }
           {
             key = "<C-h>";
-            mode = "n"; action = ":silent !tmux select-pane -L<CR";
+            mode = "n"; 
+            action = ":silent !tmux select-pane -L<CR";
           }
           {
             key = "<C-j>";
