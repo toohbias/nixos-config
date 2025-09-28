@@ -164,7 +164,13 @@
           typst = {
             enable = true;
             extensions = {
-              typst-preview-nvim.enable = true;
+              typst-preview-nvim = {
+                enable = true;
+                setupOpts = {
+                  port = 8000;
+                  debug = true;
+                };
+              };
               # typst-concealer.enable = true;
             };
           };

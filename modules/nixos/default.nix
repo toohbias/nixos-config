@@ -11,6 +11,7 @@
     ./virtual.nix
     ./util.nix
     ./bluetooth.nix
+    ./network.nix
     ./printer/print.nix
   ];
 }
