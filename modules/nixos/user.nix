@@ -1,6 +1,6 @@
 {
   users.users.tobi = {
     isNormalUser = true;
-    extraGroups = ["wheel" "networkmanager"];
+    extraGroups = ["wheel" "networkmanager" "wireshark"];
   };
 }
