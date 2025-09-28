@@ -9,6 +9,7 @@
     shotcut
     gimp
     discord
+    wireshark
   ];
 
   nixpkgs.config.allowUnfreePredicate = pkg:
