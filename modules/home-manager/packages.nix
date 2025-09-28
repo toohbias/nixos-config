@@ -10,6 +10,7 @@
     gimp
     discord
     wireshark
+    socat
   ];
 
   nixpkgs.config.allowUnfreePredicate = pkg:
