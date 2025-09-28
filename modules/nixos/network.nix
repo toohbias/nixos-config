@@ -4,5 +4,6 @@
     enable = true;
     allowedTCPPorts = [ 8001 ];
   };
+  programs.wireshark.enable = true;
 
 }
