@@ -9,7 +9,6 @@
     shotcut
     gimp
     discord
-    wireshark
     socat
   ];
 

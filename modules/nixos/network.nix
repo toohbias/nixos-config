@@ -1,8 +1,12 @@
-{
+{ pkgs, ...} : {
 
   networking.firewall = {
     enable = true;
-    allowedTCPPorts = [ 8001 ];
+    # allowedTCPPorts = [ 8001 ];
+  };
+  programs.wireshark = {
+    enable = true;
+    package = pkgs.wireshark;
   };
 
 }
