@@ -9,7 +9,7 @@
     shotcut
     gimp
     discord
-    socat
+    zathura
   ];
 
   nixpkgs.config.allowUnfreePredicate = pkg:
