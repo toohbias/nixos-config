@@ -1,4 +1,4 @@
-{pkgs, ...}: {
+{pkgs, inputs, system, ...}: {
   environment.systemPackages = with pkgs; [
     # Desktop Apps
     ungoogled-chromium
@@ -23,5 +23,8 @@
     cliphist
 
     libinput
+
+    # Winboat
+    freerdp
   ];
 }

@@ -1,4 +1,4 @@
-{pkgs, ...} : {
+{pkgs, inputs, system, ...} : {
   home.packages = with pkgs; [
     spotify-player
     anydesk

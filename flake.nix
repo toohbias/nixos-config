@@ -12,6 +12,8 @@
     nvf.url = "github:notashelf/nvf";
 
     mcmojave-hyprcursor.url = "github:libadoxon/mcmojave-hyprcursor";
+
+    winboat.url = "github:TibixDev/winboat";
   };
 
   outputs = {
