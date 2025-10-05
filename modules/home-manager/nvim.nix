@@ -27,6 +27,16 @@
             action = ''"+p'';
           }
           {
+            key = ";";
+            mode = ["n" "x"];
+            action = ":";
+          }
+          {
+            key = ":";
+            mode = ["n" "x"];
+            action = ";";
+          }
+          {
             key = "<leader>ef";
             mode = "n";
             action = ":Neotree toggle<CR>";
