@@ -1,23 +1,14 @@
 {pkgs, inputs, system, ...} : {
   home.packages = with pkgs; [
     spotify-player
-    anydesk
-    libreoffice
     thunderbird
     kicad
-    jetbrains.idea-ultimate
-    shotcut
     gimp
     discord
-    zathura
   ];
 
   nixpkgs.config.allowUnfreePredicate = pkg:
-    builtins.elem (pkgs.lib.getName pkg) [
-      "anydesk"
-      "idea-ultimate"
-      "discord"
-    ];
+    builtins.elem (pkgs.lib.getName pkg) [ "discord" ];
 
   xdg.desktopEntries = {
     Spotify = {
