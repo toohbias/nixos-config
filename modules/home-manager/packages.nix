@@ -9,7 +9,7 @@
   ];
 
   nixpkgs.config.allowUnfreePredicate = pkg:
-    builtins.elem (pkgs.lib.getName pkg) [ "discord" "jetbrains.rust-rover" ];
+    builtins.elem (pkgs.lib.getName pkg) [ "discord" "rust-rover" ];
 
   xdg.desktopEntries = {
     Spotify = {
