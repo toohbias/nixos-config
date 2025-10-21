@@ -32,7 +32,7 @@
 
       "$mainMod, E, exec, hyprlock"
 
-      # Move focus with mainMod + arrow keys
+      # Move focus with mainMod + hjkl
       "$mainMod, h, movefocus, l"
       "$mainMod, l, movefocus, r"
       "$mainMod, k, movefocus, u"
@@ -68,7 +68,15 @@
       "$mainMod SHIFT, l, swapwindow, r"
 
       "$mainMod CTRL, h, movecurrentworkspacetomonitor, l"
+      "$mainMod CTRL, j, movecurrentworkspacetomonitor, d"
+      "$mainMod CTRL, j, movecurrentworkspacetomonitor, u"
       "$mainMod CTRL, l, movecurrentworkspacetomonitor, r"
+
+      # Resize windows with mainMod + ALT + hjkl
+      "$mainMod ALT, h, resizeactive, -10 0"
+      "$mainMod ALT, j, resizeactive, 0 10"
+      "$mainMod ALT, k, resizeactive, 0 -10"
+      "$mainMod ALT, l, resizeactive, 10 0"
             
       # Example special workspace (scratchpad)
       "$mainMod, S, togglespecialworkspace, magic"

@@ -162,8 +162,7 @@
         lsp.enable = true;
 
         languages = {
-          enableTreesitter = true;
-          enableFormat = true;
+          enableTreesitter = true
 
           java.enable = true;
           clang.enable = true;
