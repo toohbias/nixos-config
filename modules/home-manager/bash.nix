@@ -79,6 +79,8 @@
         unset ORIGINAL_DIR
       }
 
+      eval "$(zoxide init bash)"
+
       export STARSHIP_CONFIG="$HOME/.config/starship.toml"
       eval "$(starship init bash)"
     '';
