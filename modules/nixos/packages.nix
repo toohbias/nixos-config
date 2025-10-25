@@ -9,6 +9,7 @@
 
     # CLI utils
     fastfetch
+    zoxide
     btop
     git
     ripgrep
