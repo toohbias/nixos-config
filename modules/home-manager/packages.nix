@@ -7,6 +7,7 @@
     discord
     jetbrains.rust-rover
     anydesk
+    shotcut
   ];
 
   nixpkgs.config.allowUnfreePredicate = pkg:
