@@ -6,10 +6,11 @@
     gimp
     discord
     jetbrains.rust-rover
+    anydesk
   ];
 
   nixpkgs.config.allowUnfreePredicate = pkg:
-    builtins.elem (pkgs.lib.getName pkg) [ "discord" "rust-rover" ];
+    builtins.elem (pkgs.lib.getName pkg) [ "discord" "rust-rover" "anydesk" ];
 
   xdg.desktopEntries = {
     Spotify = {
