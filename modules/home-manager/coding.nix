@@ -20,6 +20,13 @@
 
     # Typst
     typst
+
+    # Zig
+    zig
+
+    # Haskell
+    ghc
+    cabal-install
   ];
 
 }

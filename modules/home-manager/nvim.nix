@@ -175,6 +175,8 @@
           rust.enable = true;
           assembly.enable = true;
           python.enable = true;
+          zig.enable = true;
+          haskell.enable = true;
 
           typst = {
             enable = true;
