@@ -92,6 +92,16 @@
             action = ":!cargo run<CR>";
           }
           {
+            key = "<leader>rz";
+            mode = "n";
+            action = ":!zig run <C-R>%<CR>";
+          }
+          {
+            key = "<leader>rh";
+            mode = "n";
+            action = ":!ghc <C-R>% -o test; ./test<CR>";
+          }
+          {
             key = "<leader>rt";
             mode = "n";
             action = ":!typst compile<CR>";
