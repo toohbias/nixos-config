@@ -123,6 +123,12 @@
           }
         ];
 
+        theme = {
+          enable = true;
+          name = "github";
+          style = "dark";
+        };
+
         highlight.Normal.bg = "Black";
 
         utility = {
