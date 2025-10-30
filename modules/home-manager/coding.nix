@@ -27,6 +27,7 @@
     # Haskell
     ghc
     cabal-install
+    haskell-language-server
   ];
 
 }

@@ -130,6 +130,10 @@
         };
 
         highlight.Normal.bg = "Black";
+        highlight.NormalFloat.bg = "Black";
+        highlight.NormalNC.bg = "Black";
+        highlight.Pmenu.bg = "Black";
+        highlight.NeoTreeNormal.bg = "Black";
 
         utility = {
           images.image-nvim = {
