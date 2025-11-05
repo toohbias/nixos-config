@@ -10,7 +10,6 @@
     ./theme.nix
     ./coding.nix
     ./defaults.nix
-    ./winboat.nix
     ./tmux.nix
     ./hyprland
   ];

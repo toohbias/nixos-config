@@ -150,7 +150,10 @@
             enable = true;
             setupOpts = {
               backend = "kitty";
-              integrations.markdown.onlyRenderAtCursor = true;
+              integrations = {
+                markdown.onlyRenderAtCursor = true;
+                typst.enabled = false;
+              };
             };
           };
           motion.flash-nvim = {
@@ -211,7 +214,7 @@
             extensions.markview-nvim = {
               enable = true;
               setupOpts = {
-                typst.code_blocks.enable = false;
+                typst.code_blocks.style = "simple";
               };
             };
           };
