@@ -2,7 +2,6 @@
   programs.bash = {
     enable = true;
     shellAliases = {
-      gc = "sudo nix-collect-garbage -d";
       sd = "shutdown 0";
       rb = "reboot";
       pic = "kitty icat";
@@ -57,6 +56,11 @@
             >    git commit -m [message]"
         fi
         popd
+      }
+
+      function gc() {
+        home-manager expire-generations "-7 days"
+        sudo nix-collect-garbage -d
       }
 
       function mkcd() {
