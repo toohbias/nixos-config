@@ -9,8 +9,12 @@
     shotcut
   ];
 
-  nixpkgs.config.allowUnfreePredicate = pkg:
-    builtins.elem (pkgs.lib.getName pkg) [ "discord" "anydesk" ];
+  nixpkgs.config = {
+    allowUnfreePredicate = pkg:
+      builtins.elem (pkgs.lib.getName pkg) [ "discord" "anydesk" ];
+    permittedInsecurePackages = [ "gradle-7.6.6" ];
+  };
+
 
   xdg.desktopEntries = {
     Spotify = {
