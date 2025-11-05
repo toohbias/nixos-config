@@ -208,7 +208,12 @@
 
           markdown = {
             enable = true;
-            extensions.markview-nvim.enable = true;
+            extensions.markview-nvim = {
+              enable = true;
+              setupOpts = {
+                typst.code_blocks.enable = false;
+              };
+            };
           };
         };
       };
