@@ -152,7 +152,7 @@
               backend = "kitty";
               integrations = {
                 markdown.onlyRenderAtCursor = true;
-                typst.enabled = false;
+                typst.enable = false;
               };
             };
           };
