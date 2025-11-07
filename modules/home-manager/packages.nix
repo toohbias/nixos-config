@@ -12,7 +12,6 @@
   nixpkgs.config = {
     allowUnfreePredicate = pkg:
       builtins.elem (pkgs.lib.getName pkg) [ "discord" "anydesk" ];
-    permittedInsecurePackages = [ "gradle-7.6.6" ];
   };
 
 
