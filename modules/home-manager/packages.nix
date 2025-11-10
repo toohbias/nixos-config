@@ -3,11 +3,9 @@
     # spotify-player
     spotify
     thunderbird
-    kicad
     gimp
     discord
     anydesk
-    shotcut
   ];
 
   nixpkgs.config = {
