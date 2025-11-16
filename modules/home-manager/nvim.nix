@@ -193,6 +193,7 @@
           assembly.enable = true;
           python.enable = true;
           zig.enable = true;
+          go.enable = true;
           haskell.enable = true;
 
           typst = {

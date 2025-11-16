@@ -24,6 +24,9 @@
     # Zig
     zig
 
+    # Go
+    go
+
     # Haskell
     ghc
     cabal-install
