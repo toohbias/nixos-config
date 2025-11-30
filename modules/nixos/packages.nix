@@ -27,5 +27,6 @@
 
     # Winboat
     freerdp
+    winboat
   ];
 }
