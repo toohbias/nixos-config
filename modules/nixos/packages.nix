@@ -26,7 +26,7 @@
     libinput
 
     # Winboat
-    freerdp
-    winboat
+    # freerdp
+    # winboat
   ];
 }
