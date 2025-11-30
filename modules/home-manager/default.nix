@@ -1,5 +1,6 @@
 {
   imports = [
+    ./auto.nix
     ./git.nix
     ./bash.nix
     ./kitty.nix
