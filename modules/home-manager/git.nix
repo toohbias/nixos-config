@@ -2,10 +2,12 @@
 
   programs.git = {
     enable = true;
-    userName = "toohbias";
-    userEmail = "db2tbo@outlook.de";
-    extraConfig = {
+    settings = {
       init.defaultBranch = "main";
+      user = {
+        name = "toohbias";
+        email = "db2tbo@outlook.de";
+      };
     };
   };
 
