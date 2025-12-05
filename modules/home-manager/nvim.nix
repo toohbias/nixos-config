@@ -107,6 +107,11 @@
             action = ":!typst compile<CR>";
           }
           {
+            key = "<leader>rg";
+            mode = "n";
+            action = "!go run <C-R>%";
+          }
+          {
             key = "<leader>p";
             mode = "n";
             action = ":TypstPreview<CR>";
