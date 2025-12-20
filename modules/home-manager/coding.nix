@@ -3,8 +3,7 @@
   home.packages = with pkgs; [
 
     # Java
-    javaPackages.openjfx25
-    # (pkgs.jdk25.override {enableJavaFX = true;})
+    jdk25
 
     # C
     gcc
