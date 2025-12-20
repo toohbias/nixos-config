@@ -56,6 +56,15 @@
           cd $ORIGINAL_DIR
         '';
       };
+      jfx = pkgs.mkShell {
+        buildInputs = with pkgs; [
+          javaPackages.openjfx21
+          (pkgs.jdk21.override {enableJavaFX = true;})
+        ];
+        shellHook = ''
+          cd $ORIGINAL_DIR
+        '';
+      };
     };
   };
 }

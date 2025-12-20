@@ -4,7 +4,7 @@
 
     # Java
     javaPackages.openjfx25
-    (pkgs.jdk25.override {enableJavaFX = true;})
+    # (pkgs.jdk25.override {enableJavaFX = true;})
 
     # C
     gcc
