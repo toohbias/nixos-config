@@ -31,6 +31,9 @@
     ghc
     cabal-install
     haskell-language-server
+
+    # JS
+    node
   ];
 
 }
