@@ -33,7 +33,7 @@
     haskell-language-server
 
     # JS
-    node
+    nodejs
   ];
 
 }
