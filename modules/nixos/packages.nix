@@ -27,5 +27,6 @@
 
     # Winboat
     # winboat
+    # (pkgs.winboat.override {nodejs_24 = pkgs.nodejs_24;})
   ];
 }
