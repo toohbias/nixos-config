@@ -14,6 +14,7 @@
     mountOnMedia = true;
   };
 
+  # arduino ide esp32
   services.udev.extraRules = ''
     SUBSYSTEMS=="usb", ATTRS{idVendor}=="2e8a", MODE:="0666"
     SUBSYSTEMS=="usb", ATTRS{idVendor}=="2341", MODE:="0666"
