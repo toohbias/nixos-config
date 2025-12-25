@@ -200,6 +200,7 @@
           zig.enable = true;
           go.enable = true;
           haskell.enable = true;
+          ts.enable = true;
 
           typst = {
             enable = true;
