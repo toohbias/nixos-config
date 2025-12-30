@@ -2,7 +2,7 @@
 
   networking.firewall = {
     enable = true;
-    # allowedTCPPorts = [ 8080 ];
+    allowedTCPPorts = [ 8080 ];
   };
   programs.wireshark = {
     enable = true;
