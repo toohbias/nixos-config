@@ -42,7 +42,7 @@
       opengl = pkgs.mkShell {
         nativeBuildInputs = with pkgs; [ pkg-config ];
         buildInputs = with pkgs; [
-          glfw-wayland
+          glfw
           wayland
           libxkbcommon
           wayland-scanner
