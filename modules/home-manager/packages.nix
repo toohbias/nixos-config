@@ -6,6 +6,7 @@
     gimp
     discord
     anydesk
+    libreoffice
   ];
 
   nixpkgs.config = {
