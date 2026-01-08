@@ -30,10 +30,10 @@
 
       "$mainMod, Tab, exec, hyprctl switchxkblayout chicony-usb-keyboard next"
 
-      "$mainMod, E, sendshortcut CTRL SHIFT, m, class:discord"
+      "$mainMod, E, sendshortcut, CTRL SHIFT, m, class:discord"
       "$mainMod, E, exec, hyprlock"
 
-      "$mainMod, M, sendshortcut CTRL SHIFT, m, class:discord"
+      "$mainMod, M, sendshortcut, CTRL SHIFT, m, class:discord"
 
       # Move focus with mainMod + hjkl
       "$mainMod, h, movefocus, l"
