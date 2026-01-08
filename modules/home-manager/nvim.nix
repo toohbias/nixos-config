@@ -207,10 +207,10 @@
             extensions = {
               typst-preview-nvim = {
                 enable = true;
-                #setupOpts = {
-                #  port = 8000;
-                #  debug = true;
-                #};
+                setupOpts = {
+                  port = 8000;
+                  debug = true;
+                };
               };
               # typst-concealer.enable = true;
             };
