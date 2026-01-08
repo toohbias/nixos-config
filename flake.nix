@@ -9,11 +9,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    # nvf-nixpkgs.url = "github:NixOS/nixpkgs/c0b0e0fddf73fd517c3471e546c0df87a42d53f4";
 
     nvf = {
       url = "github:notashelf/nvf";
-      # inputs.nixpkgs.follows = "nvf-nixpkgs";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
 
     mcmojave-hyprcursor.url = "github:libadoxon/mcmojave-hyprcursor";
