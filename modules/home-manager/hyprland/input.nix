@@ -21,7 +21,7 @@
       "$mainMod, T, exec, $terminal"
       "$mainMod, B, exec, $browser"
       "$mainMod, Q, killactive,"
-      "$mainMod, M, exit,"
+      # "$mainMod, M, exit,"
       "$mainMod, F, togglefloating,"
       "$mainMod SHIFT, F, fullscreen,"
       "$mainMod, A, togglesplit, # dwindle"
@@ -30,7 +30,10 @@
 
       "$mainMod, Tab, exec, hyprctl switchxkblayout chicony-usb-keyboard next"
 
+      "$mainMod, E, dispatch, sendshortcut CTRL SHIFT, m, class:discord"
       "$mainMod, E, exec, hyprlock"
+
+      "$mainMod, M, dispatch, sendshortcut CTRL SHIFT, m, class:discord"
 
       # Move focus with mainMod + hjkl
       "$mainMod, h, movefocus, l"
