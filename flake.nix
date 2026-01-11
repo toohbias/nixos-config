@@ -9,7 +9,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-
     nvf = {
       url = "github:notashelf/nvf";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -65,6 +64,9 @@
           javaPackages.openjfx21
           (pkgs.jdk21.override {enableJavaFX = true;})
         ];
+        env = {
+          JAVA_HOME = pkgs.jdk21.outPath;
+        };
         shellHook = ''
           cd $ORIGINAL_DIR
         '';
