@@ -32,7 +32,7 @@
     haskell-language-server
 
     # JS
-    nodejs
+    nodejs_24
   ];
 
   # programs.bash.sessionVariables = {
