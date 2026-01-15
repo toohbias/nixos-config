@@ -18,6 +18,7 @@
     # Other
     home-manager
     tree
+    zip
     unzip
 
     wl-clipboard
