@@ -36,7 +36,6 @@
       "$mainMod SHIFT, E, exec, hyprlock"
 
       "$mainMod, M, sendshortcut, CTRL SHIFT, m, class:discord"
-      "$mainMod SHIFT, M, sendshortcut, CTRL SHIFT, d, class:discord"
 
       # Move focus with mainMod + hjkl
       "$mainMod, h, movefocus, l"
