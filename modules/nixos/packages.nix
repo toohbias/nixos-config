@@ -14,6 +14,7 @@
     git
     ripgrep
     starship
+    eza
 
     # Other
     home-manager

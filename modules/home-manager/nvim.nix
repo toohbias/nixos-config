@@ -194,6 +194,7 @@
           enableTreesitter = true;
 
           java.enable = true;
+          java.treesitter.enable = true;
           clang.enable = true;
           rust.enable = true;
           assembly.enable = true;
