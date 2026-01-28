@@ -3,6 +3,7 @@
     input = {
       kb_layout = "us,de";
       kb_options = "caps:swapescape,grp_led:scroll";
+      repeat_delay = 250;
       numlock_by_default = true;
 
       follow_mouse = 1;
@@ -31,6 +32,7 @@
       "$mainMod, Tab, exec, hyprctl switchxkblayout chicony-usb-keyboard next"
 
       "$mainMod, E, sendshortcut, CTRL SHIFT, m, class:discord"
+      "$mainMod, E, sendshortcut, , SPACE, class:spotify"
       "$mainMod, E, exec, hyprlock"
 
       "$mainMod SHIFT, E, exec, hyprlock"
