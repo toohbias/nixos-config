@@ -1,8 +1,15 @@
 {
 
-  virtualisation.virtualbox.host.enable = true;
-  virtualisation.virtualbox.guest.enable = true;
-  virtualisation.virtualbox.guest.dragAndDrop = true;
+  virtualisation.virtualbox = {
+    host = {
+      enable = true;
+      enableExtensionPack = true;
+    };
+    guest = {
+      enable = true;
+      dragAndDrop = true;
+    };
+  };
 
   virtualisation.docker.enable = true;
 
