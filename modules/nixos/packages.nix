@@ -15,6 +15,7 @@
     ripgrep
     starship
     eza
+    lazygit
 
     # Other
     home-manager
