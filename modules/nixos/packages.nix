@@ -22,6 +22,7 @@
     tree
     zip
     unzip
+    file
 
     wl-clipboard
     cliphist
@@ -30,5 +31,7 @@
 
     # Winboat
     # winboat
+
+    qemu
   ];
 }
