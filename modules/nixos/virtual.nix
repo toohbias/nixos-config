@@ -19,7 +19,10 @@
 
   virtualisation.libvirtd = {
     enable = true;
-    qemu.swtpm.enable = true;
+    qemu = {
+      swtpm.enable = true;
+      vhostUserPackages = [ pkgs.virtiofsd ];
+    };
   };
 
   systemd.tmpfiles.rules = [ "L+ /var/lib/qemu/firmware - - - - ${pkgs.qemu}/share/qemu/firmware" ];
