@@ -34,5 +34,6 @@
 
     qemu
     dnsmasq
+    virt-manager
   ];
 }
