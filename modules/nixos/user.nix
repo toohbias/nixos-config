@@ -2,7 +2,14 @@
 
   users.users.tobi = {
     isNormalUser = true;
-    extraGroups = ["wheel" "networkmanager" "wireshark" "docker" "dialout"];
+    extraGroups = [
+      "wheel" 
+      "networkmanager" 
+      "wireshark" 
+      "docker" 
+      "dialout"
+      "libvirtd"
+    ];
   };
 
 }

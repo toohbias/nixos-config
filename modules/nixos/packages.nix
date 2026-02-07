@@ -33,5 +33,6 @@
     # winboat
 
     qemu
+    dnsmasq
   ];
 }

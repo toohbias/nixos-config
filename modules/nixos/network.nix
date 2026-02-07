@@ -2,7 +2,8 @@
 
   networking.firewall = {
     enable = true;
-    allowedTCPPorts = [ 8080 ];
+    allowedTCPPorts = [];
+    trustedInterfaces = [ "virbr0" ];
   };
   programs.wireshark = {
     enable = true;

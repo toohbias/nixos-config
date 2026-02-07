@@ -17,6 +17,10 @@
 
   virtualisation.docker.enable = true;
 
+  virtualisation.libvirtd = {
+    enable = true;
+  };
+
   systemd.tmpfiles.rules = [ "L+ /var/lib/qemu/firmware - - - - ${pkgs.qemu}/share/qemu/firmware" ];
 
   boot.binfmt.emulatedSystems = [ "aarch64-linux" ];
