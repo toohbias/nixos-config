@@ -6,9 +6,9 @@
     trustedInterfaces = [ "virbr0" ];
   };
 
-  networking.hosts = [
+  networking.hosts = {
     "192.168.178.216" = [ "raspi" ];
-  ];
+  };
 
   programs.wireshark = {
     enable = true;
