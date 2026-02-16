@@ -118,9 +118,9 @@
             action = ":TypstPreview<CR>";
           }
           {
-            key = "<leader>zp";
+            key = "<leader>z";
             mode = "n";
-            action = "ostd.debug.print(\"{}\\n\", .{});<esc>hhi";
+            action = "astd.debug.print(\"{}\\n\", .{});<esc>hhi";
           }
           {
             key = "<C-h>";
