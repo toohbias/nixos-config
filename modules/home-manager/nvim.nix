@@ -118,24 +118,29 @@
             action = ":TypstPreview<CR>";
           }
           {
+            key = "<leader>zp";
+            mode = "n";
+            action = "ostd.debug.print(\"{}\\n\", .{});<esc>hhi";
+          }
+          {
             key = "<C-h>";
             mode = "n"; 
-            action = ":silent !tmux select-pane -L<CR";
+            action = ":silent !tmux select-pane -L<CR>";
           }
           {
             key = "<C-j>";
             mode = "n";
-            action = ":silent !tmux select-pane -D<CR";
+            action = ":silent !tmux select-pane -D<CR>";
           }
           {
             key = "<C-k>";
             mode = "n";
-            action = ":silent !tmux select-pane -U<CR";
+            action = ":silent !tmux select-pane -U<CR>";
           }
           {
             key = "<C-l>";
             mode = "n";
-            action = ":silent !tmux select-pane -R<CR";
+            action = ":silent !tmux select-pane -R<CR>";
           }
         ];
 
