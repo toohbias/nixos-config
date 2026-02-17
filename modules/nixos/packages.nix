@@ -35,5 +35,7 @@
     qemu
     dnsmasq
     virt-manager
+
+    earlyoom
   ];
 }
