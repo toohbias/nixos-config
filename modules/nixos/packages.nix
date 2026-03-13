@@ -16,6 +16,7 @@
     starship
     eza
     lazygit
+    fzf
 
     # Other
     home-manager
