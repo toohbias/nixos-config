@@ -45,12 +45,15 @@
       opengl = pkgs.mkShell {
         nativeBuildInputs = with pkgs; [ pkg-config ];
         buildInputs = with pkgs; [
+          vulkan-loader
+          vulkan-tools
           glfw
           wayland
           libxkbcommon
           wayland-scanner
         ];
         LD_LIBRARY_PATH = pkgs.lib.makeLibraryPath (with pkgs; [ 
+          vulkan-loader
           wayland 
           libxkbcommon
           libglvnd
