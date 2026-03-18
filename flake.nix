@@ -47,6 +47,7 @@
         buildInputs = with pkgs; [
           vulkan-loader
           vulkan-tools
+          shaderc
           glfw
           wayland
           libxkbcommon
