@@ -42,7 +42,7 @@
     };
 
     devShells.${system} = {
-      opengl = pkgs.mkShell {
+      graphics = pkgs.mkShell {
         nativeBuildInputs = with pkgs; [ pkg-config ];
         buildInputs = with pkgs; [
           vulkan-loader
