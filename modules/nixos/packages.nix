@@ -20,6 +20,7 @@
 
     # Other
     home-manager
+    nix-index
     tree
     zip
     unzip
