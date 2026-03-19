@@ -16,11 +16,16 @@
 
     mcmojave-hyprcursor.url = "github:libadoxon/mcmojave-hyprcursor";
 
+    nix-index-database = {
+      url = "github:nix-community/nix-index-database";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = {
     nixpkgs,
     home-manager,
+    nix-index-database,
     ...
   } @ inputs: let
     system = "x86_64-linux";
@@ -30,7 +35,10 @@
     nixosConfigurations.tobi = nixpkgs.lib.nixosSystem {
       specialArgs = {inherit nixpkgs;};
       inherit system;
-      modules = [./hosts/${host}/configuration.nix];
+      modules = [
+        ./hosts/${host}/configuration.nix
+        nix-index-database.nixosModules.default
+      ];
     };
 
     homeConfigurations.tobi = home-manager.lib.homeManagerConfiguration {
