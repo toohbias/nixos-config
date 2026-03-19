@@ -47,6 +47,7 @@
         buildInputs = with pkgs; [
           vulkan-loader
           vulkan-tools
+          vulkan-headers
           vulkan-validation-layers
           shaderc
           glfw
