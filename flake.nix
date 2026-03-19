@@ -60,6 +60,8 @@
           libxkbcommon
           libglvnd
         ]);
+        VK_LAYER_PATH = "${pkgs.vulkan-validation-layers}/share/vulkan/explicit_layer.d";
+        VK_ICD_FILENAMES = "${pkgs.mesa.drivers}/share/vulkan/icd.d/intel_icd.x86_64.json";
         shellHook = ''
           cd $ORIGINAL_DIR
         '';
