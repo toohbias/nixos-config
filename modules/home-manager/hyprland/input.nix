@@ -39,6 +39,8 @@
 
       "$mainMod, M, sendshortcut, CTRL SHIFT, m, class:discord"
 
+      "$mainMod, P, sendshortcut, , SPACE, class:spotify"
+
       # Move focus with mainMod + hjkl
       "$mainMod, h, movefocus, l"
       "$mainMod, l, movefocus, r"
