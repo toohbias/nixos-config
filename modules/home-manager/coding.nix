@@ -1,6 +1,7 @@
 { pkgs, ... }: {
 
   home.packages = with pkgs; [
+    lldb
 
     # Java
     jdk25
