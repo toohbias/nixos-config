@@ -34,7 +34,6 @@
 
     # JS
     nodejs_24
-    html
   ];
 
   # programs.bash.sessionVariables = {

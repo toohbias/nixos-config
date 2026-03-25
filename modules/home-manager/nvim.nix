@@ -208,6 +208,7 @@
           go.enable = true;
           haskell.enable = true;
           ts.enable = true;
+          html.enable = true;
 
           typst = {
             enable = true;
