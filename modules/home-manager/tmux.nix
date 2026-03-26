@@ -1,4 +1,6 @@
-{pkgs, ... }: {
+{pkgs, config, ... }: {
+
+  programs.dconf.enable = true;
 
   programs.tmux = {
     enable = true;
