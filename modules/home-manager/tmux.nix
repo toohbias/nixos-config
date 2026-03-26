@@ -1,9 +1,12 @@
-{pkgs , ... }: {
+{pkgs, ... }: {
 
   programs.tmux = {
     enable = true;
     extraConfig = ''
-      set -gq allow-passthrough on        
+      set -g allow-passthrough on        
+
+      set -g base-index 1
+      setw -g pane-base-index 1
 
       bind -n C-h select-pane -L
       bind -n C-j select-pane -D
