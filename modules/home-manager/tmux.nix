@@ -15,4 +15,6 @@
     '';
   };
 
+  xdg.configFile."tmux/tmux.conf".force = true;
+
 }
