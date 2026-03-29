@@ -39,5 +39,7 @@
     virt-manager
 
     earlyoom
+
+    deepfilternet
   ];
 }
