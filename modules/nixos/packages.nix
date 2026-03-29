@@ -40,6 +40,6 @@
 
     earlyoom
 
-    deepfilternet
+    noisetorch
   ];
 }
