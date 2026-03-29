@@ -39,7 +39,5 @@
     virt-manager
 
     earlyoom
-
-    noisetorch
   ];
 }
