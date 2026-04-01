@@ -13,7 +13,9 @@
         "monitor.alsa.rules" = [
           {
             matches = [
-              { "node.name" = "alsa_input.usb-BLUE_MICROPHONE_Blue_Snowball_797_2020_12_16_41638-00.mono-fallback" }
+              { 
+                "node.name" = "alsa_input.usb-BLUE_MICROPHONE_Blue_Snowball_797_2020_12_16_41638-00.mono-fallback";
+              }
             ];
             actions = {
               update-props = {
