@@ -3,10 +3,9 @@
     exec-once = [
       "hyprlock"
       "waybar"
-      # "hyprpaper"
       "wl-paste --type text --watch cliphist store"
       "wl-paste --type image --watch cliphist store"
-      "noisetorch -i"
+      "sleep 5 && noisetorch -i > /tmp/noisetorch.log 2>&1"
     ];
   };
 }
