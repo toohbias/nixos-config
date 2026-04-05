@@ -31,9 +31,6 @@
 
     libinput
 
-    # Winboat
-    # winboat
-
     qemu
     dnsmasq
     virt-manager
