@@ -33,6 +33,7 @@
 
       "$mainMod, E, sendshortcut, CTRL SHIFT, m, class:discord"
       "$mainMod, E, sendshortcut, , SPACE, class:spotify"
+      "$mainMod, E, sendshortcut, , SPACE, title:spotify_player"
       "$mainMod, E, exec, hyprlock"
 
       "$mainMod SHIFT, E, exec, hyprlock"
@@ -40,6 +41,7 @@
       "$mainMod, M, sendshortcut, CTRL SHIFT, m, class:discord"
 
       "$mainMod, P, sendshortcut, , SPACE, class:spotify"
+      "$mainMod, P, sendshortcut, , SPACE, title:spotify_player"
 
       # Move focus with mainMod + hjkl
       "$mainMod, h, movefocus, l"
