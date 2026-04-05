@@ -1,6 +1,6 @@
 {pkgs, inputs, system, ...} : {
   home.packages = with pkgs; [
-    # spotify-player
+    spotify-player
     spotify
     thunderbird
     gimp
@@ -17,12 +17,12 @@
     permittedInsecurePackages = [ "gradle-7.6.6" ];
   };
 
-/*
+# /*
   xdg.desktopEntries = {
     Spotify = {
       name = "Spotify";
       exec = "kitty spotify_player";
     };
   };
-*/
+# */
 }
