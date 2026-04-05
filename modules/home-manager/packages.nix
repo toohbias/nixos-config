@@ -7,6 +7,8 @@
     discord
     anydesk
     libreoffice
+
+    wineWowPackages.wayland
   ];
 
   nixpkgs.config = {
