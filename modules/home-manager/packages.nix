@@ -1,7 +1,7 @@
 {pkgs, inputs, system, ...} : {
   home.packages = with pkgs; [
     spotify-player
-    spotify
+    # spotify
     thunderbird
     gimp
     discord
@@ -13,7 +13,11 @@
 
   nixpkgs.config = {
     allowUnfreePredicate = pkg:
-      builtins.elem (pkgs.lib.getName pkg) [ "discord" "anydesk" "spotify" ];
+      builtins.elem (pkgs.lib.getName pkg) [ 
+        "discord" 
+        "anydesk" 
+        # "spotify" 
+      ];
     permittedInsecurePackages = [ "gradle-7.6.6" ];
   };
 
