@@ -210,6 +210,11 @@
           ts.enable = true;
           html.enable = true;
 
+          json = {
+            enable = true;
+            format.enable = true;
+          };
+
           typst = {
             enable = true;
             extensions = {
