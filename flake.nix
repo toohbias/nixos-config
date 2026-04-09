@@ -46,6 +46,7 @@
         buildInputs = with pkgs; [
           vulkan-loader
           vulkan-tools
+          vulkan-tools-lunarg
           vulkan-headers
           vulkan-validation-layers
           shaderc
@@ -61,7 +62,6 @@
           libglvnd
         ]);
         VULKAN_SDK = pkgs.vulkan-headers;
-        Vulkan_LIBRARY = "${pkgs.vulkan-loader}/lib/libvulkan.so.1.4.328";
         VK_LAYER_PATH = "${pkgs.vulkan-validation-layers}/share/vulkan/explicit_layer.d";
         VK_ICD_FILENAMES = "${pkgs.mesa}/share/vulkan/icd.d/intel_icd.x86_64.json";
         shellHook = ''
