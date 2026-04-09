@@ -54,12 +54,14 @@
           wayland
           libxkbcommon
           wayland-scanner
+          mesa
         ];
         LD_LIBRARY_PATH = pkgs.lib.makeLibraryPath (with pkgs; [ 
           vulkan-loader
           wayland 
           libxkbcommon
           libglvnd
+          mesa
         ]);
         VULKAN_SDK = pkgs.vulkan-headers;
         VK_LAYER_PATH = "${pkgs.vulkan-validation-layers}/share/vulkan/explicit_layer.d";
