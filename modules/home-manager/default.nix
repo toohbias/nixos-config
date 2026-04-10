@@ -11,7 +11,7 @@
     ./theme.nix
     ./coding.nix
     ./defaults.nix
-    ./virtual.nix
+    # ./virtual.nix
     ./tmux.nix
     ./hyprland
   ];
