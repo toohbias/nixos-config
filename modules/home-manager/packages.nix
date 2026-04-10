@@ -7,7 +7,7 @@
     discord
     anydesk
     libreoffice
-    winboat
+    # winboat
   ];
 
   nixpkgs.config = {
