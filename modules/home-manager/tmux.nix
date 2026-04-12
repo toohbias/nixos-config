@@ -44,6 +44,4 @@
     baseIndex = 1;
   };
 
-  # xdg.configFile."tmux/tmux.conf".force = true;
-
 }
