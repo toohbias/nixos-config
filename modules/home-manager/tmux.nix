@@ -12,7 +12,7 @@
       bind -n C-l select-pane -R
 
       bind -n C-n new-window
-      bind -n C-w kill-window
+      bind -n C-q kill-window
 
       # chooses split direction based on pane aspect ratio
       bind -n C-t run-shell '
@@ -27,10 +27,9 @@
           tmux split-window -v
         fi
       '
-      bind -n C-q kill-pane
+      bind -n C-w kill-pane
 
       bind -n C-v copy-mode
-      bind -n C-f find-window -CNT
 
       bind -n C-1 select-window -t 1
       bind -n C-2 select-window -t 2
