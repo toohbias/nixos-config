@@ -82,6 +82,12 @@
           cd $ORIGINAL_DIR
         '';
       };
+      zig = pkgs.mkShell {
+        buildInputs = [ pkgs.zig ];
+        shellHook = ''
+            export PATH="~/dld/zig-x86_64-linux-0.16.0:$PATH"
+        '';
+      };
     };
   };
 }
