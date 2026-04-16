@@ -8,6 +8,7 @@
     anydesk
     libreoffice
     # winboat
+    appimage-run
   ];
 
   nixpkgs.config = {
