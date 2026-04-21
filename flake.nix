@@ -4,35 +4,35 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-25.11";
 
-    nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
+    # nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
 
     home-manager = {
       url = "github:nix-community/home-manager/release-25.11";
-      inputs.nixpkgs.follows = "nixpkgs-unstable";
-      # inputs.nixpkgs.follows = "nixpkgs";
+      # inputs.nixpkgs.follows = "nixpkgs-unstable";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
 
     nvf = {
       url = "github:notashelf/nvf";
-      inputs.nixpkgs.follows = "nixpkgs-unstable";
+      # inputs.nixpkgs.follows = "nixpkgs-unstable";
     };
 
     mcmojave-hyprcursor.url = "github:libadoxon/mcmojave-hyprcursor";
   };
 
   outputs = {
-    # nixpkgs,
-    nixpkgs-unstable,
+    nixpkgs,
+    # nixpkgs-unstable,
     home-manager,
     ...
   } @ inputs: let
     system = "x86_64-linux";
-    # pkgs = nixpkgs.legacyPackages.${system};
-    pkgs = nixpkgs-unstable.legacyPackages.${system};
+    pkgs = nixpkgs.legacyPackages.${system};
+    # pkgs = nixpkgs-unstable.legacyPackages.${system};
     host = "gmktec";
   in {
-    nixosConfigurations.tobi = nixpkgs-unstable.lib.nixosSystem {
-      specialArgs = {inherit nixpkgs-unstable;};
+    nixosConfigurations.tobi = nixpkgs.lib.nixosSystem {
+      specialArgs = {inherit nixpkgs;};
       inherit system;
       modules = [./hosts/${host}/configuration.nix];
     };
