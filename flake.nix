@@ -32,7 +32,7 @@
     host = "gmktec";
   in {
     nixosConfigurations.tobi = nixpkgs-unstable.lib.nixosSystem {
-      specialArgs = {inherit nixpkgs;};
+      specialArgs = {inherit nixpkgs-unstable;};
       inherit system;
       modules = [./hosts/${host}/configuration.nix];
     };
