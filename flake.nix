@@ -31,7 +31,7 @@
     pkgs = nixpkgs-unstable.legacyPackages.${system};
     host = "gmktec";
   in {
-    nixosConfigurations.tobi = nixpkgs.lib.nixosSystem {
+    nixosConfigurations.tobi = nixpkgs-unstable.lib.nixosSystem {
       specialArgs = {inherit nixpkgs;};
       inherit system;
       modules = [./hosts/${host}/configuration.nix];
