@@ -22,7 +22,7 @@
     typst
 
     # Zig
-    zig
+    zig # comment to update file
 
     # Go
     go
