@@ -193,18 +193,7 @@
         };
 
         lsp.enable = true;
-
-        lsp.servers = {
-          zls = {
-            cmd = [ "/home/tobi/dld/zls/zls" ];
-            filetypes = [ "zig" ];
-            root_markers = [
-                ".git"
-                "build.zig"
-                "build.zig.zon"
-            ];
-          };
-        };
+        lsp.servers zls.cmd = lib.mkForce [ "/home/tobi/dld/zls/zls" ];
 
         languages = {
           enableTreesitter = true;
@@ -215,7 +204,7 @@
           rust.enable = true;
           assembly.enable = true;
           python.enable = true;
-          # zig.enable = true;
+          zig.enable = true;
           go.enable = true;
           haskell.enable = true;
           typescript.enable = true;
