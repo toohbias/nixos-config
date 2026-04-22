@@ -13,6 +13,7 @@
     btop
     git
     ripgrep
+    fd
     starship
     eza
     lazygit
