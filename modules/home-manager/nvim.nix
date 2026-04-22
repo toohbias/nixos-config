@@ -1,4 +1,3 @@
-
 {inputs, ...}: {
   imports = [inputs.nvf.homeManagerModules.default];
 
@@ -195,7 +194,17 @@
 
         lsp.enable = true;
 
-        lsp.servers.zls.cmd = [ "/home/tobi/dld/zls/zls" ];
+        lsp.servers = {
+          zls = {
+            cmd = [ "/home/tobi/dld/zls/zls" ];
+            filetypes = [ "zig" ]
+            root_markers = [
+                ".git"
+                "build.zig"
+                "build.zig.zon"
+            ];
+          };
+        };
 
         languages = {
           enableTreesitter = true;
