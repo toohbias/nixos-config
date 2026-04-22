@@ -197,7 +197,7 @@
         lsp.servers = {
           zls = {
             cmd = [ "/home/tobi/dld/zls/zls" ];
-            filetypes = [ "zig" ]
+            filetypes = [ "zig" ];
             root_markers = [
                 ".git"
                 "build.zig"
