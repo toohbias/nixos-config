@@ -90,7 +90,7 @@
       zig = pkgs.mkShell { # TODO: remove once its in nixpkgs
         buildInputs = [ pkgs.zig ];
         shellHook = ''
-          export PATH="~/dld/zig-x86_64-linux-0.16.0:$PATH"
+          export PATH="~/dld/zig:$PATH"
           cd $ORIGINAL_DIR
         '';
       };     
