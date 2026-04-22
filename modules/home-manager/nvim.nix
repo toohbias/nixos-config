@@ -206,10 +206,10 @@
           rust.enable = true;
           assembly.enable = true;
           python.enable = true;
-          zig.enable = true;
+          # zig.enable = true;
           go.enable = true;
           haskell.enable = true;
-          ts.enable = true;
+          typescript.enable = true;
           html.enable = true;
 
           json = {
