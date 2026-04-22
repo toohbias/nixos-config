@@ -195,6 +195,8 @@
 
         lsp.enable = true;
 
+        lsp.servers.zls.cmd = [ "/home/tobi/dld/zls/zls" ];
+
         languages = {
           enableTreesitter = true;
 
