@@ -6,7 +6,7 @@
       default_session = {
         # command = "Hyprland";
         # user = "tobi";
-        command = "${pkgs.gtkgreet}/bin/gtkgreet -c Hyprland";
+        command = "${pkgs.wlgreet}/bin/gtkgreet -l -c Hyprland";
         user = "greeter";
       };
     };

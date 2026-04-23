@@ -3,7 +3,7 @@
     # Desktop Apps
     ungoogled-chromium
 
-    gtkgreet
+    wlgreet
 
     # Coding
     neovim
