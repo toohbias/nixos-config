@@ -3,8 +3,6 @@
     # Desktop Apps
     ungoogled-chromium
 
-    wlgreet
-
     # Coding
     neovim
     tree-sitter
