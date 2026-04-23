@@ -31,12 +31,12 @@
             home-manager switch --flake ~/nix#tobi
         fi
         if [ -n "$nixos" -o -n "$config" ]
-            then
-              sudo nixos-rebuild switch --flake ~/nix#tobi
+          then
+            sudo nixos-rebuild switch --flake ~/nix#tobi
         fi
         if [ -n "$flake" ]
-            then
-              nix flake update
+          then
+            nix flake update
         fi
 
         # in case hardware-configuration.nix changes or something

@@ -22,7 +22,7 @@
       "$mainMod, T, exec, $terminal"
       "$mainMod, B, exec, $browser"
       "$mainMod, Q, killactive,"
-      # "$mainMod, M, exit,"
+      "$mainMod ALT, M, exit,"
       "$mainMod, F, togglefloating,"
       "$mainMod SHIFT, F, fullscreen,"
       "$mainMod, A, togglesplit, # dwindle"
