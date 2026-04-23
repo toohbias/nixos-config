@@ -6,7 +6,7 @@
       default_session = {
         # command = "Hyprland";
         # user = "tobi";
-        command = "agreety --cmd Hyprland";
+        command = "agetty --cmd Hyprland";
         user = "greeter";
       };
     };
