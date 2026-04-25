@@ -10,6 +10,7 @@
       "dialout"
       "libvirtd"
     ];
+    uid = 1003;
   };
 
 }

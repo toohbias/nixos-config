@@ -12,6 +12,7 @@
     ./util.nix
     ./bluetooth.nix
     ./network.nix
+    ./files.nix
     # ./steam.nix
     ./printer/print.nix
   ];
