@@ -31,8 +31,8 @@
       modules = [
         ({
           systemd.tmpfiles.rules = [
-            "L+ /home/tobi/nix-tobi          - - - -  /home/nix-shared/modules/home-manager/tobi"
-            "L+ /home/babbabra/nix-babbabra  - - - -  /home/nix-shared/modules/home-manager/babbabra"
+            "L+ /home/tobi/nix      - - - -  /home/nix-shared/modules/home-manager/tobi"
+            "L+ /home/babbabra/nix  - - - -  /home/nix-shared/modules/home-manager/babbabra"
           ];
         })
         ./configuration.nix
