@@ -210,6 +210,8 @@
           typescript.enable = true;
           html.enable = true;
 
+          nix.enable = true;
+
           json = {
             enable = true;
             format.enable = true;

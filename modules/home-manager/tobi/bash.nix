@@ -16,7 +16,7 @@
     };
     bashrcExtra = ''
       function rebuild() {
-        pushd ~/nix
+        pushd /home/nix-shared
         git add *
 
         status=$(git status)
@@ -28,11 +28,11 @@
 
         if [ -n "$home" ]
           then
-            home-manager switch --flake ~/nix#tobi
+            home-manager switch --flake /home/nix-shared#tobi
         fi
         if [ -n "$nixos" -o -n "$config" ]
           then
-            sudo nixos-rebuild switch --flake ~/nix#tobi
+            sudo nixos-rebuild switch --flake /home/nix-shared#tobi
         fi
         if [ -n "$flake" ]
           then
@@ -74,7 +74,7 @@
       }
 
       function update() {
-        pushd ~/nix
+        pushd /home/nix-shared
         nix flake update
         popd
         rebuild -c
@@ -87,7 +87,7 @@
 
       function shell() {
         export ORIGINAL_DIR=$(pwd)
-        pushd ~/nix
+        pushd /home/nix-shared
         nix develop .#$1
         popd
         unset ORIGINAL_DIR

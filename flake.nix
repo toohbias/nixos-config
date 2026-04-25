@@ -24,21 +24,64 @@
   } @ inputs: let
     system = "x86_64-linux";
     pkgs = nixpkgs.legacyPackages.${system};
-    host = "gmktec";
   in {
     nixosConfigurations.tobi = nixpkgs.lib.nixosSystem {
       specialArgs = {inherit nixpkgs;};
       inherit system;
-      modules = [./hosts/${host}/configuration.nix];
+      modules = [
+        ({
+          systemd.tmpfiles.rules = [
+            "L+ /home/tobi/nix-tobi          - - - -  /home/nix-shared/modules/home-manager/tobi"
+            "L+ /home/babbabra/nix-babbabra  - - - -  /home/nix-shared/modules/home-manager/babbabra"
+          ];
+        })
+        ./configuration.nix
+      ];
     };
 
-    homeConfigurations.tobi = home-manager.lib.homeManagerConfiguration {
-      inherit pkgs;
-      modules = [./hosts/${host}/home.nix];
-      extraSpecialArgs = {
-        inherit inputs;
+    homeConfigurations = {
+      tobi = home-manager.lib.homeManagerConfiguration {
+        inherit pkgs;
+        modules = let
+          name = "tobi";
+        in [ ({
+            imports = [./modules/home-manager/${name}];
+
+            home = {
+              username = name;
+              homeDirectory = "/home/${name}/";
+              stateVersion = "25.11";
+            };
+
+            news.display = "silent";
+        }) ];
+        extraSpecialArgs = {
+          inherit inputs;
+        };
+      };
+      
+      # /*
+      babbabra = home-manager.lib.homeManagerConfiguration {
+        inherit pkgs;
+        modules = let
+          name = "babbabra";
+        in [ ({
+            imports = [./modules/home-manager/${name}];
+
+            home = {
+              username = name;
+              homeDirectory = "/home/${name}/";
+              stateVersion = "25.11";
+            };
+
+            news.display = "silent";
+        }) ];
+        extraSpecialArgs = {
+          inherit inputs;
+        };
       };
     };
+    # */
 
     devShells.${system} = {
       graphics = pkgs.mkShell {
@@ -85,7 +128,7 @@
       zig = pkgs.mkShell { # TODO: remove once its in nixpkgs
         buildInputs = [ pkgs.zig ];
         shellHook = ''
-          export PATH="~/dld/zig:$PATH"
+          export PATH="/home/tobi/dld/zig:$PATH"
           echo '{"zig_exe_path": "/home/tobi/dld/zig/zig"}' > $(/home/tobi/dld/zls/zls env | grep local_config_dir | cut -d':' -f2 | tr -d ' ",' | sed 's/$/\/zls.json/')
           cd $ORIGINAL_DIR
         '';

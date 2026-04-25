@@ -1,7 +1,7 @@
 {
   imports = [
     ./hardware-configuration.nix
-    ./../../modules/nixos
+    ./modules/nixos
   ];
 
   nix.settings = {
@@ -12,8 +12,7 @@
 
   networking.hostName = "nixos";
 
-  # Enable the OpenSSH daemon.
-  # services.openssh.enable = true;
+  services.openssh.enable = true;
 
   system.stateVersion = "25.11";
 }
