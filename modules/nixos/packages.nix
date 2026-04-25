@@ -1,4 +1,4 @@
-{pkgs, inputs, system, ...}: {
+{pkgs, ...}: {
   environment.systemPackages = with pkgs; [
     # Desktop Apps
     ungoogled-chromium
