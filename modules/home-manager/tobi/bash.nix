@@ -5,7 +5,7 @@
       sd = "shutdown 0";
       rb = "reboot";
       pic = "kitty icat";
-      ls = "eza --color=always --icons=always";
+      ls = "eza -g --color=always --icons=always";
       tree = "eza -T --color=always --icons=always";
       lg = "lazygit";
       ff = "fastfetch";
