@@ -5,7 +5,6 @@
     ./locale.nix
     ./user.nix
     ./auto.nix
-    ./sessions.nix
     ./packages.nix
     ./fonts.nix
     ./virtual.nix
@@ -15,5 +14,6 @@
     ./files.nix
     # ./steam.nix
     ./printer/print.nix
+    ./session
   ];
 }
