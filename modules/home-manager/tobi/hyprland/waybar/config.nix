@@ -1,4 +1,4 @@
-let configuration = ''
+let configuration = {widget}: ''
     "layer": "top",
     "position": "top",
     "modules-left": [
@@ -16,7 +16,7 @@ let configuration = ''
         "custom/spacer",
         "disk",
         "custom/spacer",
-        "network"
+        ${widget}
     ],
     "custom/spacer": {
         "format": " ",
@@ -68,25 +68,35 @@ let configuration = ''
     "disk": {
         "format": "{percentage_used}% 󰋊 "
     },
+    "network": {
+        "format-ethernet": "󰈀 ",
+        "format-wifi": "󰤨 ",
+        "format-disconnected": "󰤭 "
+    },
+    "custom/logout": {
+        "on-click": "hyprctl dispatch exit",
+        "format": "󰗽"
+    },
+    "custom/poweroff": {
+        "on-click": "shutdown 0",
+        "format": "󰐥"
+    }
   '';
 in
 {
   home.file.".config/waybar/config.jsonc".text = ''
     [{
         "output": "HDMI-A-1",
-        ${configuration}
-        "network": {
-            "format": " {bandwidthDownBytes}  {bandwidthUpBytes}",
+        ${configuration
+            ''
+        "custom/logout",
+        "custom/poweroff"
+            ''
         }
     },
     {
         "output": "HDMI-A-2",
-        ${configuration}
-        "network": {
-            "format-ethernet": "󰈀 ",
-            "format-wifi": "󰤨 ",
-            "format-disconnected": "󰤭 "
-        }
+        ${configuration "network"}
     }]
   '';
 }
