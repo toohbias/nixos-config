@@ -75,11 +75,11 @@ let configuration = widget: ''
     },
     "custom/logout": {
         "on-click": "hyprctl dispatch exit",
-        "format": "󰗽"
+        "format": "󰗽 "
     },
     "custom/poweroff": {
         "on-click": "shutdown 0",
-        "format": "󰐥"
+        "format": "󰐥 "
     }
   '';
 in
