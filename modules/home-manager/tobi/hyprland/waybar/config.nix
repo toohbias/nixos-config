@@ -1,4 +1,4 @@
-let configuration = {widget}: ''
+let configuration = widget: ''
     "layer": "top",
     "position": "top",
     "modules-left": [
