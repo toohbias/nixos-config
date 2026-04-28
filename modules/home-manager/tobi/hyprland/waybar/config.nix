@@ -96,7 +96,7 @@ in
     },
     {
         "output": "HDMI-A-2",
-        ${configuration "network"}
+        ${configuration ''"network"''}
     }]
   '';
 }
