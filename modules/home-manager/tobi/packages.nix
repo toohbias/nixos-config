@@ -1,4 +1,4 @@
-{pkgs, inputs, system, ...} : {
+{pkgs, ...} : {
   home.packages = with pkgs; [
     spotify-player
     # spotify
