@@ -90,6 +90,7 @@ in
         ${configuration
             ''
         "custom/logout",
+        "custom/spacer",
         "custom/poweroff"
             ''
         }
