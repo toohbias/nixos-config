@@ -35,6 +35,12 @@
         padding: 0px;
         color: ${config.theme.text};
     }
+    #custom-logout:hover,
+    #custom-poweroff:hover,
+    #workspaces button:hover {
+        background: ${config.theme.text};
+        color: ${config.theme.background};
+    }
     #custom-spacer {
         color: #${config.theme.inactive_nt};
     }

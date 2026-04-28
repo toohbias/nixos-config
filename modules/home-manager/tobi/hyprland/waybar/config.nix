@@ -15,7 +15,6 @@ let configuration = widget: ''
         "memory",
         "custom/spacer",
         "disk",
-        "custom/spacer",
         ${widget}
     ],
     "custom/spacer": {
@@ -71,15 +70,18 @@ let configuration = widget: ''
     "network": {
         "format-ethernet": "󰈀 ",
         "format-wifi": "󰤨 ",
-        "format-disconnected": "󰤭 "
+        "format-disconnected": "󰤭 ",
+        "tooltip-format": " {bandwidthDownBytes}  {bandwidthUpBytes}"
     },
     "custom/logout": {
         "on-click": "hyprctl dispatch exit",
-        "format": "󰗽 "
+        "format": " 󰗽 ",
+        "tooltip": false
     },
     "custom/poweroff": {
         "on-click": "shutdown 0",
-        "format": "󰐥 "
+        "format": " 󰐥 ",
+        "tooltip": false
     }
   '';
 in
@@ -89,15 +91,19 @@ in
         "output": "HDMI-A-1",
         ${configuration
             ''
-        "custom/logout",
-        "custom/spacer",
-        "custom/poweroff"
+                "custom/logout",
+                "custom/poweroff"
             ''
         }
     },
     {
         "output": "HDMI-A-2",
-        ${configuration ''"network"''}
+        ${configuration 
+            ''
+                "custom/spacer",
+                "network"
+            ''
+        }
     }]
   '';
 }
