@@ -32,7 +32,7 @@
         fi
         if [ -n "$nixos" -o -n "$config" ]
           then
-            sudo nixos-rebuild switch --flake /home/nix-shared#tobi
+            sudo nixos-rebuild switch --flake /home/nix-shared
         fi
         if [ -n "$flake" ]
           then
