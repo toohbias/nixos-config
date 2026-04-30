@@ -10,8 +10,8 @@
     };
 
     nvf = {
-      url = "github:notashelf/nvf";
-      # inputs.nixpkgs.follows = "nixpkgs";
+      url = "github:notashelf/nvf?ref=refs/tags/v0.8"; # revert next nixos update
+      # url = "github:notashelf/nvf";
     };
 
     mcmojave-hyprcursor.url = "github:libadoxon/mcmojave-hyprcursor";

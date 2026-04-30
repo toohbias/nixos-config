@@ -17,7 +17,7 @@
       # chooses split direction based on pane aspect ratio
       bind -n C-t run-shell '
         pane_width=$(tmux display-message -p "#{pane_width}")
-        pane_height=$(tmux display-message -p "#{pane_height}")
+        pane_height=$(expr $(tmux display-message -p "#{pane_height}") \* 2)
 
         if [ "$pane_width" -gt "$pane_height" ]; then
           # Wide pane → split vertically
