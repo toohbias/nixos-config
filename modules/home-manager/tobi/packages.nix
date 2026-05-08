@@ -9,6 +9,7 @@
     libreoffice
     # winboat
     appimage-run
+    uxplay
   ];
 
   nixpkgs.config = {
