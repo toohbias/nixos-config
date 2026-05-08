@@ -37,5 +37,6 @@
     virt-manager
 
     earlyoom
+    uxplay
   ];
 }
