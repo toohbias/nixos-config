@@ -3,6 +3,7 @@
   networking.firewall = {
     enable = true;
     allowedTCPPorts = [];
+    allowedUDPPorts = [ 5353 ];
     trustedInterfaces = [ "virbr0" ];
   };
 
