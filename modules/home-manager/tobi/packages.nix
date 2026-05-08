@@ -21,12 +21,14 @@
     permittedInsecurePackages = [ "gradle-7.6.6" ];
   };
 
-# /*
   xdg.desktopEntries = {
     Spotify = {
       name = "Spotify";
       exec = "kitty spotify_player";
     };
+    Airplay = {
+      name = "Airplay";
+      exec = "uxplay -p";
+    };
   };
-# */
 }
