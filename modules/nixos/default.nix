@@ -13,6 +13,7 @@
     ./network.nix
     ./files.nix
     # ./steam.nix
+    ./airplay.nix
     ./printer/print.nix
     ./session
   ];
