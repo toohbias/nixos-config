@@ -7,6 +7,7 @@
       pic = "kitty icat";
       ls = "eza -g --color=always --icons=always";
       tree = "eza -T --color=always --icons=always";
+      cat = "bat";
       lg = "lazygit";
       ff = "fastfetch";
       c = "clear";

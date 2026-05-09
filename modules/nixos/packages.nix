@@ -18,6 +18,7 @@
     eza
     lazygit
     fzf
+    bat
 
     # Other
     home-manager
