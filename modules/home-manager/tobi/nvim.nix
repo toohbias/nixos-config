@@ -109,7 +109,7 @@
           {
             key = "<leader>rg";
             mode = "n";
-            action = "!go run <C-R>%";
+            action = "!go run <C-R>%<CR>";
           }
           {
             key = "<leader>p";
