@@ -8,7 +8,6 @@
 
     # C
     gcc
-    gdb
     gnumake
     cmake
 
@@ -34,6 +33,10 @@
 
     # JS
     nodejs_24
+
+    # debugging
+    gdb
+    valgrind
   ];
 
   # programs.bash.sessionVariables = {
