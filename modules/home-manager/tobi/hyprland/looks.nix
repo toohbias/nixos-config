@@ -78,13 +78,7 @@
       ];
     };
 
-    dwindle = {
-      pseudotile = true;
-      preserve_split = true;
-    };
-
-    master = {
-      new_status = "master";
-    };
+    dwindle.preserve_split = true;
+    master.new_status = "master";
   };
 }

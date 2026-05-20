@@ -18,6 +18,10 @@
         libgcc
 
         stdenv.cc.cc
+
+        intel-media-driver
+
+        openh264
     ];
 
     sourceRoot = ".";

@@ -25,7 +25,7 @@
       "$mainMod ALT, M, exit,"
       "$mainMod, F, togglefloating,"
       "$mainMod SHIFT, F, fullscreen,"
-      "$mainMod, A, togglesplit, # dwindle"
+      "$mainMod, A, layoutmsg, togglesplit, # dwindle"
 
       "$mainMod, O, setprop, activewindow opaque toggle"
 
