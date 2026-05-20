@@ -6,6 +6,7 @@
 
     nativeBuildInputs = with pkgs; [
         autoPatchelfHook
+        makeWrapper
     ];
 
     buildInputs = with pkgs; [
@@ -21,8 +22,12 @@
 
         intel-media-driver
         intel-vaapi-driver
-        vpl-gpu-rt
+        vaapi-intel-hybrid
+        libva
+        libva1
+        libva-utils
         openh264
+        x264
     ];
 
     sourceRoot = ".";
@@ -31,5 +36,15 @@
         runHook preInstall
         install -Dm755 hypr-rdp $out/bin/hypr-rdp
         runHook postInstall
+    '';
+
+    postFixup = ''
+        wrapProgram $out/bin/hypr-rdp --prefix LD_LIBRARY_PATH : ${pkgs.lib.makeLibraryPath (with pkgs; [
+            openh264
+            intel-media-driver
+            intel-vaapi-driver
+            libva
+            libva1
+        ])}
     '';
 }

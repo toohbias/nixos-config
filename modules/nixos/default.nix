@@ -2,6 +2,7 @@
   imports = [
     ./system.nix
     ./audio.nix
+    ./graphics.nix
     ./locale.nix
     ./user.nix
     ./auto.nix
