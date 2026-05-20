@@ -20,9 +20,12 @@
         stdenv.cc.cc
 
         intel-media-driver
-
+        intel-vaapi-driver
+        vpl-gpu-rt
         openh264
     ];
+
+    sourceRoot = ".";
 
     installPhase = ''
         runHook preInstall

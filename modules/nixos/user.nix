@@ -10,6 +10,7 @@
         "docker" 
         "dialout"
         "libvirtd"
+        "video"
       ];
       uid = 1003;
     };
