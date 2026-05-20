@@ -3,6 +3,7 @@
   networking.firewall = {
     enable = true;
     trustedInterfaces = [ "virbr0" ];
+    allowedTCPPorts = [ 3389 ];
   };
 
   networking.hosts = {
