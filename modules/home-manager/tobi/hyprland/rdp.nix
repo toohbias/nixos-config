@@ -24,8 +24,6 @@
         openh264
     ];
 
-    sourceRoot = ".";
-
     installPhase = ''
         runHook preInstall
         install -Dm755 hypr-rdp $out/bin/hypr-rdp
