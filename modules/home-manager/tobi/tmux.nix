@@ -3,6 +3,7 @@
   programs.tmux = {
     enable = true;
     keyMode = "vi";
+    escapeTime = 0;
     extraConfig = ''
       set -g allow-passthrough on        
 
