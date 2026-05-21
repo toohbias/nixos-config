@@ -2,7 +2,7 @@
   services.greetd = {
     enable = true;
     settings.default_session = {
-      command = "startxfce4";
+      command = "start-xfce4";
       user = "tobi";
     };
   };

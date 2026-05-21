@@ -12,7 +12,10 @@
 
   networking.hostName = "nixos";
 
-  services.openssh.enable = true;
+  services.openssh = {
+    enable = true;
+    settings.X11Forwarding = true;
+  };
 
   system.stateVersion = "25.11";
 }
