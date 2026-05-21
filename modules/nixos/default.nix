@@ -16,6 +16,7 @@
     # ./steam.nix
     ./airplay.nix
     ./printer/print.nix
+    ./xfce.nix
     ./session
   ];
 }

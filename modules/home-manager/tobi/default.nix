@@ -14,6 +14,5 @@
     # ./virtual.nix
     ./tmux.nix
     ./hyprland
-    ./xfce.nix
   ];
 }
