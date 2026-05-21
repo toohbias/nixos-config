@@ -17,6 +17,7 @@
     ./airplay.nix
     ./printer/print.nix
     ./xfce.nix
-    ./session
+    ./sessions-tmp.nix
+    # ./session
   ];
 }
