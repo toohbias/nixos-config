@@ -7,10 +7,21 @@
       xterm.enable = false;
     };
     videoDrivers = [ "modesetting" ];
+    xkb = {
+      layout = "us";
+      options = "caps:swapescape";
+    };
+    displayManager.lightdm.enable= true;
   };
 
-  services.displayManager.sddm.enable = true;
-
+  # services.displayManager.sddm = {
+  #   enable = true;
+  #   settings.Autologin = {
+  #     Session = "xfce.desktop";
+  #     User = "tobi";
+  #   };
+  # };
+ 
   # services.displayManager = {
   #   enable = true;
   #   defaultSession = "xfce";
@@ -21,6 +32,7 @@
   # };
     
   services.libinput.enable = true;
+  services.udev.enable = true;
 
   environment.systemPackages = with pkgs; [
     xorg.xinit
