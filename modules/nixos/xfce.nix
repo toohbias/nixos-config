@@ -6,10 +6,21 @@
       xfce.enable = true;
       xterm.enable = false;
     };
+    videoDrivers = [ "modesetting" ];
   };
+
+  services.displayManager.sddm.enable = true;
+
+  # services.displayManager = {
+  #   enable = true;
+  #   defaultSession = "xfce";
+  #   autoLogin = {
+  #     enable = true;
+  #     user = "tobi";
+  #   };
+  # };
     
   services.libinput.enable = true;
-  services.displayManager.defaultSession = "xfce";
 
   environment.systemPackages = with pkgs; [
     xorg.xinit

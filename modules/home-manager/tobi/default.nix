@@ -13,6 +13,6 @@
     ./defaults.nix
     # ./virtual.nix
     ./tmux.nix
-    ./hyprland
+    # ./hyprland
   ];
 }
