@@ -18,7 +18,6 @@
     ./printer/print.nix
     ./xfce.nix
     ./rdp.nix
-    # ./sessions-tmp.nix
     ./session
   ];
 }

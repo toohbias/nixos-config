@@ -14,18 +14,6 @@
     };
   };
 
-  # services.displayManager = {
-  #   enable = true;
-  #   defaultSession = "xfce";
-  #   autoLogin = {
-  #     enable = true;
-  #     user = "tobi";
-  #   };
-  # };
-    
-  services.libinput.enable = true;
-  services.udev.enable = true;
-
   environment.systemPackages = with pkgs; [
     xorg.xinit
     xauth
