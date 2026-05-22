@@ -2,7 +2,7 @@
   services.greetd = {
     enable = true;
     settings.default_session = {
-      command = "startxfce4";
+      command = "Hyprland";
       user = "tobi";
     };
   };
