@@ -12,26 +12,16 @@
       variant = "";
       options = "caps:swapescape";
     };
-    # displayManager.lightdm.enable= true;
-    # displayManager.startx.enable = true;
   };
 
-  # services.displayManager.sddm = {
+  # services.displayManager = {
   #   enable = true;
-  #   settings.Autologin = {
-  #     Session = "xfce.desktop";
-  #     User = "tobi";
+  #   defaultSession = "xfce";
+  #   autoLogin = {
+  #     enable = true;
+  #     user = "tobi";
   #   };
   # };
- 
-  services.displayManager = {
-    enable = true;
-    defaultSession = "xfce";
-    autoLogin = {
-      enable = true;
-      user = "tobi";
-    };
-  };
     
   services.libinput.enable = true;
   services.udev.enable = true;
