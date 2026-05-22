@@ -9,9 +9,11 @@
     videoDrivers = [ "modesetting" ];
     xkb = {
       layout = "us";
+      variant = "";
       options = "caps:swapescape";
     };
-    displayManager.lightdm.enable= true;
+    # displayManager.lightdm.enable= true;
+    displayManager.startx.enable = true;
   };
 
   # services.displayManager.sddm = {

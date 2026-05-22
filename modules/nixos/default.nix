@@ -9,7 +9,7 @@
     ./packages.nix
     ./fonts.nix
     ./virtual.nix
-    ./util.nix
+    # ./util.nix
     ./bluetooth.nix
     ./network.nix
     ./files.nix
