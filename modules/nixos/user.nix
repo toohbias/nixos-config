@@ -21,7 +21,7 @@
         "networkmanager" 
         "wireshark"
       ];
-      uid = 1004;
+      uid = 1002;
     };
   };
 
