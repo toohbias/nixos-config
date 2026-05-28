@@ -42,6 +42,16 @@
         "x-systemd.idle-timeout=600"
       ];
     };
+
+    "/mnt/server/barbara" = {
+      device = "192.168.178.251:/mnt/HD/HD_a2/barbara";
+      fsType = "nfs";
+      options = [
+        "x-systemd.automount"
+        "noauto"
+        "x-systemd.idle-timeout=600"
+      ];
+    };
   };
 
 }
