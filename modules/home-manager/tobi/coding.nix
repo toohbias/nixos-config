@@ -8,6 +8,7 @@
 
     # C
     gcc
+    ninja
     gnumake
     cmake
 
@@ -21,7 +22,7 @@
     typst
 
     # Zig
-    zig # comment to update file
+    zig
 
     # Go
     go
