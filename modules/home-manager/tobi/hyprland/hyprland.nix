@@ -1,9 +1,6 @@
-{ pkgs-unstable, ...}: {
+{
 
-  wayland.windowManager.hyprland = {
-    enable = true;
-    package = pkgs-unstable.hyprland;
-  };
+  wayland.windowManager.hyprland.enable = true;
 
   xdg.configFile."hypr/hyprland.conf".force = true;
 

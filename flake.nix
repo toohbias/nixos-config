@@ -2,18 +2,16 @@
   description = "My system configuration";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-25.11";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-26.05";
 
     nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
 
     home-manager = {
-      url = "github:nix-community/home-manager/release-25.11";
+      url = "github:nix-community/home-manager/release-26.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    nvf = {
-      url = "github:notashelf/nvf?ref=refs/tags/v0.8"; # revert next nixos update
-    };
+    nvf.url = "github:notashelf/nvf";
 
     mcmojave-hyprcursor.url = "github:libadoxon/mcmojave-hyprcursor";
   };
@@ -53,7 +51,7 @@
             home = {
               username = name;
               homeDirectory = "/home/${name}/";
-              stateVersion = "25.11";
+              stateVersion = "26.05";
             };
 
             news.display = "silent";
@@ -75,7 +73,7 @@
             home = {
               username = name;
               homeDirectory = "/home/${name}/";
-              stateVersion = "25.11";
+              stateVersion = "26.05";
             };
 
             news.display = "silent";
@@ -129,7 +127,7 @@
           cd $ORIGINAL_DIR
         '';
       };
-      zig = pkgs.mkShell { # TODO: remove once its in nixpkgs
+      zig = pkgs.mkShell {
         buildInputs = [ pkgs.zig ];
         shellHook = ''
           export PATH="/home/tobi/dld/zig:$PATH"

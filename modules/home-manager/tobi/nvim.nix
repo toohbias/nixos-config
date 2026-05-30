@@ -207,8 +207,7 @@
           zig.enable = true;
           go.enable = true;
           haskell.enable = true;
-          # typescript.enable = true;
-          ts.enable = true;
+          typescript.enable = true;
           html.enable = true;
 
           nix.enable = true;

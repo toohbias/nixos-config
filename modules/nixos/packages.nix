@@ -19,6 +19,7 @@
     lazygit
     fzf
     bat
+    icdiff
 
     # Other
     home-manager
