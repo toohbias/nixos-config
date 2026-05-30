@@ -29,7 +29,4 @@
     valgrind
   ];
 
-  # programs.bash.sessionVariables = {
-  #   JAVA_HOME = pkgs.jdk25.outPath;
-  # };
 }
