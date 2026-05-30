@@ -5,7 +5,6 @@
     ./env.nix
     ./input.nix
     ./looks.nix
-    ./programs.nix
     ./windowrules.nix
     ./packages.nix
 

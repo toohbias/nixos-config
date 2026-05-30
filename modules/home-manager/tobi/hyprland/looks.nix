@@ -1,79 +1,210 @@
+
+
+
+
+
+
+
+
 { config, ... }: {
   wayland.windowManager.hyprland.settings = {
     monitor = [
-      "HDMI-A-1,1920x1080@60,0x0,1"
-      "HDMI-A-2,1280x1024@60,-1280x0,1"
+      {
+        output = "HDMI-A-1";
+        mode = "1920x1080@60";
+        position = "0x0";
+        scale = "1";
+      }
+      {
+        output = "HDMI-A-2";
+        mode = "1280x1024@60";
+        position = "-1280x0";
+        scale = "1";
+      }
     ];
 
-    general = {
-      gaps_in = 4;
-      gaps_out = 8;
+    config = {
+      general = {
+        gaps_in = 4;
+        gaps_out = 8;
 
-      border_size = config.theme.border_size;
-      "col.active_border" = "rgba(${config.theme.active_nt}${config.theme.opacity_nt})";
-      "col.inactive_border" = "rgba(${config.theme.inactive_nt}${config.theme.opacity_nt})";
+        border_size = config.theme.border_size;
 
-      resize_on_border = false;
+        col = {
+          active_border = "rgba(${config.theme.active_nt}${config.theme.opacity_nt})";
+          inactive_border = "rgba(${config.theme.inactive_nt}${config.theme.opacity_nt})";
+        };
 
-      allow_tearing = false;
+        resize_on_border = false;
 
-      layout = "dwindle";
-    };
+        allow_tearing = false;
 
-    decoration = {
-      rounding = config.theme.radius_out;
-
-      active_opacity = config.theme.opacity;
-      inactive_opacity = config.theme.opacity;
-
-      shadow = {
-        enabled = true;
-        range = 4;
-        render_power = 3;
-        color = "rgba(1A1A1AEE)";
+        layout = "dwindle";
       };
 
-      blur = {
-        enabled = true;
-        size = 3;
-        passes = 1;
+      decoration = {
+        rounding = config.theme.radius_out;
 
-        vibrancy = 0.1696;
+        active_opacity = config.theme.opacity;
+        inactive_opacity = config.theme.opacity;
+
+        shadow = {
+          enabled = true;
+          range = 4;
+          render_power = 3;
+          color = "rgba(1A1A1AEE)";
+        };
+
+        blur = {
+          enabled = true;
+          size = 3;
+          passes = 1;
+          vibrancy = 0.1696;
+        };
       };
+
+      animations.enabled = true;
+
+      dwindle.preserve_split = true;
     };
 
-    animations = {
-      enabled = "yes, please :)";
+    curve = [
+      {
+        _args = [ "easeOutQuint" {
+          type = "bezier";
+          points = [ [ 0.23 1 ] [ 0.32 1 ] ];
+        }];
+      }
+      {
+        _args = [ "easeInOutCubic" {
+          type = "bezier";
+          points = [ [ 0.65 0.05 ] [ 0.36 1 ] ];
+        }];
+      }
+      {
+        _args = [ "linear" {
+          type = "bezier";
+          points = [ [ 0 0 ] [ 1 1 ] ];
+        }];
+      }
+      {
+        _args = [ "almostLinear" {
+          type = "bezier";
+          points = [ [ 0.5 0.5 ] [ 0.75 1.0 ] ];
+        }];
+      }
+      {
+        _args = [ "quick" {
+          type = "bezier";
+          points = [ [ 0.15 0 ] [ 0.1 1 ] ];
+        }];
+      }
+    ];
 
-      bezier = [
-        "easeOutQuint,0.23,1,0.32,1"
-        "easeInOutCubic,0.65,0.05,0.36,1"
-        "linear,0,0,1,1"
-        "almostLinear,0.5,0.5,0.75,1.0"
-        "quick,0.15,0,0.1,1"
-      ];
-
-      animation = [
-        "global, 1, 10, default"
-        "border, 1, 5.39, easeOutQuint"
-        "windows, 1, 4.79, easeOutQuint"
-        "windowsIn, 1, 4.1, easeOutQuint, popin 87%"
-        "windowsOut, 1, 1.49, linear, popin 87%"
-        "fadeIn, 1, 1.73, almostLinear"
-        "fadeOut, 1, 1.46, almostLinear"
-        "fade, 1, 3.03, quick"
-        "layers, 1, 3.81, easeOutQuint"
-        "layersIn, 1, 4, easeOutQuint, fade"
-        "layersOut, 1, 1.5, linear, fade"
-        "fadeLayersIn, 1, 1.79, almostLinear"
-        "fadeLayersOut, 1, 1.39, almostLinear"
-        "workspaces, 1, 1.94, almostLinear, fade"
-        "workspacesIn, 1, 1.21, almostLinear, fade"
-        "workspacesOut, 1, 1.94, almostLinear, fade"
-      ];
-    };
-
-    dwindle.preserve_split = true;
-    master.new_status = "master";
+    animation = [
+      {
+        leaf = "global";
+        enabled = true;
+        speed = 10;
+        bezier = "default";
+      }
+      {
+        leaf = "border";
+        enabled = true;
+        speed = 5.39;
+        bezier = "easeOutQuint";
+      }
+      {
+        leaf = "windows";
+        enabled = true;
+        speed = 4.79;
+        bezier = "easeOutQuint";
+      }
+      {
+        leaf = "windowsIn";
+        enabled = true;
+        speed = 4.1;
+        bezier = "easeOutQuint";
+        style = "popin 87%";
+      }
+      {
+        leaf = "windowsOut";
+        enabled = true;
+        speed = 1.49;
+        bezier = "linear";
+        style = "popin 87%";
+      }
+      {
+        leaf = "fadeIn";
+        enabled = true;
+        speed = 1.73;
+        bezier = "almostLinear";
+      }
+      {
+        leaf = "fadeOut";
+        enabled = true;
+        speed = 1.46;
+        bezier = "almostLinear";
+      }
+      {
+        leaf = "fade";
+        enabled = true;
+        speed = 3.03;
+        bezier = "quick";
+      }
+      {
+        leaf = "layers";
+        enabled = true;
+        speed = 3.81;
+        bezier = "easeOutQuint";
+      }
+      {
+        leaf = "layersIn";
+        enabled = true;
+        speed = 4;
+        bezier = "easeOutQuint";
+        style = "fade";
+      }
+      {
+        leaf = "layersOut";
+        enabled = true;
+        speed = 1.5;
+        bezier = "linear";
+        style = "fade";
+      }
+      {
+        leaf = "fadeLayersIn";
+        enabled = true;
+        speed = 1.79;
+        bezier = "almostLinear";
+      }
+      {
+        leaf = "fadeLayersOut";
+        enabled = true;
+        speed = 1.39;
+        bezier = "almostLinear";
+      }
+      {
+        leaf = "workspaces";
+        enabled = true;
+        speed = 1.94;
+        bezier = "almostLinear";
+        style = "fade";
+      }
+      {
+        leaf = "workspacesIn";
+        enabled = true;
+        speed = 1.21;
+        bezier = "almostLinear";
+        style = "fade";
+      }
+      {
+        leaf = "workspacesOut";
+        enabled = true;
+        speed = 1.94;
+        bezier = "almostLinear";
+        style = "fade";
+      }
+    ];
   };
 }
