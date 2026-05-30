@@ -5,11 +5,6 @@
       "HDMI-A-2,1280x1024@60,-1280x0,1"
     ];
 
-    misc = {
-      disable_hyprland_logo = true;
-      splash = true;
-    };
-
     general = {
       gaps_in = 4;
       gaps_out = 8;

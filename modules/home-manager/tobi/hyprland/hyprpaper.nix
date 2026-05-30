@@ -13,6 +13,7 @@
           path = "~/pic/wallpaper/red1.png";
         }
       ];
+      misc.splash = false;
     };
   };
 
