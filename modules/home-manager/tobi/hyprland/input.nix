@@ -11,6 +11,11 @@
       force_no_accel = true;
     };
 
+    misc = {
+      disable_hyprland_logo = true;
+      disable_splash_rendering = true;
+    };
+
     "$mainMod" = "SUPER";
 
     bind = [
