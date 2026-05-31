@@ -1,6 +1,6 @@
 {
   wayland.windowManager.hyprland.settings = {
-    config.windowrule = [
+    window_rule = [
       {
         name = "opaqueBrowser";
         match.title = "(.*)(Chromium)$";
