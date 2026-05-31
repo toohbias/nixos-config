@@ -32,11 +32,12 @@ let configuration = widget: ''
             "title<.*Stack Overflow.*>": " ",
             "class<kitty>": " ",
             "title<nvim.*>": " ",
+            "title<vi.*>": " ",
             "class<thunderbird>": " ",
             "class<jetbrains-idea>": " ",
             "class<libreoffice-writer>": " ",
             "class<libreoffice-impress>": "󱎐 ",
-            "class<spotify>": " ",
+            "class<spotify.*>": " ",
             "class<Gimp.*>": " ",
             "class<discord>": " ",
             "class<kitty> title<.*tmux.*>": " "
