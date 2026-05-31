@@ -58,7 +58,7 @@ in {
 
         (sendshortcutFunc { key = "E"; mods = "CTRL + SHIFT"; sc = "m"; window = "class:discord"; })
         (sendshortcutFunc { key = "E"; mods = ""; sc = "SPACE"; window = "class:spotify"; })
-        (sendshortcutFunc { key = "E"; mods = ""; sc = "SPACE"; window = "class:spotify_player"; })
+        (sendshortcutFunc { key = "E"; mods = ""; sc = "SPACE"; window = "title:spotify_player"; })
         (execFunc { key = "E"; cmd = "hyprlock"; })
 
         (execFunc { key = "SHIFT + E"; cmd = "hyprlock"; })
@@ -66,7 +66,7 @@ in {
         (sendshortcutFunc { key = "M"; mods = "CTRL + SHIFT"; sc = "m"; window = "class:discord"; })
 
         (sendshortcutFunc { key = "P"; mods = ""; sc = "SPACE"; window = "class:spotify"; })
-        (sendshortcutFunc { key = "P"; mods = ""; sc = "SPACE"; window = "class:spotify_player"; })
+        (sendshortcutFunc { key = "P"; mods = ""; sc = "SPACE"; window = "title:spotify_player"; })
 
         # Move focus with mainMod + hjkl
         (focusFunc { key = "h"; inst = "direction"; val = "\"left\""; })
