@@ -41,10 +41,6 @@ let configuration = widget: ''
             "class<discord>": " ",
             "class<kitty> title<.*tmux.*>": " "
         },
-        "workspace-taskbar": {
-            "enable": true,
-            "on-click-window": "hyprctl dispatch \"hl.dsp.focus({ window = 'address:{address}' })\""
-        }
     },
     "clock": {
         "format": "{:%R  %A %b %d}"
