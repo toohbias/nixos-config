@@ -14,12 +14,20 @@
     nvf.url = "github:notashelf/nvf";
 
     mcmojave-hyprcursor.url = "github:libadoxon/mcmojave-hyprcursor";
+
+    # hack to fix waybar workspaces not switching, see https://github.com/Alexays/Waybar/pull/5013
+    # TODO: remove at 26.11
+    waybar-fixed = {
+        url = "github:Alexays/Waybar/e17c0d9f0a73acc370df60ec8c532b1ed2385c73";
+        inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = {
     nixpkgs,
     nixpkgs-unstable,
     home-manager,
+    waybar-fixed, # TODO: remove at 26.11
     ...
   } @ inputs: let
     system = "x86_64-linux";
@@ -59,6 +67,7 @@
         extraSpecialArgs = {
           inherit inputs;
           inherit pkgs-unstable;
+          inherit waybar-fixed; # TODO: remove at 26.11
         };
       };
       
