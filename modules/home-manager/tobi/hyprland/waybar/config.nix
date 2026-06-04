@@ -23,7 +23,6 @@ let configuration = widget: ''
     },
     "hyprland/workspaces": {
         "format": "{icon} {windows}",
-        "on-click": "activate",
         "window-rewrite-default": " ",
         "window-rewrite": {
             "class<chromium-browser>": " ",
@@ -41,6 +40,10 @@ let configuration = widget: ''
             "class<Gimp.*>": " ",
             "class<discord>": " ",
             "class<kitty> title<.*tmux.*>": " "
+        },
+        "workspace-taskbar": {
+            "enable": true,
+            "on-click-window": "hyprctl dispatch \"hl.dsp.focus({ window = 'address:{address}' })\""
         }
     },
     "clock": {

@@ -14,7 +14,10 @@
 
   services.openssh = {
     enable = true;
-    settings.X11Forwarding = true;
+    settings = {
+      X11Forwarding = true;
+      PermitRootLogin = "no";
+    };
   };
 
   system.stateVersion = "26.05";
