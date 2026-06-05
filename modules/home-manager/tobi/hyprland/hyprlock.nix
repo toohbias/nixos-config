@@ -4,6 +4,8 @@
     enable = true;
 
     settings = {
+      general.fail_timeout = 500;
+
       background = {
         path = "~/pic/wallpaper/red1_lock_input.png";
         blur_passes = 0;
