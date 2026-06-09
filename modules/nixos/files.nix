@@ -1,5 +1,4 @@
 {
-
   boot.supportedFilesystems = [ "nfs" ];
 
   fileSystems = {
@@ -53,5 +52,4 @@
       ];
     };
   };
-
 }

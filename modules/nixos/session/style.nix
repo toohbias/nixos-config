@@ -1,5 +1,4 @@
 {
-
   programs.regreet.extraCss = ''
     * {
         font-family: FiraCode Nerd Font;
@@ -36,5 +35,4 @@
         background: rgba(0, 0, 0, 0.75);
     }
   '';
-
 }

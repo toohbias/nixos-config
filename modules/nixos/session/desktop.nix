@@ -1,13 +1,11 @@
-{ pkgs, ...}: {
-
+{ pkgs, ... }: {
   services.desktopManager.plasma6.enable = true;
   environment.plasma6.excludePackages = with pkgs.kdePackages; [
-        ark
-        discover
+    ark
+    discover
   ];
 
   services.displayManager.sessionPackages = [
     pkgs.hyprland
   ];
-
 }

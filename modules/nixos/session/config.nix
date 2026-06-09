@@ -1,11 +1,11 @@
 {
-
   programs.regreet = {
     enable = true;
     cageArgs = [
       "-s"
       "-d"
-      "-m" "last"
+      "-m"
+      "last"
     ];
     settings = {
       background = {

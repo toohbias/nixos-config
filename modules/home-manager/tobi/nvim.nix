@@ -1,5 +1,5 @@
-{inputs, lib, ...}: {
-  imports = [inputs.nvf.homeManagerModules.default];
+{ inputs, ... }: {
+  imports = [ inputs.nvf.homeManagerModules.default ];
 
   programs.nvf = {
     enable = true;
@@ -18,7 +18,10 @@
         keymaps = [
           {
             key = "y";
-            mode = ["n" "x"];
+            mode = [
+              "n"
+              "x"
+            ];
             action = ''"+y'';
           }
           {
@@ -28,12 +31,18 @@
           }
           {
             key = ";";
-            mode = ["n" "x"];
+            mode = [
+              "n"
+              "x"
+            ];
             action = ":";
           }
           {
             key = ":";
-            mode = ["n" "x"];
+            mode = [
+              "n"
+              "x"
+            ];
             action = ";";
           }
           {
@@ -123,7 +132,7 @@
           }
           {
             key = "<C-h>";
-            mode = "n"; 
+            mode = "n";
             action = ":silent !tmux select-pane -L<CR>";
           }
           {

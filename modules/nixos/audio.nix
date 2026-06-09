@@ -1,5 +1,4 @@
 {
-
   services.pipewire = {
     enable = true;
     alsa.enable = true;
@@ -12,7 +11,7 @@
         "monitor.alsa.rules" = [
           {
             matches = [
-              { 
+              {
                 "node.name" = "alsa_input.usb-BLUE_MICROPHONE_Blue_Snowball_797_2020_12_16_41638-00.mono-fallback";
               }
             ];
@@ -28,5 +27,4 @@
   };
 
   programs.noisetorch.enable = true;
-
 }

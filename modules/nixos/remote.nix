@@ -1,4 +1,4 @@
-{ pkgs, ...}: {
+{ pkgs, ... }: {
 
   # services.xserver = {
   #   enable = true;
@@ -25,5 +25,5 @@
   #   defaultWindowManager = "startxfce4";
   # };
 
-  programs.kdeconnect.enable = true;
+  # programs.kdeconnect.enable = true;
 }

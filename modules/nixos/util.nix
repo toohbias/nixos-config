@@ -1,5 +1,4 @@
 {
-
   services.libinput = {
     enable = true;
     mouse.additionalOptions = ''
@@ -8,5 +7,4 @@
       ModelBouncingKeys=1
     '';
   };
-
 }

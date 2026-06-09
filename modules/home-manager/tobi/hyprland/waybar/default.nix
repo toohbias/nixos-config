@@ -1,4 +1,4 @@
-{ waybar-fixed, pkgs, ...}: {
+{ waybar-fixed, pkgs, ... }: {
 
   programs.waybar = {
     enable = true;

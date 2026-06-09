@@ -1,5 +1,4 @@
 { config, ... }: {
-
   programs.hyprlock = {
     enable = true;
 
@@ -36,5 +35,4 @@
   };
 
   xdg.configFile."hypr/hyprlock.conf".force = true;
-
 }

@@ -1,5 +1,4 @@
 {
-
   nix.gc = {
     automatic = true;
     dates = "weekly";
@@ -10,5 +9,4 @@
     enable = true;
     frequency = "weekly";
   };
-
 }

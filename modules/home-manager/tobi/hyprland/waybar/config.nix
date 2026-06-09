@@ -1,4 +1,5 @@
-let configuration = widget: ''
+let
+  configuration = widget: ''
     "layer": "top",
     "position": "top",
     "modules-left": [
@@ -89,21 +90,17 @@ in
   home.file.".config/waybar/config.jsonc".text = ''
     [{
         "output": "HDMI-A-1",
-        ${configuration
-            ''
-                "custom/logout",
-                "custom/poweroff"
-            ''
-        }
+        ${configuration ''
+          "custom/logout",
+          "custom/poweroff"
+        ''}
     },
     {
         "output": "HDMI-A-2",
-        ${configuration 
-            ''
-                "custom/spacer",
-                "network"
-            ''
-        }
+        ${configuration ''
+          "custom/spacer",
+          "network"
+        ''}
     }]
   '';
 }

@@ -1,5 +1,4 @@
 {
-
   hardware.bluetooth = {
     enable = true;
     powerOnBoot = true;
@@ -11,5 +10,4 @@
       Policy.AutoEnable = true;
     };
   };
-
 }

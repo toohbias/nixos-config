@@ -1,5 +1,4 @@
 { config, ... }: {
-
   programs.kitty = {
     enable = true;
     font = {
@@ -7,5 +6,4 @@
       size = 11;
     };
   };
-
 }

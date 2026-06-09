@@ -1,12 +1,11 @@
-{pkgs, ...}: {
+{ pkgs, ... }: {
   services.printing.enable = true;
   services.printing.drivers = [
-    (pkgs.writeTextFile
-      {
-        name = "xwc3220.ppd";
-        text = builtins.readFile ./xwc3220.ppd;
-        destination = "/share/cups/model/xwc3220.ppd";
-      })
+    (pkgs.writeTextFile {
+      name = "xwc3220.ppd";
+      text = builtins.readFile ./xwc3220.ppd;
+      destination = "/share/cups/model/xwc3220.ppd";
+    })
   ];
 
   hardware.printers = {

@@ -1,13 +1,12 @@
 {
-
   users.users = {
     tobi = {
       isNormalUser = true;
       extraGroups = [
-        "wheel" 
-        "networkmanager" 
-        "wireshark" 
-        "docker" 
+        "wheel"
+        "networkmanager"
+        "wireshark"
+        "docker"
         "dialout"
         "libvirtd"
         "video"
@@ -17,12 +16,11 @@
     babbabra = {
       isNormalUser = true;
       extraGroups = [
-        "wheel" 
-        "networkmanager" 
+        "wheel"
+        "networkmanager"
         "wireshark"
       ];
       uid = 1002;
     };
   };
-
 }

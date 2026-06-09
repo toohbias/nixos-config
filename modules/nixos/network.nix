@@ -1,9 +1,11 @@
-{ pkgs, ...} : {
-
+{ pkgs, ... }: {
   networking.firewall = {
     enable = true;
     trustedInterfaces = [ "virbr0" ];
-    allowedTCPPorts = [ 3389 22 ];
+    allowedTCPPorts = [
+      3389
+      22
+    ];
   };
 
   networking.hosts = {
@@ -14,5 +16,4 @@
     enable = true;
     package = pkgs.wireshark;
   };
-
 }
