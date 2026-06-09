@@ -192,8 +192,11 @@
           };
         };
 
-        lsp.enable = true;
-        lsp.servers.zls.cmd = lib.mkForce [ "/home/tobi/dld/zls/zls" ];
+        lsp = {
+          enable = true;
+          formatOnSave = true;
+          # servers.zls.cmd = lib.mkForce [ "/home/tobi/dld/zls/zls" ];
+        };
 
         languages = {
           enableTreesitter = true;
