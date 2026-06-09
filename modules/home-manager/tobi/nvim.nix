@@ -207,6 +207,8 @@
           # servers.zls.cmd = lib.mkForce [ "/home/tobi/dld/zls/zls" ];
         };
 
+        diagnostics.nvim-lint.enable = true;
+
         languages = {
           enableTreesitter = true;
 
