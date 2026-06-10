@@ -219,11 +219,15 @@
           python.enable = true;
           zig.enable = true;
           go.enable = true;
-          haskell.enable = true;
           typescript.enable = true;
           html.enable = true;
 
           nix.enable = true;
+
+          haskell = {
+            enable = true;
+            extensions.haskell-tools = true;
+          };
 
           json = {
             enable = true;
