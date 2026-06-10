@@ -207,6 +207,8 @@
           # servers.zls.cmd = lib.mkForce [ "/home/tobi/dld/zls/zls" ];
         };
 
+        debugger.nvim-dap.ui.enable = true;
+
         languages = {
           enableTreesitter = true;
           enableDAP = true;
