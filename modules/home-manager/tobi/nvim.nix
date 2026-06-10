@@ -226,7 +226,7 @@
 
           haskell = {
             enable = true;
-            extensions.haskell-tools = true;
+            extensions.haskell-tools.enable = true;
           };
 
           json = {
