@@ -217,17 +217,13 @@
           rust.enable = true;
           assembly.enable = true;
           python.enable = true;
+          haskell.extensions.haskell-tools.enable = true;
           zig.enable = true;
           go.enable = true;
           typescript.enable = true;
           html.enable = true;
 
           nix.enable = true;
-
-          haskell = {
-            enable = true;
-            extensions.haskell-tools.enable = true;
-          };
 
           json = {
             enable = true;
