@@ -27,6 +27,7 @@
   };
 
   programs.noisetorch.enable = true;
+
   systemd.user.services.pipewire-pulse.serviceConfig = {
     Environment = "LADSPA_PATH=/tmp";
   };

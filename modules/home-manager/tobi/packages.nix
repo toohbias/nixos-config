@@ -9,6 +9,7 @@
     libreoffice
     # winboat
     appimage-run
+    tigervnc
   ];
 
   nixpkgs.config = {
