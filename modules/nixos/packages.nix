@@ -20,6 +20,7 @@
     fzf
     bat
     icdiff
+    calc
 
     # Other
     home-manager
