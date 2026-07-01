@@ -29,6 +29,7 @@
     zip
     unzip
     file
+    net-tools
 
     wl-clipboard
     cliphist
