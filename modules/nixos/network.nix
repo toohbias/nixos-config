@@ -10,6 +10,7 @@
 
   networking.hosts = {
     "192.168.178.216" = [ "raspi" ];
+    "192.168.178.115" = [ "raspi4b" ];
   };
 
   programs.wireshark = {
