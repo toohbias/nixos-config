@@ -10,6 +10,7 @@
     ./fonts.nix
     ./virtual.nix
     # ./util.nix
+    ./obs-studio.nix
     ./bluetooth.nix
     ./network.nix
     ./files.nix

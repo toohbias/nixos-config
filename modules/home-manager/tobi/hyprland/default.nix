@@ -13,5 +13,7 @@
     ./mako.nix
     ./hyprlock.nix
     ./hyprpaper.nix
+
+    ./obs-studio.nix
   ];
 }

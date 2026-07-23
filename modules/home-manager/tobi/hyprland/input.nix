@@ -162,10 +162,13 @@ in
           key = "E";
           cmd = "hyprlock";
         })
-
         (execFunc {
           key = "SHIFT + E";
           cmd = "hyprlock";
+        })
+        (execFunc {
+          key = "C";
+          cmd = "~/.config/hypr/scripts/obs-monitor-scene.sh";
         })
 
         (sendshortcutFunc {

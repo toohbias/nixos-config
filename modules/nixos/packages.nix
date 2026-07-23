@@ -22,6 +22,8 @@
     icdiff
     calc
 
+    socat
+
     # Other
     home-manager
     nix-index
