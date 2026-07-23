@@ -15,11 +15,11 @@
 
       socat -U - UNIX-CONNECT:"$SOCKET" | while read -r event; do
           case "$event" in
-              focusedmon*\>)
-                  monitor="$\{event#focusedmon>>}"
-                  monitor="$\{monitor%%,*}"
+              focusedmon\>\>*)
+                  monitor="''${event#focusedmon>>}"
+                  monitor="''${monitor%%,*}"
 
-                  scene="$\{SCENES[$monitor]}"
+                  scene="''${SCENES[$monitor]}"
 
                   # Only switch if the monitor is mapped and the scene changed
                   if [[ -n "$scene" && "$scene" != "$last_scene" ]]; then
