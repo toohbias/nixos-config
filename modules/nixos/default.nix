@@ -14,7 +14,7 @@
     ./bluetooth.nix
     ./network.nix
     ./files.nix
-    # ./steam.nix
+    ./steam.nix
     ./airplay.nix
     ./printer/print.nix
     ./remote.nix

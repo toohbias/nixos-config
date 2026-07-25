@@ -1,6 +1,5 @@
-{ pkgs, ... }: {
+{ pkgs, pkgs-unstable, ... }: {
   home.packages = with pkgs; [
-    spotify-player
     # spotify
     thunderbird
     gimp
@@ -10,6 +9,8 @@
     # winboat
     appimage-run
     tigervnc
+
+    pkgs-unstable.spotify-player
   ];
 
   nixpkgs.config = {

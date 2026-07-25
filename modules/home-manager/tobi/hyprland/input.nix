@@ -166,8 +166,13 @@ in
           key = "SHIFT + E";
           cmd = "hyprlock";
         })
-        (execFunc {
+        (windowFunc {
           key = "C";
+          inst = "tag";
+          param = "{ tag = \"censored\" }";
+        })
+        (execFunc {
+          key = "SHIFT + C";
           cmd = "~/.config/hypr/scripts/obs-monitor-scene.sh";
         })
 

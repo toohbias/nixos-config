@@ -6,6 +6,11 @@
         match.title = "(.*)(Chromium)$";
         opaque = true;
       }
+      {
+        name = "censorWindows";
+        match.tag = "censored";
+        no_screen_share = true;
+      }
     ];
   };
 }
