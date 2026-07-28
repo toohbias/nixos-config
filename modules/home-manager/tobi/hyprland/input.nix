@@ -140,6 +140,11 @@ in
           cmd = "hyprctl switchxkblayout chicony-usb-keyboard next";
         })
 
+        (execFunc {
+          key = "W";
+          cmd = "pkill -SIGUSR1 waybar";
+        })
+
         (sendshortcutFunc {
           key = "E";
           mods = "CTRL + SHIFT";
