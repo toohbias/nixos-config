@@ -201,10 +201,11 @@
           };
         };
 
+        notes.obsidian.enable = true;
+
         lsp = {
           enable = true;
           formatOnSave = true;
-          # servers.zls.cmd = lib.mkForce [ "/home/tobi/dld/zls/zls" ];
         };
 
         debugger.nvim-dap.ui.enable = true;
@@ -221,6 +222,7 @@
           python.enable = true;
           haskell.extensions.haskell-tools.enable = true;
           zig.enable = true;
+          odin.enable = true;
           go.enable = true;
           typescript.enable = true;
           html.enable = true;
