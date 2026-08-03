@@ -18,9 +18,12 @@
     # hack to fix waybar workspaces not switching, see https://github.com/Alexays/Waybar/pull/5013
     # TODO: remove at 26.11
     waybar-fixed = {
-      url = "github:Alexays/Waybar/e17c0d9f0a73acc370df60ec8c532b1ed2385c73";
+      url = "github:Alexays/Waybar/d44a27af1023b5c68f6f61435ba550bf03f69938";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    obsidian-graph.url = "/home/tobi/doc/projects/obsidian-preview/obsidian-graph.nvim/";
+
   };
 
   outputs =
@@ -29,6 +32,7 @@
       nixpkgs-unstable,
       home-manager,
       waybar-fixed, # TODO: remove at 26.11
+      obsidian-graph,
       ...
     }@inputs:
     let
@@ -75,6 +79,7 @@
             inherit inputs;
             inherit pkgs-unstable;
             inherit waybar-fixed; # TODO: remove at 26.11
+            inherit obsidian-graph;
           };
         };
 

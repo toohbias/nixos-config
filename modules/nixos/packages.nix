@@ -4,7 +4,7 @@
     ungoogled-chromium
 
     # Coding
-    neovim
+    # neovim
     tree-sitter
 
     # CLI utils

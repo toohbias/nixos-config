@@ -1,10 +1,12 @@
-{ inputs, ... }: {
+{ inputs, obsidian-graph, ... }: {
   imports = [ inputs.nvf.homeManagerModules.default ];
 
   programs.nvf = {
     enable = true;
 
     settings = {
+      imports = [ obsidian-graph.nvfModules.default ];
+
       vim = {
         options = {
           shiftwidth = 0;
@@ -201,7 +203,18 @@
           };
         };
 
-        notes.obsidian.enable = true;
+        notes = {
+          obsidian.enable = true;
+
+          obsidian-graph = {
+            enable = true;
+            setupOpts = {
+              port = 8080;
+              debounce_ms = 100;
+              debug = false;
+            };
+          };
+        };
 
         lsp = {
           enable = true;
