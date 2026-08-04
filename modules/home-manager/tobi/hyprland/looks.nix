@@ -23,8 +23,8 @@
         border_size = config.theme.border_size;
 
         col = {
-          active_border = "rgba(${config.theme.active_nt}${config.theme.opacity_nt})";
-          inactive_border = "rgba(${config.theme.inactive_nt}${config.theme.opacity_nt})";
+          active_border = config.theme.active;
+          inactive_border = config.theme.inactive;
         };
 
         resize_on_border = false;

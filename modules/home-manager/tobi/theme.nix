@@ -4,11 +4,11 @@
 
     default = {
       opacity = 0.75;
-      active = "rgba(255, 255, 255, 1.0)";
+      active = "rgba(255, 255, 255, ${toString config.theme.opacity})";
       background = "rgba(0, 0, 0, ${toString config.theme.opacity})";
       inactive = "rgba(89, 89, 89, ${toString config.theme.opacity})";
       text = "rgba(255, 255, 255, ${toString config.theme.opacity})";
-      red = "rgba(186, 24, 27, 1.0)";
+      red = "rgba(186, 24, 27, ${toString config.theme.opacity})";
 
       opacity_nt = "BF";
       active_nt = "FFFFFF";
