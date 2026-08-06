@@ -3,7 +3,7 @@
     enable = true;
 
     settings = {
-      general.fail_timeout = 500;
+      general.fail_timeout = 0;
 
       background = {
         path = "~/pic/wallpaper/red1_lock_input.png";
@@ -12,6 +12,7 @@
 
       input-field = {
         size = "300, 60";
+        outline_thickness = 0;
         outer_color = config.theme.transparent;
         inner_color = config.theme.transparent;
         font_color = config.theme.text;
@@ -20,6 +21,10 @@
         halign = "center";
         valign = "center";
         position = "0, 1";
+        capslock_color = config.theme.red;
+        fail_color = config.theme.red;
+        check_color = config.theme.red;
+        check_text = "Authentication failed";
       };
 
       label = {
