@@ -6,15 +6,20 @@
       general.fail_timeout = 0;
 
       background = {
-        path = "~/pic/wallpaper/red1_lock_input.png";
+        path = "~/pic/wallpaper/red1_lock.png";
         blur_passes = 0;
       };
 
+      bezier = "easeOutCubic, 0.33, 1, 0.68, 1";
+      animation = "inputFieldColors, 1, 3.5, easeOutCubic";
+
       input-field = {
         size = "300, 60";
-        outline_thickness = 0;
-        outer_color = config.theme.transparent;
-        inner_color = config.theme.transparent;
+        swap_font_color = true;
+        outline_thickness = 3;
+        rounding = config.theme.radius_out;
+        outer_color = config.theme.active;
+        inner_color = config.theme.background;
         font_color = config.theme.text;
         font_family = config.theme.font;
         fade_on_empty = false;
@@ -24,7 +29,6 @@
         capslock_color = config.theme.red;
         fail_color = config.theme.red;
         check_color = config.theme.red;
-        check_text = "Authentication failed";
       };
 
       label = {
