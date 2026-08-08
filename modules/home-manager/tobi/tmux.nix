@@ -19,7 +19,7 @@
         pane_width=$(tmux display-message -p "#{pane_width}")
         pane_height=$(expr $(tmux display-message -p "#{pane_height}") \* 2)
 
-        if [ "$pane_width" -gt "$pane_height" ]; then
+        if [ "$pane_width" -ge "$pane_height" ]; then
           # Wide pane → split vertically
           tmux split-window -h
         else
@@ -40,6 +40,7 @@
       bind -n C-7 select-window -t 7
       bind -n C-8 select-window -t 8
       bind -n C-9 select-window -t 9
+      bind -n C-0 select-window -t 10
     '';
     baseIndex = 1;
   };

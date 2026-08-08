@@ -9,8 +9,8 @@
   };
 
   networking.hosts = {
-    "192.168.178.216" = [ "raspi" ];
-    "192.168.178.115" = [ "raspi4b" ];
+    "192.168.178.216" = [ "raspiKeller" ];
+    "192.168.178.115" = [ "raspi" ];
   };
 
   programs.wireshark = {
