@@ -431,6 +431,10 @@ in
           key = "SHIFT + A";
           cmd = "hyprshot -o ~/pic/Screenshots -m active";
         })
+        (execFunc {
+          key = "SHIFT + T";
+          cmd = "~/nix/hyprland/ocr.sh";
+        })
 
         (windowFunc {
           key = "mouse:272";
