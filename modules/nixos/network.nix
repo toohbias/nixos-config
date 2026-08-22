@@ -3,9 +3,11 @@
     enable = true;
     trustedInterfaces = [ "virbr0" ];
     allowedTCPPorts = [
-      3389
-      22
+      5134 # tether test
     ];
+    nat = {
+
+    };
   };
 
   networking.hosts = {

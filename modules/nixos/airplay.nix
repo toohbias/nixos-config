@@ -6,7 +6,6 @@
       7100
     ];
     allowedUDPPorts = [
-      5353
       6000
       6001
       7011
@@ -24,5 +23,12 @@
       userServices = true;
       domain = true;
     };
+
+    #tmp
+    allowInterfaces = [
+      "enp2s0"
+      "virbr0"
+    ];
+    reflector = true;
   };
 }
