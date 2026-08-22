@@ -5,9 +5,6 @@
     allowedTCPPorts = [
       5134 # tether test
     ];
-    nat = {
-
-    };
   };
 
   networking.hosts = {
