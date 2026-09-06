@@ -1,4 +1,5 @@
-{
+{ tether, ... }: {
+
   networking.firewall = {
     allowedTCPPorts = [
       7000
@@ -23,12 +24,19 @@
       userServices = true;
       domain = true;
     };
+  };
 
-    #tmp
-    allowInterfaces = [
-      "enp2s0"
-      "virbr0"
-    ];
-    reflector = true;
+  imports = [ tether.nixosModules.default ];
+  programs.tether = {
+    enable = true;
+
+    wifi = {
+      enable = true;
+      openFirewall = true;
+    };
+
+    bluetooth.enable = false;
+
+    extensions = [ ];
   };
 }

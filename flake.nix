@@ -11,9 +11,15 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    nvf.url = "github:notashelf/nvf";
+    nvf = {
+      url = "github:notashelf/nvf";
+      inputs.nixpkgs.follows = "nixpkgs-unstable";
+    };
 
-    mcmojave-hyprcursor.url = "github:libadoxon/mcmojave-hyprcursor";
+    mcmojave-hyprcursor = {
+      url = "github:libadoxon/mcmojave-hyprcursor";
+      inputs.nixpkgs.follows = "nixpkgs-unstable";
+    };
 
     # hack to fix waybar workspaces not switching, see https://github.com/Alexays/Waybar/pull/5013
     # TODO: remove at 26.11
@@ -21,8 +27,14 @@
       url = "github:Alexays/Waybar/d44a27af1023b5c68f6f61435ba550bf03f69938";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
-    obsidian-graph.url = "/home/tobi/doc/projects/obsidian-preview/obsidian-graph.nvim/";
+    obsidian-graph = {
+      url = "/home/tobi/doc/projects/obsidian-preview/obsidian-graph.nvim/";
+      inputs.nixpkgs.follows = "nixpkgs-unstable";
+    };
+    tether = {
+      url = "github:zackb/tether";
+      inputs.nixpkgs.follows = "nixpkgs-unstable";
+    };
 
   };
 
@@ -33,6 +45,7 @@
       home-manager,
       waybar-fixed, # TODO: remove at 26.11
       obsidian-graph,
+      tether,
       ...
     }@inputs:
     let
@@ -42,7 +55,10 @@
     in
     {
       nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
-        specialArgs = { inherit nixpkgs; };
+        specialArgs = {
+          inherit nixpkgs;
+          inherit tether;
+        };
         inherit system;
         modules = [
           ({
