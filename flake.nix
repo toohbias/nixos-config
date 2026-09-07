@@ -16,10 +16,7 @@
       inputs.nixpkgs.follows = "nixpkgs-unstable";
     };
 
-    mcmojave-hyprcursor = {
-      url = "github:libadoxon/mcmojave-hyprcursor";
-      inputs.nixpkgs.follows = "nixpkgs-unstable";
-    };
+    mcmojave-hyprcursor.url = "github:libadoxon/mcmojave-hyprcursor";
 
     # hack to fix waybar workspaces not switching, see https://github.com/Alexays/Waybar/pull/5013
     # TODO: remove at 26.11

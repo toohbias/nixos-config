@@ -136,9 +136,7 @@
     "mcmojave-hyprcursor": {
       "inputs": {
         "hyprcursor": "hyprcursor",
-        "nixpkgs": [
-          "nixpkgs-unstable"
-        ],
+        "nixpkgs": "nixpkgs",
         "systems": "systems_2"
       },
       "locked": {
@@ -172,16 +170,16 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1788584326,
-        "narHash": "sha256-Fd3OB8J9JhgliQwOKcqx4M672CInxi1I5VnwsaXeSQo=",
-        "owner": "nixos",
+        "lastModified": 1722062969,
+        "narHash": "sha256-QOS0ykELUmPbrrUGmegAUlpmUFznDQeR4q7rFhl8eQg=",
+        "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "6713828a351efa628b025a1adf7f43cbf8597513",
+        "rev": "b73c2221a46c13557b1b3be9c2070cc42cf01eb3",
         "type": "github"
       },
       "original": {
-        "owner": "nixos",
-        "ref": "nixos-26.05",
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
         "repo": "nixpkgs",
         "type": "github"
       }
@@ -198,6 +196,22 @@
       "original": {
         "owner": "nixos",
         "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_2": {
+      "locked": {
+        "lastModified": 1788690626,
+        "narHash": "sha256-+v4I4LawmRD/mVxO7QIAerRrCkElp3YImzWkkUnvOTg=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "c25784012c9982bca5b3e0de87e90bbdac8927d3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixos-26.05",
         "repo": "nixpkgs",
         "type": "github"
       }
@@ -245,7 +259,7 @@
       "inputs": {
         "home-manager": "home-manager",
         "mcmojave-hyprcursor": "mcmojave-hyprcursor",
-        "nixpkgs": "nixpkgs",
+        "nixpkgs": "nixpkgs_2",
         "nixpkgs-unstable": "nixpkgs-unstable",
         "nvf": "nvf",
         "obsidian-graph": "obsidian-graph",
@@ -290,11 +304,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1788707309,
-        "narHash": "sha256-ngf2EvkEM5XcuwWm5fYXIGMnOzMDoMvaxU0CGE5caAM=",
+        "lastModified": 1788752762,
+        "narHash": "sha256-tR7ekoc44aO2oYJrapsp5k/Ex6Hh6JSm0pfsN47aKss=",
         "owner": "zackb",
         "repo": "tether",
-        "rev": "ec6d731a25ec675e641d7abbc4364d329847ea7a",
+        "rev": "fdfbf695a6a5cb8b54beb968505a988e6f365f3d",
         "type": "github"
       },
       "original": {

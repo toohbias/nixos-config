@@ -66,7 +66,7 @@ in
       config = {
         input = {
           kb_layout = "us,de";
-          kb_options = "caps:swapescape,grp_led:scroll";
+          kb_options = "caps:swapescape,grp_led:num";
           repeat_delay = 250;
           numlock_by_default = true;
 
