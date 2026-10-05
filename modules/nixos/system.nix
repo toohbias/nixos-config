@@ -35,7 +35,7 @@
 
   nixpkgs.overlays = [
     (final: prev: {
-      wpa_supplicant = pkgs-unstable.wpa_supplicant.overrideAttrs (old: {
+      wpa_supplicant = prev.wpa_supplicant.overrideAttrs (old: {
         extraConfig = old.extraConfig + ''
           CONFIG_NAN=y
           CONFIG_NAN_USD=y
