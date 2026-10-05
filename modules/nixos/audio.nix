@@ -23,6 +23,22 @@
           }
         ];
       };
+      "51-bluetooth-priority" = {
+        "monitor.bluez.rules" = [
+          {
+            matches = [
+              {
+                "node.name" = "~bluez_output.*";
+              }
+            ];
+            actions = {
+              "update-props" = {
+                "priority.session" = 2500;
+              };
+            };
+          }
+        ];
+      };
     };
   };
 

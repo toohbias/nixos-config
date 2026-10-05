@@ -55,6 +55,7 @@
         specialArgs = {
           inherit nixpkgs;
           inherit tether;
+          inherit pkgs-unstable;
         };
         inherit system;
         modules = [

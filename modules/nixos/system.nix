@@ -1,3 +1,4 @@
+{ pkgs, pkgs-unstable, ... }:
 {
   # boot
   boot.loader.systemd-boot.enable = true;
@@ -6,7 +7,7 @@
   boot.kernelParams = [ "kvm.enable_virt_at_load=0" ]; # virtualbox kvm error
 
   # networkmanager
-  networking.networkmanager.enable = true;
+  networking.networkmanager.enable = false; # nan
 
   # usb
   services.udisks2 = {
@@ -21,5 +22,27 @@
     SUBSYSTEMS=="usb", ATTRS{idVendor}=="1fc9", MODE:="0666"
     SUBSYSTEMS=="usb", ATTRS{idVendor}=="0525", MODE:="0666"
   '';
+
+  # hacking on NAN
+  boot.kernelPackages = pkgs.linuxPackages_latest;
+
+  networking.wireless = {
+    enable = true;
+    autoDetectInterfaces = false;
+    interfaces = [ ];
+    userControlled = true;
+  };
+
+  nixpkgs.overlays = [
+    (final: prev: {
+      wpa_supplicant = pkgs-unstable.wpa_supplicant.overrideAttrs (old: {
+        extraConfig = old.extraConfig + ''
+          CONFIG_NAN=y
+          CONFIG_NAN_USD=y
+        '';
+      });
+    })
+  ];
+  users.users.tobi.extraGroups = [ "wpa_supplicant" ];
 
 }
