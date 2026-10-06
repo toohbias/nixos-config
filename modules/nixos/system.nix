@@ -6,9 +6,6 @@
 
   boot.kernelParams = [ "kvm.enable_virt_at_load=0" ]; # virtualbox kvm error
 
-  # networkmanager
-  networking.networkmanager.enable = false; # nan
-
   # usb
   services.udisks2 = {
     enable = true;
@@ -25,13 +22,6 @@
 
   # hacking on NAN
   boot.kernelPackages = pkgs.linuxPackages_latest;
-
-  networking.wireless = {
-    enable = true;
-    autoDetectInterfaces = false;
-    interfaces = [ ];
-    userControlled = true;
-  };
 
   nixpkgs.overlays = [
     (final: prev: {
